@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCAC5D1F1E8268B4003CACF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D1E1E8268B4003CACF8 /* main.m */; };
+		BCAC5D221E8268B4003CACF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D211E8268B4003CACF8 /* AppDelegate.m */; };
+		BCAC5D251E8268B4003CACF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D241E8268B4003CACF8 /* ViewController.m */; };
+		BCAC5D281E8268B4003CACF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAC5D261E8268B4003CACF8 /* Main.storyboard */; };
+		BCAC5D2B1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D291E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld */; };
+		BCAC5D2D1E8268B4003CACF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAC5D2C1E8268B4003CACF8 /* Assets.xcassets */; };
+		BCAC5D301E8268B4003CACF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAC5D2E1E8268B4003CACF8 /* LaunchScreen.storyboard */; };
+		BCAC5D3B1E8268B4003CACF8 /* ShellCoinForMerchantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D3A1E8268B4003CACF8 /* ShellCoinForMerchantTests.m */; };
+		BCAC5D461E8268B4003CACF8 /* ShellCoinForMerchantUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D451E8268B4003CACF8 /* ShellCoinForMerchantUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCAC5D371E8268B4003CACF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCAC5D121E8268B4003CACF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCAC5D191E8268B4003CACF8;
+			remoteInfo = ShellCoinForMerchant;
+		};
+		BCAC5D421E8268B4003CACF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCAC5D121E8268B4003CACF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCAC5D191E8268B4003CACF8;
+			remoteInfo = ShellCoinForMerchant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCAC5D1A1E8268B4003CACF8 /* ShellCoinForMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellCoinForMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAC5D1E1E8268B4003CACF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCAC5D201E8268B4003CACF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCAC5D211E8268B4003CACF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCAC5D231E8268B4003CACF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCAC5D241E8268B4003CACF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCAC5D271E8268B4003CACF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCAC5D2A1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShellCoinForMerchant.xcdatamodel; sourceTree = "<group>"; };
+		BCAC5D2C1E8268B4003CACF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCAC5D2F1E8268B4003CACF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCAC5D311E8268B4003CACF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAC5D361E8268B4003CACF8 /* ShellCoinForMerchantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShellCoinForMerchantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAC5D3A1E8268B4003CACF8 /* ShellCoinForMerchantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShellCoinForMerchantTests.m; sourceTree = "<group>"; };
+		BCAC5D3C1E8268B4003CACF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAC5D411E8268B4003CACF8 /* ShellCoinForMerchantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShellCoinForMerchantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAC5D451E8268B4003CACF8 /* ShellCoinForMerchantUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShellCoinForMerchantUITests.m; sourceTree = "<group>"; };
+		BCAC5D471E8268B4003CACF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCAC5D171E8268B4003CACF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAC5D331E8268B4003CACF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAC5D3E1E8268B4003CACF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCAC5D111E8268B4003CACF8 = {
+			isa = PBXGroup;
+			children = (
+				BCAC5D1C1E8268B4003CACF8 /* ShellCoinForMerchant */,
+				BCAC5D391E8268B4003CACF8 /* ShellCoinForMerchantTests */,
+				BCAC5D441E8268B4003CACF8 /* ShellCoinForMerchantUITests */,
+				BCAC5D1B1E8268B4003CACF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCAC5D1B1E8268B4003CACF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCAC5D1A1E8268B4003CACF8 /* ShellCoinForMerchant.app */,
+				BCAC5D361E8268B4003CACF8 /* ShellCoinForMerchantTests.xctest */,
+				BCAC5D411E8268B4003CACF8 /* ShellCoinForMerchantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCAC5D1C1E8268B4003CACF8 /* ShellCoinForMerchant */ = {
+			isa = PBXGroup;
+			children = (
+				BCAC5D201E8268B4003CACF8 /* AppDelegate.h */,
+				BCAC5D211E8268B4003CACF8 /* AppDelegate.m */,
+				BCAC5D231E8268B4003CACF8 /* ViewController.h */,
+				BCAC5D241E8268B4003CACF8 /* ViewController.m */,
+				BCAC5D261E8268B4003CACF8 /* Main.storyboard */,
+				BCAC5D2C1E8268B4003CACF8 /* Assets.xcassets */,
+				BCAC5D2E1E8268B4003CACF8 /* LaunchScreen.storyboard */,
+				BCAC5D311E8268B4003CACF8 /* Info.plist */,
+				BCAC5D291E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld */,
+				BCAC5D1D1E8268B4003CACF8 /* Supporting Files */,
+			);
+			path = ShellCoinForMerchant;
+			sourceTree = "<group>";
+		};
+		BCAC5D1D1E8268B4003CACF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCAC5D1E1E8268B4003CACF8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCAC5D391E8268B4003CACF8 /* ShellCoinForMerchantTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCAC5D3A1E8268B4003CACF8 /* ShellCoinForMerchantTests.m */,
+				BCAC5D3C1E8268B4003CACF8 /* Info.plist */,
+			);
+			path = ShellCoinForMerchantTests;
+			sourceTree = "<group>";
+		};
+		BCAC5D441E8268B4003CACF8 /* ShellCoinForMerchantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCAC5D451E8268B4003CACF8 /* ShellCoinForMerchantUITests.m */,
+				BCAC5D471E8268B4003CACF8 /* Info.plist */,
+			);
+			path = ShellCoinForMerchantUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCAC5D191E8268B4003CACF8 /* ShellCoinForMerchant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCAC5D4A1E8268B4003CACF8 /* Build configuration list for PBXNativeTarget "ShellCoinForMerchant" */;
+			buildPhases = (
+				BCAC5D161E8268B4003CACF8 /* Sources */,
+				BCAC5D171E8268B4003CACF8 /* Frameworks */,
+				BCAC5D181E8268B4003CACF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShellCoinForMerchant;
+			productName = ShellCoinForMerchant;
+			productReference = BCAC5D1A1E8268B4003CACF8 /* ShellCoinForMerchant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCAC5D351E8268B4003CACF8 /* ShellCoinForMerchantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCAC5D4D1E8268B4003CACF8 /* Build configuration list for PBXNativeTarget "ShellCoinForMerchantTests" */;
+			buildPhases = (
+				BCAC5D321E8268B4003CACF8 /* Sources */,
+				BCAC5D331E8268B4003CACF8 /* Frameworks */,
+				BCAC5D341E8268B4003CACF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCAC5D381E8268B4003CACF8 /* PBXTargetDependency */,
+			);
+			name = ShellCoinForMerchantTests;
+			productName = ShellCoinForMerchantTests;
+			productReference = BCAC5D361E8268B4003CACF8 /* ShellCoinForMerchantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCAC5D401E8268B4003CACF8 /* ShellCoinForMerchantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCAC5D501E8268B4003CACF8 /* Build configuration list for PBXNativeTarget "ShellCoinForMerchantUITests" */;
+			buildPhases = (
+				BCAC5D3D1E8268B4003CACF8 /* Sources */,
+				BCAC5D3E1E8268B4003CACF8 /* Frameworks */,
+				BCAC5D3F1E8268B4003CACF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCAC5D431E8268B4003CACF8 /* PBXTargetDependency */,
+			);
+			name = ShellCoinForMerchantUITests;
+			productName = ShellCoinForMerchantUITests;
+			productReference = BCAC5D411E8268B4003CACF8 /* ShellCoinForMerchantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCAC5D121E8268B4003CACF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Guo;
+				TargetAttributes = {
+					BCAC5D191E8268B4003CACF8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 33XXMRMT7P;
+						ProvisioningStyle = Automatic;
+					};
+					BCAC5D351E8268B4003CACF8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 33XXMRMT7P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCAC5D191E8268B4003CACF8;
+					};
+					BCAC5D401E8268B4003CACF8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 33XXMRMT7P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCAC5D191E8268B4003CACF8;
+					};
+				};
+			};
+			buildConfigurationList = BCAC5D151E8268B4003CACF8 /* Build configuration list for PBXProject "ShellCoinForMerchant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCAC5D111E8268B4003CACF8;
+			productRefGroup = BCAC5D1B1E8268B4003CACF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCAC5D191E8268B4003CACF8 /* ShellCoinForMerchant */,
+				BCAC5D351E8268B4003CACF8 /* ShellCoinForMerchantTests */,
+				BCAC5D401E8268B4003CACF8 /* ShellCoinForMerchantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCAC5D181E8268B4003CACF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAC5D301E8268B4003CACF8 /* LaunchScreen.storyboard in Resources */,
+				BCAC5D2D1E8268B4003CACF8 /* Assets.xcassets in Resources */,
+				BCAC5D281E8268B4003CACF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAC5D341E8268B4003CACF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAC5D3F1E8268B4003CACF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCAC5D161E8268B4003CACF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAC5D251E8268B4003CACF8 /* ViewController.m in Sources */,
+				BCAC5D2B1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld in Sources */,
+				BCAC5D221E8268B4003CACF8 /* AppDelegate.m in Sources */,
+				BCAC5D1F1E8268B4003CACF8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAC5D321E8268B4003CACF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAC5D3B1E8268B4003CACF8 /* ShellCoinForMerchantTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAC5D3D1E8268B4003CACF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAC5D461E8268B4003CACF8 /* ShellCoinForMerchantUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCAC5D381E8268B4003CACF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCAC5D191E8268B4003CACF8 /* ShellCoinForMerchant */;
+			targetProxy = BCAC5D371E8268B4003CACF8 /* PBXContainerItemProxy */;
+		};
+		BCAC5D431E8268B4003CACF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCAC5D191E8268B4003CACF8 /* ShellCoinForMerchant */;
+			targetProxy = BCAC5D421E8268B4003CACF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCAC5D261E8268B4003CACF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCAC5D271E8268B4003CACF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCAC5D2E1E8268B4003CACF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCAC5D2F1E8268B4003CACF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCAC5D481E8268B4003CACF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCAC5D491E8268B4003CACF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCAC5D4B1E8268B4003CACF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 33XXMRMT7P;
+				INFOPLIST_FILE = ShellCoinForMerchant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCAC5D4C1E8268B4003CACF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 33XXMRMT7P;
+				INFOPLIST_FILE = ShellCoinForMerchant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCAC5D4E1E8268B4003CACF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 33XXMRMT7P;
+				INFOPLIST_FILE = ShellCoinForMerchantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShellCoinForMerchant.app/ShellCoinForMerchant";
+			};
+			name = Debug;
+		};
+		BCAC5D4F1E8268B4003CACF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 33XXMRMT7P;
+				INFOPLIST_FILE = ShellCoinForMerchantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShellCoinForMerchant.app/ShellCoinForMerchant";
+			};
+			name = Release;
+		};
+		BCAC5D511E8268B4003CACF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 33XXMRMT7P;
+				INFOPLIST_FILE = ShellCoinForMerchantUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShellCoinForMerchant;
+			};
+			name = Debug;
+		};
+		BCAC5D521E8268B4003CACF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 33XXMRMT7P;
+				INFOPLIST_FILE = ShellCoinForMerchantUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShellCoinForMerchant;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCAC5D151E8268B4003CACF8 /* Build configuration list for PBXProject "ShellCoinForMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAC5D481E8268B4003CACF8 /* Debug */,
+				BCAC5D491E8268B4003CACF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCAC5D4A1E8268B4003CACF8 /* Build configuration list for PBXNativeTarget "ShellCoinForMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAC5D4B1E8268B4003CACF8 /* Debug */,
+				BCAC5D4C1E8268B4003CACF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCAC5D4D1E8268B4003CACF8 /* Build configuration list for PBXNativeTarget "ShellCoinForMerchantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAC5D4E1E8268B4003CACF8 /* Debug */,
+				BCAC5D4F1E8268B4003CACF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCAC5D501E8268B4003CACF8 /* Build configuration list for PBXNativeTarget "ShellCoinForMerchantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAC5D511E8268B4003CACF8 /* Debug */,
+				BCAC5D521E8268B4003CACF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCAC5D291E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCAC5D2A1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodel */,
+			);
+			currentVersion = BCAC5D2A1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodel */;
+			path = ShellCoinForMerchant.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BCAC5D121E8268B4003CACF8 /* Project object */;
+}
