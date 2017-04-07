@@ -68,28 +68,41 @@
         //登录接口请求操作
         NSString *password = [[NSString stringWithFormat:@"%@%@",self.password_tf.text,PasswordKey]md5_32];
         NSDictionary *parms = @{@"phone":self.user_tf.text,
-                                @"deviceToken":[ShellCoinUserInfo shareUserInfos].devicetoken,
+                                @"deviceToken":NullToSpace([ShellCoinUserInfo shareUserInfos].devicetoken),
                                 @"deviceType":@"ios",
                                 @"password":password};
-        [HttpClient POST:@"user/login" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+        [HttpClient POST:@"mch/login" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
             [SVProgressHUD dismiss];
             if (IsRequestTrue) {
                 //设置用户信息
                 [SVProgressHUD showSuccessWithStatus:@"登录成功"];
                 [[NSUserDefaults standardUserDefaults]setObject:self.user_tf.text forKey:LoginUserName];
                 [[NSUserDefaults standardUserDefaults]setObject:self.password_tf.text forKey:LoginUserPassword];
-                [[NSUserDefaults standardUserDefaults]synchronize];
+                [[NSUserDefaults standardUserDefaults]setObject:self.password_tf.text forKey:LoginUserPassword];
                 [ShellCoinUserInfo shareUserInfos].currentLogined = YES;
                 [[ShellCoinUserInfo shareUserInfos]setUserinfoWithdic:jsonObject[@"data"]];
+                //记录商户号
+//                [[NSUserDefaults standardUserDefaults]setObject:[ShellCoinUserInfo shareUserInfos].code forKey:MyBussinssCode];
                 //统计新增用户
-//                [MobClick profileSignInWithPUID:[TTXUserInfo shareUserInfos].userid];
-                [self dismissViewControllerAnimated:YES completion:NULL];
+                [[NSUserDefaults standardUserDefaults]synchronize];
+                
+                if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
+                    [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
+                    [[NSUserDefaults standardUserDefaults]synchronize];
+                    [UIApplication sharedApplication].keyWindow.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
+                    [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
+                    [[NSUserDefaults standardUserDefaults]synchronize];
+                    [self presentViewController:[UIApplication sharedApplication].keyWindow.rootViewController animated:YES completion:NULL];
+                }else{
+                    [self dismissViewControllerAnimated:YES completion:NULL];
+                }
             }
         } failure:^(NSURLSessionDataTask *operation, NSError *error) {
             [SVProgressHUD dismiss];
         }];
     }
 }
+
 
 -(BOOL) valueValidated {
     // 判断电话号码是否合格

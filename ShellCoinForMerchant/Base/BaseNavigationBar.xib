@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,12 +15,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_bg2" translatesAutoresizingMaskIntoConstraints="NO" id="fEV-h9-1Q9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBy-hR-jrp">
                     <rect key="frame" x="0.0" y="20" width="414" height="40"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0p-Vc-A75">
                             <rect key="frame" x="64" y="20" width="286" height="0.0"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -34,15 +37,17 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gai-NO-g82">
-                            <rect key="frame" x="376" y="5" width="30" height="30"/>
+                            <rect key="frame" x="376" y="0.0" width="30" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                             <connections>
                                 <action selector="detail_btn:" destination="iN0-l3-epB" eventType="touchUpInside" id="J3p-J5-Thc"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unU-Qd-L89">
                             <rect key="frame" x="0.0" y="-2" width="44" height="44"/>
-                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="44" id="lqk-d5-gbR"/>
                                 <constraint firstAttribute="height" constant="44" id="u9p-iy-8HL"/>
@@ -60,12 +65,13 @@
                     <constraints>
                         <constraint firstItem="H0p-Vc-A75" firstAttribute="centerY" secondItem="sBy-hR-jrp" secondAttribute="centerY" id="0ri-Li-7nJ"/>
                         <constraint firstItem="unU-Qd-L89" firstAttribute="centerY" secondItem="sBy-hR-jrp" secondAttribute="centerY" id="AZA-zc-NcD"/>
+                        <constraint firstItem="Gai-NO-g82" firstAttribute="top" secondItem="sBy-hR-jrp" secondAttribute="top" id="Liy-Z4-EoF"/>
                         <constraint firstItem="nBr-I4-X2h" firstAttribute="leading" secondItem="unU-Qd-L89" secondAttribute="trailing" id="NQ1-hw-XRp"/>
                         <constraint firstAttribute="trailing" secondItem="Gai-NO-g82" secondAttribute="trailing" constant="8" id="Rbg-e7-Efc"/>
+                        <constraint firstAttribute="bottom" secondItem="Gai-NO-g82" secondAttribute="bottom" id="SHt-bu-ZeI"/>
                         <constraint firstItem="H0p-Vc-A75" firstAttribute="leading" secondItem="unU-Qd-L89" secondAttribute="trailing" constant="20" id="dP1-1F-WYF"/>
                         <constraint firstItem="unU-Qd-L89" firstAttribute="leading" secondItem="sBy-hR-jrp" secondAttribute="leading" id="fHV-rN-uvr"/>
                         <constraint firstItem="nBr-I4-X2h" firstAttribute="centerY" secondItem="sBy-hR-jrp" secondAttribute="centerY" id="gM5-nU-3aG"/>
-                        <constraint firstItem="Gai-NO-g82" firstAttribute="centerY" secondItem="sBy-hR-jrp" secondAttribute="centerY" id="ppq-QT-c9i"/>
                         <constraint firstAttribute="trailing" secondItem="H0p-Vc-A75" secondAttribute="trailing" constant="64" id="q1w-pB-uwR"/>
                     </constraints>
                 </view>
@@ -80,11 +86,15 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="sBy-hR-jrp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CIM-be-mNp"/>
+                <constraint firstAttribute="bottom" secondItem="fEV-h9-1Q9" secondAttribute="bottom" id="Fhh-ah-vW8"/>
                 <constraint firstAttribute="trailing" secondItem="Pte-a8-YHc" secondAttribute="trailing" id="RGP-zG-RMM"/>
                 <constraint firstItem="Pte-a8-YHc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RT6-VP-gga"/>
                 <constraint firstAttribute="bottom" secondItem="Pte-a8-YHc" secondAttribute="bottom" id="Un1-ie-6FT"/>
+                <constraint firstAttribute="trailing" secondItem="fEV-h9-1Q9" secondAttribute="trailing" id="a6p-YL-EpW"/>
+                <constraint firstItem="fEV-h9-1Q9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jkO-8X-guz"/>
                 <constraint firstItem="sBy-hR-jrp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="rwc-k5-xfb"/>
                 <constraint firstAttribute="trailing" secondItem="sBy-hR-jrp" secondAttribute="trailing" id="rxG-J8-3H8"/>
+                <constraint firstItem="fEV-h9-1Q9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wCG-4W-gEq"/>
                 <constraint firstAttribute="bottom" secondItem="sBy-hR-jrp" secondAttribute="bottom" id="zqS-1f-fjh"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -94,12 +104,14 @@
                 <outlet property="backtitle_leading" destination="NQ1-hw-XRp" id="5mg-C7-wlH"/>
                 <outlet property="detail_btn" destination="Gai-NO-g82" id="NHs-hx-u47"/>
                 <outlet property="lineVIew" destination="Pte-a8-YHc" id="6Na-93-ahw"/>
+                <outlet property="mineBgImageview" destination="fEV-h9-1Q9" id="3dN-bE-tWd"/>
                 <outlet property="title_label" destination="H0p-Vc-A75" id="d8W-MH-cdg"/>
             </connections>
-            <point key="canvasLocation" x="46" y="-270"/>
+            <point key="canvasLocation" x="95" y="-284"/>
         </view>
     </objects>
     <resources>
-        <image name="icon_back" width="40" height="40"/>
+        <image name="icon_back" width="44" height="44"/>
+        <image name="mine_bg2" width="375" height="64"/>
     </resources>
 </document>

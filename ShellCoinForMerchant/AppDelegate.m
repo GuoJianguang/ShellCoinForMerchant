@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
+        self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
+    }else{
+        self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
+    }
+    
+    [_window makeKeyAndVisible];
     return YES;
 }
 

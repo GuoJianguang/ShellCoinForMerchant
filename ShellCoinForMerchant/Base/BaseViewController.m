@@ -34,7 +34,13 @@
         make.top.equalTo(self.view);
         make.height.equalTo(@64);
     }];
-    self.view.backgroundColor = [UIColor colorWithRed:241/255. green:247/255. blue:247/255. alpha:1.];
+    self.view.backgroundColor = [UIColor colorFromHexString:@"#faf8f6"];
+}
+
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;  //默认的值是黑色的
 }
 
 +(id)controller {
