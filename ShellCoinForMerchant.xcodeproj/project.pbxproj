@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		14A3F32FA3535384F520B906 /* libPods-ShellCoinForMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842F9D262A12AD6836A31F64 /* libPods-ShellCoinForMerchant.a */; };
-		BC085C9C1E83643400572E8A /* ForgetPasswordOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085C8E1E83643400572E8A /* ForgetPasswordOneViewController.m */; };
-		BC085C9D1E83643400572E8A /* ForgetPasswordOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC085C8F1E83643400572E8A /* ForgetPasswordOneViewController.xib */; };
-		BC085C9E1E83643400572E8A /* ForgetPasswordTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085C911E83643400572E8A /* ForgetPasswordTwoViewController.m */; };
-		BC085C9F1E83643400572E8A /* ForgetPasswordTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC085C921E83643400572E8A /* ForgetPasswordTwoViewController.xib */; };
-		BC085CA01E83643400572E8A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC085C931E83643400572E8A /* Login.storyboard */; };
-		BC085CA11E83643400572E8A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085C951E83643400572E8A /* LoginViewController.m */; };
-		BC085CA21E83643400572E8A /* RegisterOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085C971E83643400572E8A /* RegisterOneViewController.m */; };
-		BC085CA31E83643400572E8A /* RegisterOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC085C981E83643400572E8A /* RegisterOneViewController.xib */; };
-		BC085CA41E83643400572E8A /* RegisterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085C9A1E83643400572E8A /* RegisterTwoViewController.m */; };
-		BC085CA51E83643400572E8A /* RegisterTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC085C9B1E83643400572E8A /* RegisterTwoViewController.xib */; };
 		BC085CB61E83645800572E8A /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CA81E83645800572E8A /* BaseCollectionViewCell.m */; };
 		BC085CB71E83645800572E8A /* BaseHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CAA1E83645800572E8A /* BaseHtmlViewController.m */; };
 		BC085CB81E83645800572E8A /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CAC1E83645800572E8A /* BaseModel.m */; };
@@ -35,7 +25,6 @@
 		BC085CE61E83647C00572E8A /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CD11E83647C00572E8A /* NewPagedFlowView.m */; };
 		BC085CE71E83647C00572E8A /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CD31E83647C00572E8A /* PGIndexBannerSubiew.m */; };
 		BC085CE81E83647C00572E8A /* ShellCoinPageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CD51E83647C00572E8A /* ShellCoinPageControlView.m */; };
-		BC085CE91E83647C00572E8A /* SortButtonSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CD71E83647C00572E8A /* SortButtonSwitchView.m */; };
 		BC085CEA1E83647C00572E8A /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CD91E83647C00572E8A /* SwipeView.m */; };
 		BC085CEB1E83647C00572E8A /* Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CDB1E83647C00572E8A /* Verify.m */; };
 		BC085D261E836B3F00572E8A /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CF21E836B3E00572E8A /* Colours.m */; };
@@ -54,6 +43,50 @@
 		BC085D331E836B3F00572E8A /* LBXZXCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085D0E1E836B3F00572E8A /* LBXZXCapture.m */; };
 		BC085D341E836B3F00572E8A /* ZXingWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085D111E836B3F00572E8A /* ZXingWrapper.m */; };
 		BC085D451E83718200572E8A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085D441E83718200572E8A /* HomeViewController.m */; };
+		BC2537ED1E9B564F007232B3 /* SettlementPayWayView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2537EC1E9B564F007232B3 /* SettlementPayWayView.m */; };
+		BC2537EF1E9B5658007232B3 /* SettlementPayWayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2537EE1E9B5658007232B3 /* SettlementPayWayView.xib */; };
+		BC2537F41E9B6042007232B3 /* OrderEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2537F21E9B6042007232B3 /* OrderEntryViewController.m */; };
+		BC2537F51E9B6042007232B3 /* OrderEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2537F31E9B6042007232B3 /* OrderEntryViewController.xib */; };
+		BC2537FA1E9B686F007232B3 /* OrderManamentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2537F81E9B686F007232B3 /* OrderManamentViewController.m */; };
+		BC2537FB1E9B686F007232B3 /* OrderManamentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2537F91E9B686F007232B3 /* OrderManamentViewController.xib */; };
+		BC2537FE1E9B6AFE007232B3 /* SortButtonSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2537FD1E9B6AFE007232B3 /* SortButtonSwitchView.m */; };
+		BC2538051E9B6B6E007232B3 /* Bill1View.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538001E9B6B6E007232B3 /* Bill1View.m */; };
+		BC2538061E9B6B6E007232B3 /* Bill1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2538011E9B6B6E007232B3 /* Bill1View.xib */; };
+		BC2538071E9B6B6E007232B3 /* Bill12View.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538031E9B6B6E007232B3 /* Bill12View.m */; };
+		BC2538081E9B6B6E007232B3 /* Bill12View.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2538041E9B6B6E007232B3 /* Bill12View.xib */; };
+		BC2538161E9B6C7A007232B3 /* UIScrollView+NoDataSouce.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538121E9B6C7A007232B3 /* UIScrollView+NoDataSouce.m */; };
+		BC2538171E9B6C7A007232B3 /* NothingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538141E9B6C7A007232B3 /* NothingView.m */; };
+		BC2538181E9B6C7A007232B3 /* NothingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2538151E9B6C7A007232B3 /* NothingView.xib */; };
+		BC25381C1E9B6D9B007232B3 /* YetCompleteOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC25381A1E9B6D9B007232B3 /* YetCompleteOrderCell.m */; };
+		BC25381D1E9B6D9B007232B3 /* YetCompleteOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC25381B1E9B6D9B007232B3 /* YetCompleteOrderCell.xib */; };
+		BC2538211E9B6E02007232B3 /* WaitSureOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC25381F1E9B6E02007232B3 /* WaitSureOrderCell.m */; };
+		BC2538221E9B6E02007232B3 /* WaitSureOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2538201E9B6E02007232B3 /* WaitSureOrderCell.xib */; };
+		BC2538261E9B720D007232B3 /* SureOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538241E9B720D007232B3 /* SureOrderView.m */; };
+		BC2538271E9B720D007232B3 /* SureOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2538251E9B720D007232B3 /* SureOrderView.xib */; };
+		BC25383B1E9B76B5007232B3 /* ForgetPasswordOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC25382A1E9B76B5007232B3 /* ForgetPasswordOneViewController.m */; };
+		BC25383C1E9B76B5007232B3 /* ForgetPasswordOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC25382B1E9B76B5007232B3 /* ForgetPasswordOneViewController.xib */; };
+		BC25383D1E9B76B5007232B3 /* ForgetPasswordTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC25382D1E9B76B5007232B3 /* ForgetPasswordTwoViewController.m */; };
+		BC25383E1E9B76B5007232B3 /* ForgetPasswordTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC25382E1E9B76B5007232B3 /* ForgetPasswordTwoViewController.xib */; };
+		BC25383F1E9B76B5007232B3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC25382F1E9B76B5007232B3 /* Login.storyboard */; };
+		BC2538401E9B76B5007232B3 /* Login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2538301E9B76B5007232B3 /* Login.xcassets */; };
+		BC2538411E9B76B5007232B3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538321E9B76B5007232B3 /* LoginViewController.m */; };
+		BC2538421E9B76B5007232B3 /* RegisterOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538341E9B76B5007232B3 /* RegisterOneViewController.m */; };
+		BC2538431E9B76B5007232B3 /* RegisterOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2538351E9B76B5007232B3 /* RegisterOneViewController.xib */; };
+		BC2538441E9B76B5007232B3 /* RegisterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538371E9B76B5007232B3 /* RegisterTwoViewController.m */; };
+		BC2538451E9B76B5007232B3 /* RegisterTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2538381E9B76B5007232B3 /* RegisterTwoViewController.xib */; };
+		BC2538461E9B76B5007232B3 /* RootLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC25383A1E9B76B5007232B3 /* RootLoginViewController.m */; };
+		BC2538601E9B7890007232B3 /* libUMessage_Sdk_1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2538511E9B7890007232B3 /* libUMessage_Sdk_1.4.0.a */; };
+		BC2538611E9B7890007232B3 /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2538541E9B7890007232B3 /* UMSocialCore.framework */; };
+		BC2538621E9B7890007232B3 /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2538551E9B7890007232B3 /* UMSocialNetwork.framework */; };
+		BC2538631E9B7890007232B3 /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC2538561E9B7890007232B3 /* UMSocialSDKResources.bundle */; };
+		BC2538641E9B7890007232B3 /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2538571E9B7890007232B3 /* UShareUI.framework */; };
+		BC2538651E9B7890007232B3 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2538591E9B7890007232B3 /* UMMobClick.framework */; };
+		BC2538661E9B7890007232B3 /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25385B1E9B7890007232B3 /* libSocialWeChat.a */; };
+		BC2538671E9B7890007232B3 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25385C1E9B7890007232B3 /* libWeChatSDK.a */; };
+		BC25386A1E9B78D7007232B3 /* WeXinPayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2538691E9B78D7007232B3 /* WeXinPayObject.m */; };
+		BC25386C1E9B79FD007232B3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25386B1E9B79FD007232B3 /* libz.tbd */; };
+		BC25386E1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25386D1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd */; };
+		BC2538701E9B7A17007232B3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25386F1E9B7A17007232B3 /* libsqlite3.tbd */; };
 		BC3FB69D1E975E5100C06A95 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3FB69C1E975E5100C06A95 /* Home.xcassets */; };
 		BC3FB6A11E97636400C06A95 /* BillConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB69F1E97636400C06A95 /* BillConsumptionTableViewCell.m */; };
 		BC3FB6A21E97636400C06A95 /* BillConsumptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FB6A01E97636400C06A95 /* BillConsumptionTableViewCell.xib */; };
@@ -98,21 +131,6 @@
 /* Begin PBXFileReference section */
 		572BBA7B2F43A719AE18FDF0 /* Pods-ShellCoinForMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShellCoinForMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShellCoinForMerchant/Pods-ShellCoinForMerchant.release.xcconfig"; sourceTree = "<group>"; };
 		842F9D262A12AD6836A31F64 /* libPods-ShellCoinForMerchant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShellCoinForMerchant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC085C8D1E83643400572E8A /* ForgetPasswordOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordOneViewController.h; sourceTree = "<group>"; };
-		BC085C8E1E83643400572E8A /* ForgetPasswordOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordOneViewController.m; sourceTree = "<group>"; };
-		BC085C8F1E83643400572E8A /* ForgetPasswordOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordOneViewController.xib; sourceTree = "<group>"; };
-		BC085C901E83643400572E8A /* ForgetPasswordTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordTwoViewController.h; sourceTree = "<group>"; };
-		BC085C911E83643400572E8A /* ForgetPasswordTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordTwoViewController.m; sourceTree = "<group>"; };
-		BC085C921E83643400572E8A /* ForgetPasswordTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordTwoViewController.xib; sourceTree = "<group>"; };
-		BC085C931E83643400572E8A /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		BC085C941E83643400572E8A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		BC085C951E83643400572E8A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		BC085C961E83643400572E8A /* RegisterOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterOneViewController.h; sourceTree = "<group>"; };
-		BC085C971E83643400572E8A /* RegisterOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterOneViewController.m; sourceTree = "<group>"; };
-		BC085C981E83643400572E8A /* RegisterOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterOneViewController.xib; sourceTree = "<group>"; };
-		BC085C991E83643400572E8A /* RegisterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTwoViewController.h; sourceTree = "<group>"; };
-		BC085C9A1E83643400572E8A /* RegisterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTwoViewController.m; sourceTree = "<group>"; };
-		BC085C9B1E83643400572E8A /* RegisterTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTwoViewController.xib; sourceTree = "<group>"; };
 		BC085CA71E83645800572E8A /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
 		BC085CA81E83645800572E8A /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
 		BC085CA91E83645800572E8A /* BaseHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHtmlViewController.h; sourceTree = "<group>"; };
@@ -147,8 +165,6 @@
 		BC085CD31E83647C00572E8A /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
 		BC085CD41E83647C00572E8A /* ShellCoinPageControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellCoinPageControlView.h; sourceTree = "<group>"; };
 		BC085CD51E83647C00572E8A /* ShellCoinPageControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellCoinPageControlView.m; sourceTree = "<group>"; };
-		BC085CD61E83647C00572E8A /* SortButtonSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortButtonSwitchView.h; sourceTree = "<group>"; };
-		BC085CD71E83647C00572E8A /* SortButtonSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortButtonSwitchView.m; sourceTree = "<group>"; };
 		BC085CD81E83647C00572E8A /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
 		BC085CD91E83647C00572E8A /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
 		BC085CDA1E83647C00572E8A /* Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Verify.h; sourceTree = "<group>"; };
@@ -187,6 +203,72 @@
 		BC085D111E836B3F00572E8A /* ZXingWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXingWrapper.m; sourceTree = "<group>"; };
 		BC085D431E83718200572E8A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		BC085D441E83718200572E8A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		BC2537EB1E9B564F007232B3 /* SettlementPayWayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettlementPayWayView.h; sourceTree = "<group>"; };
+		BC2537EC1E9B564F007232B3 /* SettlementPayWayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettlementPayWayView.m; sourceTree = "<group>"; };
+		BC2537EE1E9B5658007232B3 /* SettlementPayWayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettlementPayWayView.xib; sourceTree = "<group>"; };
+		BC2537F11E9B6042007232B3 /* OrderEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderEntryViewController.h; sourceTree = "<group>"; };
+		BC2537F21E9B6042007232B3 /* OrderEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderEntryViewController.m; sourceTree = "<group>"; };
+		BC2537F31E9B6042007232B3 /* OrderEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderEntryViewController.xib; sourceTree = "<group>"; };
+		BC2537F71E9B686F007232B3 /* OrderManamentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderManamentViewController.h; sourceTree = "<group>"; };
+		BC2537F81E9B686F007232B3 /* OrderManamentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderManamentViewController.m; sourceTree = "<group>"; };
+		BC2537F91E9B686F007232B3 /* OrderManamentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderManamentViewController.xib; sourceTree = "<group>"; };
+		BC2537FC1E9B6AFE007232B3 /* SortButtonSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortButtonSwitchView.h; sourceTree = "<group>"; };
+		BC2537FD1E9B6AFE007232B3 /* SortButtonSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortButtonSwitchView.m; sourceTree = "<group>"; };
+		BC2537FF1E9B6B6E007232B3 /* Bill1View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bill1View.h; sourceTree = "<group>"; };
+		BC2538001E9B6B6E007232B3 /* Bill1View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bill1View.m; sourceTree = "<group>"; };
+		BC2538011E9B6B6E007232B3 /* Bill1View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Bill1View.xib; sourceTree = "<group>"; };
+		BC2538021E9B6B6E007232B3 /* Bill12View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bill12View.h; sourceTree = "<group>"; };
+		BC2538031E9B6B6E007232B3 /* Bill12View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bill12View.m; sourceTree = "<group>"; };
+		BC2538041E9B6B6E007232B3 /* Bill12View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Bill12View.xib; sourceTree = "<group>"; };
+		BC2538111E9B6C7A007232B3 /* UIScrollView+NoDataSouce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NoDataSouce.h"; sourceTree = "<group>"; };
+		BC2538121E9B6C7A007232B3 /* UIScrollView+NoDataSouce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NoDataSouce.m"; sourceTree = "<group>"; };
+		BC2538131E9B6C7A007232B3 /* NothingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NothingView.h; sourceTree = "<group>"; };
+		BC2538141E9B6C7A007232B3 /* NothingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NothingView.m; sourceTree = "<group>"; };
+		BC2538151E9B6C7A007232B3 /* NothingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingView.xib; sourceTree = "<group>"; };
+		BC2538191E9B6D9B007232B3 /* YetCompleteOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YetCompleteOrderCell.h; sourceTree = "<group>"; };
+		BC25381A1E9B6D9B007232B3 /* YetCompleteOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YetCompleteOrderCell.m; sourceTree = "<group>"; };
+		BC25381B1E9B6D9B007232B3 /* YetCompleteOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YetCompleteOrderCell.xib; sourceTree = "<group>"; };
+		BC25381E1E9B6E02007232B3 /* WaitSureOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitSureOrderCell.h; sourceTree = "<group>"; };
+		BC25381F1E9B6E02007232B3 /* WaitSureOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitSureOrderCell.m; sourceTree = "<group>"; };
+		BC2538201E9B6E02007232B3 /* WaitSureOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitSureOrderCell.xib; sourceTree = "<group>"; };
+		BC2538231E9B720D007232B3 /* SureOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SureOrderView.h; sourceTree = "<group>"; };
+		BC2538241E9B720D007232B3 /* SureOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SureOrderView.m; sourceTree = "<group>"; };
+		BC2538251E9B720D007232B3 /* SureOrderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SureOrderView.xib; sourceTree = "<group>"; };
+		BC2538291E9B76B5007232B3 /* ForgetPasswordOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordOneViewController.h; sourceTree = "<group>"; };
+		BC25382A1E9B76B5007232B3 /* ForgetPasswordOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordOneViewController.m; sourceTree = "<group>"; };
+		BC25382B1E9B76B5007232B3 /* ForgetPasswordOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordOneViewController.xib; sourceTree = "<group>"; };
+		BC25382C1E9B76B5007232B3 /* ForgetPasswordTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordTwoViewController.h; sourceTree = "<group>"; };
+		BC25382D1E9B76B5007232B3 /* ForgetPasswordTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordTwoViewController.m; sourceTree = "<group>"; };
+		BC25382E1E9B76B5007232B3 /* ForgetPasswordTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordTwoViewController.xib; sourceTree = "<group>"; };
+		BC25382F1E9B76B5007232B3 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BC2538301E9B76B5007232B3 /* Login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Login.xcassets; sourceTree = "<group>"; };
+		BC2538311E9B76B5007232B3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BC2538321E9B76B5007232B3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BC2538331E9B76B5007232B3 /* RegisterOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterOneViewController.h; sourceTree = "<group>"; };
+		BC2538341E9B76B5007232B3 /* RegisterOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterOneViewController.m; sourceTree = "<group>"; };
+		BC2538351E9B76B5007232B3 /* RegisterOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterOneViewController.xib; sourceTree = "<group>"; };
+		BC2538361E9B76B5007232B3 /* RegisterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTwoViewController.h; sourceTree = "<group>"; };
+		BC2538371E9B76B5007232B3 /* RegisterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTwoViewController.m; sourceTree = "<group>"; };
+		BC2538381E9B76B5007232B3 /* RegisterTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTwoViewController.xib; sourceTree = "<group>"; };
+		BC2538391E9B76B5007232B3 /* RootLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootLoginViewController.h; sourceTree = "<group>"; };
+		BC25383A1E9B76B5007232B3 /* RootLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootLoginViewController.m; sourceTree = "<group>"; };
+		BC2538511E9B7890007232B3 /* libUMessage_Sdk_1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.4.0.a; sourceTree = "<group>"; };
+		BC2538521E9B7890007232B3 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		BC2538541E9B7890007232B3 /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialCore.framework; sourceTree = "<group>"; };
+		BC2538551E9B7890007232B3 /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
+		BC2538561E9B7890007232B3 /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		BC2538571E9B7890007232B3 /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		BC2538591E9B7890007232B3 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		BC25385B1E9B7890007232B3 /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		BC25385C1E9B7890007232B3 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		BC25385D1E9B7890007232B3 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		BC25385E1E9B7890007232B3 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		BC25385F1E9B7890007232B3 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		BC2538681E9B78D7007232B3 /* WeXinPayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeXinPayObject.h; sourceTree = "<group>"; };
+		BC2538691E9B78D7007232B3 /* WeXinPayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeXinPayObject.m; sourceTree = "<group>"; };
+		BC25386B1E9B79FD007232B3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BC25386D1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		BC25386F1E9B7A17007232B3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		BC3FB69C1E975E5100C06A95 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
 		BC3FB69E1E97636400C06A95 /* BillConsumptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillConsumptionTableViewCell.h; sourceTree = "<group>"; };
 		BC3FB69F1E97636400C06A95 /* BillConsumptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillConsumptionTableViewCell.m; sourceTree = "<group>"; };
@@ -232,7 +314,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2538701E9B7A17007232B3 /* libsqlite3.tbd in Frameworks */,
+				BC25386E1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd in Frameworks */,
+				BC25386C1E9B79FD007232B3 /* libz.tbd in Frameworks */,
+				BC2538651E9B7890007232B3 /* UMMobClick.framework in Frameworks */,
+				BC2538621E9B7890007232B3 /* UMSocialNetwork.framework in Frameworks */,
+				BC2538671E9B7890007232B3 /* libWeChatSDK.a in Frameworks */,
+				BC2538601E9B7890007232B3 /* libUMessage_Sdk_1.4.0.a in Frameworks */,
+				BC2538661E9B7890007232B3 /* libSocialWeChat.a in Frameworks */,
+				BC2538611E9B7890007232B3 /* UMSocialCore.framework in Frameworks */,
 				14A3F32FA3535384F520B906 /* libPods-ShellCoinForMerchant.a in Frameworks */,
+				BC2538641E9B7890007232B3 /* UShareUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,36 +348,19 @@
 		B51E7F7009EBB967E6849C66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC25386F1E9B7A17007232B3 /* libsqlite3.tbd */,
+				BC25386D1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd */,
+				BC25386B1E9B79FD007232B3 /* libz.tbd */,
 				842F9D262A12AD6836A31F64 /* libPods-ShellCoinForMerchant.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC085C8C1E83643400572E8A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				BC085C8D1E83643400572E8A /* ForgetPasswordOneViewController.h */,
-				BC085C8E1E83643400572E8A /* ForgetPasswordOneViewController.m */,
-				BC085C8F1E83643400572E8A /* ForgetPasswordOneViewController.xib */,
-				BC085C901E83643400572E8A /* ForgetPasswordTwoViewController.h */,
-				BC085C911E83643400572E8A /* ForgetPasswordTwoViewController.m */,
-				BC085C921E83643400572E8A /* ForgetPasswordTwoViewController.xib */,
-				BC085C931E83643400572E8A /* Login.storyboard */,
-				BC085C941E83643400572E8A /* LoginViewController.h */,
-				BC085C951E83643400572E8A /* LoginViewController.m */,
-				BC085C961E83643400572E8A /* RegisterOneViewController.h */,
-				BC085C971E83643400572E8A /* RegisterOneViewController.m */,
-				BC085C981E83643400572E8A /* RegisterOneViewController.xib */,
-				BC085C991E83643400572E8A /* RegisterTwoViewController.h */,
-				BC085C9A1E83643400572E8A /* RegisterTwoViewController.m */,
-				BC085C9B1E83643400572E8A /* RegisterTwoViewController.xib */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		BC085CA61E83645800572E8A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BC2537FC1E9B6AFE007232B3 /* SortButtonSwitchView.h */,
+				BC2537FD1E9B6AFE007232B3 /* SortButtonSwitchView.m */,
 				BC085CA71E83645800572E8A /* BaseCollectionViewCell.h */,
 				BC085CA81E83645800572E8A /* BaseCollectionViewCell.m */,
 				BC085CA91E83645800572E8A /* BaseHtmlViewController.h */,
@@ -321,12 +396,17 @@
 				BC085CD31E83647C00572E8A /* PGIndexBannerSubiew.m */,
 				BC085CD41E83647C00572E8A /* ShellCoinPageControlView.h */,
 				BC085CD51E83647C00572E8A /* ShellCoinPageControlView.m */,
-				BC085CD61E83647C00572E8A /* SortButtonSwitchView.h */,
-				BC085CD71E83647C00572E8A /* SortButtonSwitchView.m */,
 				BC085CD81E83647C00572E8A /* SwipeView.h */,
 				BC085CD91E83647C00572E8A /* SwipeView.m */,
 				BC085CDA1E83647C00572E8A /* Verify.h */,
 				BC085CDB1E83647C00572E8A /* Verify.m */,
+				BC2538111E9B6C7A007232B3 /* UIScrollView+NoDataSouce.h */,
+				BC2538121E9B6C7A007232B3 /* UIScrollView+NoDataSouce.m */,
+				BC2538131E9B6C7A007232B3 /* NothingView.h */,
+				BC2538141E9B6C7A007232B3 /* NothingView.m */,
+				BC2538151E9B6C7A007232B3 /* NothingView.xib */,
+				BC2538681E9B78D7007232B3 /* WeXinPayObject.h */,
+				BC2538691E9B78D7007232B3 /* WeXinPayObject.m */,
 				BC3FB6B11E97691200C06A95 /* Public.xcassets */,
 			);
 			path = Public;
@@ -352,6 +432,7 @@
 		BC085CEF1E836B3E00572E8A /* ThirdAPI */ = {
 			isa = PBXGroup;
 			children = (
+				BC25384F1E9B7890007232B3 /* share */,
 				BC085CF01E836B3E00572E8A /* Colours */,
 				BC085CF31E836B3E00572E8A /* LBXScan */,
 			);
@@ -433,9 +514,122 @@
 				BC3FB69C1E975E5100C06A95 /* Home.xcassets */,
 				BC3FB6A91E97651800C06A95 /* RootViewController.h */,
 				BC3FB6AA1E97651800C06A95 /* RootViewController.m */,
+				BC2537F61E9B685D007232B3 /* OrderManagement */,
+				BC2537F01E9B6029007232B3 /* Order entry */,
 				BC3FB6B31E97699100C06A95 /* Statements management */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		BC2537F01E9B6029007232B3 /* Order entry */ = {
+			isa = PBXGroup;
+			children = (
+				BC2537F11E9B6042007232B3 /* OrderEntryViewController.h */,
+				BC2537F21E9B6042007232B3 /* OrderEntryViewController.m */,
+				BC2537F31E9B6042007232B3 /* OrderEntryViewController.xib */,
+			);
+			path = "Order entry";
+			sourceTree = "<group>";
+		};
+		BC2537F61E9B685D007232B3 /* OrderManagement */ = {
+			isa = PBXGroup;
+			children = (
+				BC2537F71E9B686F007232B3 /* OrderManamentViewController.h */,
+				BC2537F81E9B686F007232B3 /* OrderManamentViewController.m */,
+				BC2537F91E9B686F007232B3 /* OrderManamentViewController.xib */,
+				BC2538231E9B720D007232B3 /* SureOrderView.h */,
+				BC2538241E9B720D007232B3 /* SureOrderView.m */,
+				BC2538251E9B720D007232B3 /* SureOrderView.xib */,
+				BC25381E1E9B6E02007232B3 /* WaitSureOrderCell.h */,
+				BC25381F1E9B6E02007232B3 /* WaitSureOrderCell.m */,
+				BC2538201E9B6E02007232B3 /* WaitSureOrderCell.xib */,
+				BC2538191E9B6D9B007232B3 /* YetCompleteOrderCell.h */,
+				BC25381A1E9B6D9B007232B3 /* YetCompleteOrderCell.m */,
+				BC25381B1E9B6D9B007232B3 /* YetCompleteOrderCell.xib */,
+				BC2537FF1E9B6B6E007232B3 /* Bill1View.h */,
+				BC2538001E9B6B6E007232B3 /* Bill1View.m */,
+				BC2538011E9B6B6E007232B3 /* Bill1View.xib */,
+				BC2538021E9B6B6E007232B3 /* Bill12View.h */,
+				BC2538031E9B6B6E007232B3 /* Bill12View.m */,
+				BC2538041E9B6B6E007232B3 /* Bill12View.xib */,
+			);
+			path = OrderManagement;
+			sourceTree = "<group>";
+		};
+		BC2538281E9B76B5007232B3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC2538291E9B76B5007232B3 /* ForgetPasswordOneViewController.h */,
+				BC25382A1E9B76B5007232B3 /* ForgetPasswordOneViewController.m */,
+				BC25382B1E9B76B5007232B3 /* ForgetPasswordOneViewController.xib */,
+				BC25382C1E9B76B5007232B3 /* ForgetPasswordTwoViewController.h */,
+				BC25382D1E9B76B5007232B3 /* ForgetPasswordTwoViewController.m */,
+				BC25382E1E9B76B5007232B3 /* ForgetPasswordTwoViewController.xib */,
+				BC25382F1E9B76B5007232B3 /* Login.storyboard */,
+				BC2538301E9B76B5007232B3 /* Login.xcassets */,
+				BC2538311E9B76B5007232B3 /* LoginViewController.h */,
+				BC2538321E9B76B5007232B3 /* LoginViewController.m */,
+				BC2538331E9B76B5007232B3 /* RegisterOneViewController.h */,
+				BC2538341E9B76B5007232B3 /* RegisterOneViewController.m */,
+				BC2538351E9B76B5007232B3 /* RegisterOneViewController.xib */,
+				BC2538361E9B76B5007232B3 /* RegisterTwoViewController.h */,
+				BC2538371E9B76B5007232B3 /* RegisterTwoViewController.m */,
+				BC2538381E9B76B5007232B3 /* RegisterTwoViewController.xib */,
+				BC2538391E9B76B5007232B3 /* RootLoginViewController.h */,
+				BC25383A1E9B76B5007232B3 /* RootLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BC25384F1E9B7890007232B3 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				BC2538501E9B7890007232B3 /* UMessage_Sdk_1.4.0 */,
+				BC2538531E9B7890007232B3 /* UMSocial_Sdk_4.4 */,
+				BC2538581E9B7890007232B3 /* UMStatistics_4.1.4 */,
+				BC25385A1E9B7890007232B3 /* Wechat */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		BC2538501E9B7890007232B3 /* UMessage_Sdk_1.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				BC2538511E9B7890007232B3 /* libUMessage_Sdk_1.4.0.a */,
+				BC2538521E9B7890007232B3 /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.4.0;
+			sourceTree = "<group>";
+		};
+		BC2538531E9B7890007232B3 /* UMSocial_Sdk_4.4 */ = {
+			isa = PBXGroup;
+			children = (
+				BC2538541E9B7890007232B3 /* UMSocialCore.framework */,
+				BC2538551E9B7890007232B3 /* UMSocialNetwork.framework */,
+				BC2538561E9B7890007232B3 /* UMSocialSDKResources.bundle */,
+				BC2538571E9B7890007232B3 /* UShareUI.framework */,
+			);
+			path = UMSocial_Sdk_4.4;
+			sourceTree = "<group>";
+		};
+		BC2538581E9B7890007232B3 /* UMStatistics_4.1.4 */ = {
+			isa = PBXGroup;
+			children = (
+				BC2538591E9B7890007232B3 /* UMMobClick.framework */,
+			);
+			path = UMStatistics_4.1.4;
+			sourceTree = "<group>";
+		};
+		BC25385A1E9B7890007232B3 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				BC25385B1E9B7890007232B3 /* libSocialWeChat.a */,
+				BC25385C1E9B7890007232B3 /* libWeChatSDK.a */,
+				BC25385D1E9B7890007232B3 /* UMSocialWechatHandler.h */,
+				BC25385E1E9B7890007232B3 /* WXApi.h */,
+				BC25385F1E9B7890007232B3 /* WXApiObject.h */,
+			);
+			path = Wechat;
 			sourceTree = "<group>";
 		};
 		BC3FB6B31E97699100C06A95 /* Statements management */ = {
@@ -447,6 +641,9 @@
 				BC3FB6B91E976DDD00C06A95 /* StateMentTableViewCell.h */,
 				BC3FB6BA1E976DDD00C06A95 /* StateMentTableViewCell.m */,
 				BC3FB6BB1E976DDD00C06A95 /* StateMentTableViewCell.xib */,
+				BC2537EB1E9B564F007232B3 /* SettlementPayWayView.h */,
+				BC2537EC1E9B564F007232B3 /* SettlementPayWayView.m */,
+				BC2537EE1E9B5658007232B3 /* SettlementPayWayView.xib */,
 			);
 			path = "Statements management";
 			sourceTree = "<group>";
@@ -476,15 +673,15 @@
 		BCAC5D1C1E8268B4003CACF8 /* ShellCoinForMerchant */ = {
 			isa = PBXGroup;
 			children = (
+				BC2538281E9B76B5007232B3 /* Login */,
 				BC085D3D1E83712B00572E8A /* Home */,
 				BC085CEF1E836B3E00572E8A /* ThirdAPI */,
 				BC085CBE1E83647C00572E8A /* Public */,
 				BC085CA61E83645800572E8A /* Base */,
-				BC085C8C1E83643400572E8A /* Login */,
 				BCAC5D201E8268B4003CACF8 /* AppDelegate.h */,
 				BCAC5D211E8268B4003CACF8 /* AppDelegate.m */,
-				BCAC5D231E8268B4003CACF8 /* ViewController.h */,
 				BCAC5D241E8268B4003CACF8 /* ViewController.m */,
+				BCAC5D231E8268B4003CACF8 /* ViewController.h */,
 				BCAC5D261E8268B4003CACF8 /* Main.storyboard */,
 				BCAC5D2C1E8268B4003CACF8 /* Assets.xcassets */,
 				BCAC5D2E1E8268B4003CACF8 /* LaunchScreen.storyboard */,
@@ -644,23 +841,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2538431E9B76B5007232B3 /* RegisterOneViewController.xib in Resources */,
+				BC2537FB1E9B686F007232B3 /* OrderManamentViewController.xib in Resources */,
+				BC2538451E9B76B5007232B3 /* RegisterTwoViewController.xib in Resources */,
 				BCAC5D301E8268B4003CACF8 /* LaunchScreen.storyboard in Resources */,
+				BC2538181E9B6C7A007232B3 /* NothingView.xib in Resources */,
+				BC2538631E9B7890007232B3 /* UMSocialSDKResources.bundle in Resources */,
 				BCAC5D2D1E8268B4003CACF8 /* Assets.xcassets in Resources */,
+				BC2538271E9B720D007232B3 /* SureOrderView.xib in Resources */,
 				BC3FB6B81E9769A300C06A95 /* StateMentsMViewController.xib in Resources */,
+				BC2538221E9B6E02007232B3 /* WaitSureOrderCell.xib in Resources */,
+				BC25383C1E9B76B5007232B3 /* ForgetPasswordOneViewController.xib in Resources */,
+				BC25383F1E9B76B5007232B3 /* Login.storyboard in Resources */,
+				BC2538081E9B6B6E007232B3 /* Bill12View.xib in Resources */,
 				BC3FB69D1E975E5100C06A95 /* Home.xcassets in Resources */,
-				BC085CA31E83643400572E8A /* RegisterOneViewController.xib in Resources */,
-				BC085CA01E83643400572E8A /* Login.storyboard in Resources */,
-				BC085CA51E83643400572E8A /* RegisterTwoViewController.xib in Resources */,
 				BC3FB6BD1E976DDD00C06A95 /* StateMentTableViewCell.xib in Resources */,
 				BCAC5D281E8268B4003CACF8 /* Main.storyboard in Resources */,
 				BC085D271E836B3F00572E8A /* CodeScan.bundle in Resources */,
-				BC085C9D1E83643400572E8A /* ForgetPasswordOneViewController.xib in Resources */,
-				BC085C9F1E83643400572E8A /* ForgetPasswordTwoViewController.xib in Resources */,
+				BC2537EF1E9B5658007232B3 /* SettlementPayWayView.xib in Resources */,
+				BC25381D1E9B6D9B007232B3 /* YetCompleteOrderCell.xib in Resources */,
+				BC2538401E9B76B5007232B3 /* Login.xcassets in Resources */,
 				BC3FB6B01E9768EA00C06A95 /* BaseNavigationBar.xib in Resources */,
 				BC085CDF1E83647C00572E8A /* 213955937960616.cer in Resources */,
 				BC3FB6A21E97636400C06A95 /* BillConsumptionTableViewCell.xib in Resources */,
 				BC085CE21E83647C00572E8A /* HttpClient_Readme.txt in Resources */,
 				BC3FB6B21E97691200C06A95 /* Public.xcassets in Resources */,
+				BC2537F51E9B6042007232B3 /* OrderEntryViewController.xib in Resources */,
+				BC2538061E9B6B6E007232B3 /* Bill1View.xib in Resources */,
+				BC25383E1E9B76B5007232B3 /* ForgetPasswordTwoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,27 +941,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2538461E9B76B5007232B3 /* RootLoginViewController.m in Sources */,
 				BC085CEB1E83647C00572E8A /* Verify.m in Sources */,
-				BC085C9C1E83643400572E8A /* ForgetPasswordOneViewController.m in Sources */,
+				BC2537ED1E9B564F007232B3 /* SettlementPayWayView.m in Sources */,
 				BC3FB6BC1E976DDD00C06A95 /* StateMentTableViewCell.m in Sources */,
+				BC2538071E9B6B6E007232B3 /* Bill12View.m in Sources */,
 				BC085D2E1E836B3F00572E8A /* LBXScanResult.m in Sources */,
 				BC085CBC1E83645800572E8A /* BaseViewController.m in Sources */,
+				BC25381C1E9B6D9B007232B3 /* YetCompleteOrderCell.m in Sources */,
 				BC085D311E836B3F00572E8A /* LBXScanViewStyle.m in Sources */,
 				BC085CE51E83647C00572E8A /* LSPaoMaView.m in Sources */,
-				BC085CA41E83643400572E8A /* RegisterTwoViewController.m in Sources */,
 				BCAC5D251E8268B4003CACF8 /* ViewController.m in Sources */,
 				BC085D301E836B3F00572E8A /* LBXScanViewController.m in Sources */,
 				BC085CE31E83647C00572E8A /* HttpClientAlertViewHelper.m in Sources */,
 				BC3FB6B71E9769A300C06A95 /* StateMentsMViewController.m in Sources */,
 				BC085D2A1E836B3F00572E8A /* LBXAlertAction.m in Sources */,
+				BC2538421E9B76B5007232B3 /* RegisterOneViewController.m in Sources */,
 				BC085D2B1E836B3F00572E8A /* LBXScanLineAnimation.m in Sources */,
 				BC085CEA1E83647C00572E8A /* SwipeView.m in Sources */,
+				BC2538211E9B6E02007232B3 /* WaitSureOrderCell.m in Sources */,
+				BC25386A1E9B78D7007232B3 /* WeXinPayObject.m in Sources */,
 				BC085D331E836B3F00572E8A /* LBXZXCapture.m in Sources */,
 				BC085D451E83718200572E8A /* HomeViewController.m in Sources */,
 				BC085D2D1E836B3F00572E8A /* LBXScanNetAnimation.m in Sources */,
 				BC3FB6AF1E9768EA00C06A95 /* BaseNavigationBar.m in Sources */,
+				BC2538441E9B76B5007232B3 /* RegisterTwoViewController.m in Sources */,
 				BC085CB61E83645800572E8A /* BaseCollectionViewCell.m in Sources */,
 				BC085CB71E83645800572E8A /* BaseHtmlViewController.m in Sources */,
+				BC2538171E9B6C7A007232B3 /* NothingView.m in Sources */,
+				BC2538051E9B6B6E007232B3 /* Bill1View.m in Sources */,
 				BCAC5D2B1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld in Sources */,
 				BC085CE41E83647C00572E8A /* JAlertViewHelper.m in Sources */,
 				BC085D341E836B3F00572E8A /* ZXingWrapper.m in Sources */,
@@ -763,25 +979,29 @@
 				BC085D291E836B3F00572E8A /* UIAlertView+LBXAlertAction.m in Sources */,
 				BC085CE11E83647C00572E8A /* HttpClient.m in Sources */,
 				BC085CDE1E83647C00572E8A /* AutoScroller.m in Sources */,
-				BC085CA21E83643400572E8A /* RegisterOneViewController.m in Sources */,
 				BC085D2F1E836B3F00572E8A /* LBXScanView.m in Sources */,
+				BC25383B1E9B76B5007232B3 /* ForgetPasswordOneViewController.m in Sources */,
+				BC2537F41E9B6042007232B3 /* OrderEntryViewController.m in Sources */,
 				BC085CBD1E83645800572E8A /* ShellCoinUserInfo.m in Sources */,
 				BC085CE81E83647C00572E8A /* ShellCoinPageControlView.m in Sources */,
+				BC2537FA1E9B686F007232B3 /* OrderManamentViewController.m in Sources */,
 				BC085D321E836B3F00572E8A /* LBXScanWrapper.m in Sources */,
-				BC085CA11E83643400572E8A /* LoginViewController.m in Sources */,
 				BCAC5D1F1E8268B4003CACF8 /* main.m in Sources */,
-				BC085CE91E83647C00572E8A /* SortButtonSwitchView.m in Sources */,
 				BC3FB6AB1E97651800C06A95 /* RootViewController.m in Sources */,
 				BC085CBB1E83645800572E8A /* BaseTableViewCell.m in Sources */,
 				BC3FB6A51E97638100C06A95 /* BillAmountDataModel.m in Sources */,
+				BC25383D1E9B76B5007232B3 /* ForgetPasswordTwoViewController.m in Sources */,
 				BC085D261E836B3F00572E8A /* Colours.m in Sources */,
 				BC3FB6A11E97636400C06A95 /* BillConsumptionTableViewCell.m in Sources */,
 				BC085CE71E83647C00572E8A /* PGIndexBannerSubiew.m in Sources */,
-				BC085C9E1E83643400572E8A /* ForgetPasswordTwoViewController.m in Sources */,
+				BC2537FE1E9B6AFE007232B3 /* SortButtonSwitchView.m in Sources */,
+				BC2538261E9B720D007232B3 /* SureOrderView.m in Sources */,
 				BC3FB6A81E9763A100C06A95 /* BillDataModel.m in Sources */,
 				BC085CE01E83647C00572E8A /* BaseHttpClient.m in Sources */,
+				BC2538411E9B76B5007232B3 /* LoginViewController.m in Sources */,
 				BC085CE61E83647C00572E8A /* NewPagedFlowView.m in Sources */,
 				BC085D281E836B3F00572E8A /* UIActionSheet+LBXAlertAction.m in Sources */,
+				BC2538161E9B6C7A007232B3 /* UIScrollView+NoDataSouce.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,6 +1156,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMSocial_Sdk_4.4",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/UMStatistics_4.1.4",
+					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMStatistics_4.1.4",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ShellCoinForMerchant/PrefixHeader.pch";
 				INFOPLIST_FILE = ShellCoinForMerchant/Info.plist;
@@ -944,6 +1165,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMessage_Sdk_1.2.3",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/Wechat",
+					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMessage_Sdk_1.4.0",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -960,6 +1182,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMSocial_Sdk_4.4",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/UMStatistics_4.1.4",
+					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMStatistics_4.1.4",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ShellCoinForMerchant/PrefixHeader.pch";
 				INFOPLIST_FILE = ShellCoinForMerchant/Info.plist;
@@ -968,6 +1191,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMessage_Sdk_1.2.3",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/Wechat",
+					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMessage_Sdk_1.4.0",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchant;
 				PRODUCT_NAME = "$(TARGET_NAME)";

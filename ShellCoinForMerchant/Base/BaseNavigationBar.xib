@@ -37,9 +37,9 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gai-NO-g82">
-                            <rect key="frame" x="376" y="0.0" width="30" height="40"/>
+                            <rect key="frame" x="362" y="0.0" width="44" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal">
+                            <state key="normal" image="icon_confirm">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -112,6 +112,7 @@
     </objects>
     <resources>
         <image name="icon_back" width="44" height="44"/>
+        <image name="icon_confirm" width="44" height="44"/>
         <image name="mine_bg2" width="375" height="64"/>
     </resources>
 </document>

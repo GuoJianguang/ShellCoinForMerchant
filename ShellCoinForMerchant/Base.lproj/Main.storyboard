@@ -91,6 +91,9 @@
                                                 <state key="normal" title="订单录入">
                                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="orderEnter:" destination="i4s-sE-TVr" eventType="touchUpInside" id="uZ1-yi-Cpg"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_enter" translatesAutoresizingMaskIntoConstraints="NO" id="pY4-ks-hYe">
                                                 <rect key="frame" x="247" y="0.5" width="60" height="60"/>
@@ -272,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jes-Ee-j3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912.8" y="-1011.544227886057"/>
+            <point key="canvasLocation" x="1698" y="-1046"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mf0-Sr-opN">

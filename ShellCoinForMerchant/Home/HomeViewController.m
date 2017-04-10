@@ -9,7 +9,8 @@
 #import "HomeViewController.h"
 #import "BillConsumptionTableViewCell.h"
 #import "StateMentsMViewController.h"
-
+#import "OrderEntryViewController.h"
+#import "OrderManamentViewController.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -59,7 +60,13 @@
 
 #pragma mark - 订单管理
 - (IBAction)orderManangeBtn:(UIButton *)sender {
+    OrderManamentViewController *orderManaMentVC = [[OrderManamentViewController alloc]init];
+    [self.navigationController pushViewController:orderManaMentVC animated:YES];
     
-    
+}
+
+- (IBAction)orderEnter:(UIButton *)sender {
+    OrderEntryViewController *orderENtryVC = [[OrderEntryViewController alloc]init];
+    [self.navigationController pushViewController:orderENtryVC animated:YES];
 }
 @end

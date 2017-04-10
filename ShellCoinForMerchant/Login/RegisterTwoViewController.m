@@ -22,13 +22,10 @@
     self.naviBar.title = @"注册";
     self.naviBar.title_label.textColor = [UIColor whiteColor];
     self.naviBar.lineVIew.hidden = YES;
-    self.naviBar.backImage = [UIImage imageNamed:@"icon_back_white"];
-    self.bgimage.image = [UIImage imageNamed:@"bg_login.jpg"];
+    self.naviBar.mineBgImageview.hidden = YES;
     
     self.imageHeight.constant = TWitdh*(66/75.);
     self.loginWidth.constant = TWitdh*(526/750.);
-    
-    
     self.password_view.layer.cornerRadius = (self.loginWidth.constant*(88/526.))/2.;
     self.password_view.layer.masksToBounds = YES;
     self.password_view.layer.borderWidth = 1;
@@ -41,14 +38,13 @@
     
     self.sureWidth.constant = TWitdh*(400/750.);
     CGFloat  sureBtnWidth = TWitdh*(400/750.);
-    self.login_btn.bounds = CGRectMake(0, 0, sureBtnWidth, sureBtnWidth/5.);
+    self.login_btn.bounds = CGRectMake(0, 0, sureBtnWidth, sureBtnWidth*(177/594.));
     self.login_btn.layer.cornerRadius = self.login_btn.bounds.size.height/2.;
     self.login_btn.layer.masksToBounds = YES;
-    self.login_btn.backgroundColor = MacoColor;
+//    self.login_btn.backgroundColor = MacoColor;
 
     self.password_tf.delegate = self;
     self.surePassword_tf.delegate = self;
-    
     if (THeight < 500) {
         //        self.userTop.constant = 0;
         self.loginTop.constant = 20;
@@ -56,7 +52,6 @@
         self.bgimage.contentMode = UIViewContentModeScaleAspectFill;
         self.bgimage.layer.masksToBounds = YES;
     }
-    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickProLabel)];
     self.protocolLabel.userInteractionEnabled = YES;
     [self.protocolLabel addGestureRecognizer:tap];
@@ -70,7 +65,7 @@
 {
     BaseHtmlViewController *htmlVC = [[BaseHtmlViewController alloc]init];
     htmlVC.htmlTitle = @"用户使用条款及服务协议";
-    htmlVC.htmlUrl = @"https://www.tiantianxcn.com/html5/forapp/xy_user.html";
+    htmlVC.htmlUrl = @"https://web.letopop.com/lyu-web/xieyi.html";
     [self.navigationController pushViewController:htmlVC animated:YES];
 }
 

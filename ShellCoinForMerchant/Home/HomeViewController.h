@@ -15,4 +15,8 @@
 
 - (IBAction)orderManangeBtn:(UIButton *)sender;
 
+- (IBAction)orderEnter:(UIButton *)sender;
+
+
+
 @end

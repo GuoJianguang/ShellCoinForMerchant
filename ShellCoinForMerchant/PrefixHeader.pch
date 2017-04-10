@@ -28,7 +28,10 @@
 #import "LoginViewController.h"
 #import "ShellCoinPageControlView.h"
 #import "BaseCollectionViewCell.h"
-
+#import "SortButtonSwitchView.h"
+#import "NothingView.h"
+#import "UIScrollView+NoDataSouce.h"
+#import <UMMobClick/MobClick.h>
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

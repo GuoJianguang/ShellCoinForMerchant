@@ -18,7 +18,7 @@
 /**
  友盟appstore的key
  */
-#define YoumengKey @"56cab6bde0f55a5829001e1a"
+#define YoumengKey @"58eb4a2a9f06fd4da30016f2"
 /**
  友盟企业版的key
  */
@@ -76,14 +76,14 @@
 
 #define TWitdh  [UIScreen mainScreen].bounds.size.width
 #define THeight [UIScreen mainScreen].bounds.size.height
-#define MacoColor [UIColor colorWithRed:246/255. green:105/255. blue:74/255. alpha:1]
-
+#define MacoColor [UIColor colorFromHexString:@"#ea3d3a"]
+#define MacoPriceColor [UIColor colorFromHexString:@"f27242"]
 #define MacoGrayColor [UIColor colorWithRed:237/255. green:238/255. blue:234/255. alpha:1]
 
 //标题的颜色
-#define MacoTitleColor [UIColor colorFromHexString:@"#5a5a5a"]
+#define MacoTitleColor [UIColor colorFromHexString:@"#424242"]
 //详情的字体颜色
-#define MacoDetailColor [UIColor colorFromHexString:@"#afb9c1"]
+#define MacoDetailColor [UIColor colorFromHexString:@"#969696"]
 
 //介绍的字体颜色
 #define MacoIntrodouceColor [UIColor colorFromHexString:@"#b4b4b4"]
@@ -91,7 +91,7 @@
 #define MacolayerColor [UIColor colorFromHexString:@"#e6e6e6"]
 
 //分页请求的每页的数据
-#define MacoPageSize 20
+#define MacoPageSize @"20"
 
 //appStore地址
 #define AppStoreDetailUrl @"https://itunes.apple.com/us/app/tian-tian-xin-shang-jia-ban/id1095617211?l=zh&ls=1&mt=8"

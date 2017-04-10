@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderManamentViewController">
+            <connections>
+                <outlet property="backBtn" destination="88V-HC-fkx" id="ETk-IU-6sR"/>
+                <outlet property="sortView" destination="xat-7g-spn" id="qEF-Na-5f4"/>
+                <outlet property="swipeView" destination="cxP-d3-MuU" id="fjm-xu-dII"/>
+                <outlet property="titleLabel" destination="23m-AF-Wjs" id="cbb-ft-GvO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6j-S7-7Ia">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_bg2" translatesAutoresizingMaskIntoConstraints="NO" id="gDc-F7-WPi">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5U-ZI-4h4">
+                            <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单管理" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23m-AF-Wjs">
+                                    <rect key="frame" x="54" y="11" width="267" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88V-HC-fkx">
+                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="88V-HC-fkx" secondAttribute="height" multiplier="1:1" id="CiX-fU-Tfs"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_back">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="aQ1-uV-fRS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="0Up-ZB-G3Q"/>
+                                <constraint firstItem="23m-AF-Wjs" firstAttribute="centerX" secondItem="t5U-ZI-4h4" secondAttribute="centerX" id="24u-xb-Vm0"/>
+                                <constraint firstItem="23m-AF-Wjs" firstAttribute="centerY" secondItem="t5U-ZI-4h4" secondAttribute="centerY" id="482-MQ-Mvk"/>
+                                <constraint firstItem="23m-AF-Wjs" firstAttribute="leading" secondItem="88V-HC-fkx" secondAttribute="trailing" constant="10" id="49q-yy-cmY"/>
+                                <constraint firstItem="88V-HC-fkx" firstAttribute="top" secondItem="t5U-ZI-4h4" secondAttribute="top" id="5n9-85-5Dc"/>
+                                <constraint firstAttribute="bottom" secondItem="88V-HC-fkx" secondAttribute="bottom" id="Rs8-6V-xb8"/>
+                                <constraint firstItem="88V-HC-fkx" firstAttribute="leading" secondItem="t5U-ZI-4h4" secondAttribute="leading" id="maG-JR-TuI"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xat-7g-spn" customClass="SortButtonSwitchView">
+                            <rect key="frame" x="0.0" y="64" width="375" height="61"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xat-7g-spn" firstAttribute="leading" secondItem="F6j-S7-7Ia" secondAttribute="leading" id="1IX-1Q-O1e"/>
+                        <constraint firstAttribute="trailing" secondItem="gDc-F7-WPi" secondAttribute="trailing" id="70j-BZ-HCw"/>
+                        <constraint firstAttribute="bottom" secondItem="xat-7g-spn" secondAttribute="bottom" id="JAO-Yx-8t8"/>
+                        <constraint firstAttribute="trailing" secondItem="t5U-ZI-4h4" secondAttribute="trailing" id="TQu-eL-wRA"/>
+                        <constraint firstItem="t5U-ZI-4h4" firstAttribute="leading" secondItem="F6j-S7-7Ia" secondAttribute="leading" id="X9L-3L-poB"/>
+                        <constraint firstAttribute="bottom" secondItem="gDc-F7-WPi" secondAttribute="bottom" constant="6" id="ZLq-0O-suD"/>
+                        <constraint firstAttribute="trailing" secondItem="xat-7g-spn" secondAttribute="trailing" id="b3b-aU-C5o"/>
+                        <constraint firstAttribute="width" secondItem="F6j-S7-7Ia" secondAttribute="height" multiplier="3" id="j9Z-rI-VbR"/>
+                        <constraint firstItem="gDc-F7-WPi" firstAttribute="top" secondItem="F6j-S7-7Ia" secondAttribute="top" id="jRR-M7-TRf"/>
+                        <constraint firstItem="gDc-F7-WPi" firstAttribute="leading" secondItem="F6j-S7-7Ia" secondAttribute="leading" id="sYn-Sr-pCt"/>
+                        <constraint firstItem="t5U-ZI-4h4" firstAttribute="top" secondItem="F6j-S7-7Ia" secondAttribute="top" constant="20" id="tm5-2x-cRf"/>
+                        <constraint firstItem="xat-7g-spn" firstAttribute="top" secondItem="t5U-ZI-4h4" secondAttribute="bottom" id="ux6-Fr-FgO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxP-d3-MuU" customClass="SwipeView">
+                    <rect key="frame" x="0.0" y="125" width="375" height="542"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cxP-d3-MuU" secondAttribute="bottom" id="9of-nU-KfS"/>
+                <constraint firstAttribute="trailing" secondItem="cxP-d3-MuU" secondAttribute="trailing" id="IxP-eF-EDX"/>
+                <constraint firstItem="cxP-d3-MuU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kyk-gd-phx"/>
+                <constraint firstItem="F6j-S7-7Ia" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UNq-im-ZGl"/>
+                <constraint firstItem="cxP-d3-MuU" firstAttribute="top" secondItem="F6j-S7-7Ia" secondAttribute="bottom" id="bBU-fV-xXG"/>
+                <constraint firstAttribute="trailing" secondItem="F6j-S7-7Ia" secondAttribute="trailing" id="eca-wI-dSl"/>
+                <constraint firstItem="F6j-S7-7Ia" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fU0-Ta-C1V"/>
+            </constraints>
+            <point key="canvasLocation" x="-814" y="-184"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_back" width="44" height="44"/>
+        <image name="mine_bg2" width="375" height="64"/>
+    </resources>
+</document>

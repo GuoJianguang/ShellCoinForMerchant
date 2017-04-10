@@ -21,8 +21,7 @@
     // Do any additional setup after loading the view.
     self.navigationController.navigationBar.hidden = YES;
 
-    self.imageHeight.constant = TWitdh*(66/75.);
-    self.bgimage.image = [UIImage imageNamed:@"bg_login.jpg"];
+    self.imageHeight.constant = TWitdh*(72/75.);
     
     self.loginWidth.constant = TWitdh*(526/750.);
     
@@ -38,10 +37,10 @@
     
     self.sureWidth.constant = TWitdh*(400/750.);
     CGFloat  sureBtnWidth = TWitdh*(400/750.);
-    self.login_btn.bounds = CGRectMake(0, 0, sureBtnWidth, sureBtnWidth/5.);
-    self.login_btn.layer.cornerRadius = self.login_btn.bounds.size.height/2.;
+    self.login_btn.bounds = CGRectMake(0, 0, sureBtnWidth, sureBtnWidth/(177/594.));
+//    self.login_btn.layer.cornerRadius = self.login_btn.bounds.size.height/2.;
     self.login_btn.layer.masksToBounds = YES;
-    self.login_btn.backgroundColor = MacoColor;
+//    self.login_btn.backgroundColor = MacoColor;
     
     if ([[NSUserDefaults standardUserDefaults]objectForKey:LoginUserName]) {
         self.user_tf.text = [[NSUserDefaults standardUserDefaults]objectForKey:LoginUserName];
@@ -67,8 +66,9 @@
         [SVProgressHUD showWithStatus:@"正在登录..."];
         //登录接口请求操作
         NSString *password = [[NSString stringWithFormat:@"%@%@",self.password_tf.text,PasswordKey]md5_32];
+        
         NSDictionary *parms = @{@"phone":self.user_tf.text,
-                                @"deviceToken":NullToSpace([ShellCoinUserInfo shareUserInfos].devicetoken),
+                                @"deviceToken":[ShellCoinUserInfo shareUserInfos].devicetoken,
                                 @"deviceType":@"ios",
                                 @"password":password};
         [HttpClient POST:@"mch/login" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
@@ -82,8 +82,10 @@
                 [ShellCoinUserInfo shareUserInfos].currentLogined = YES;
                 [[ShellCoinUserInfo shareUserInfos]setUserinfoWithdic:jsonObject[@"data"]];
                 //记录商户号
-//                [[NSUserDefaults standardUserDefaults]setObject:[ShellCoinUserInfo shareUserInfos].code forKey:MyBussinssCode];
+                [[NSUserDefaults standardUserDefaults]setObject:[ShellCoinUserInfo shareUserInfos].code forKey:MyBussinssCode];
+                
                 //统计新增用户
+                [MobClick profileSignInWithPUID:[ShellCoinUserInfo shareUserInfos].userid];
                 [[NSUserDefaults standardUserDefaults]synchronize];
                 
                 if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
@@ -97,12 +99,13 @@
                     [self dismissViewControllerAnimated:YES completion:NULL];
                 }
             }
+            
         } failure:^(NSURLSessionDataTask *operation, NSError *error) {
             [SVProgressHUD dismiss];
         }];
     }
-}
 
+}
 
 -(BOOL) valueValidated {
     // 判断电话号码是否合格

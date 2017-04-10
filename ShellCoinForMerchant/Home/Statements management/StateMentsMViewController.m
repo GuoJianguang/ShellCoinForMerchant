@@ -8,9 +8,10 @@
 
 #import "StateMentsMViewController.h"
 #import "StateMentTableViewCell.h"
+#import "SettlementPayWayView.h"
 
 @interface StateMentsMViewController ()<UITableViewDelegate,UITableViewDataSource>
-
+@property (nonatomic, strong)SettlementPayWayView *payView;
 @end
 
 @implementation StateMentsMViewController
@@ -20,7 +21,14 @@
     // Do any additional setup after loading the view from its nib.
     self.naviBar.title = @"结算单管理";
     
-    
+}
+
+- (SettlementPayWayView *)payView
+{
+    if (!_payView) {
+        _payView = [[SettlementPayWayView alloc]init];
+    }
+    return _payView;
 }
 
 #pragma mark - UITableView
@@ -41,6 +49,20 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.view addSubview:self.payView];
+    UIEdgeInsets insets = UIEdgeInsetsMake(0, 0, 0, 0);
+    [self.payView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).insets(insets);
+    }];
+    self.payView.itemView.frame = CGRectMake(0, THeight , TWitdh, TWitdh*(260/375.));
+    [UIView animateWithDuration:0.5 animations:^{
+        self.payView.itemView.frame = CGRectMake(0, THeight - (TWitdh*(260/375.)), TWitdh, TWitdh*(260/375.));
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
