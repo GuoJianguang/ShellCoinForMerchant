@@ -10,16 +10,19 @@
 
 
 
-@interface SureOrderView : UIView
+@protocol SureOrderviewDelegate <NSObject>
 
+- (void)sureSuccess;
+
+@end
+
+@interface SureOrderView : UIView
 
 
 @property (weak, nonatomic) IBOutlet UIView *blackBackgoundView;
 
 
 @property (weak, nonatomic) IBOutlet UIView *itemView;
-
-
 
 
 
@@ -33,9 +36,11 @@
 
 - (IBAction)cancelBtn:(UIButton *)sender;
 
+@property (nonatomic, assign)id<SureOrderviewDelegate> deleagete;
 
 @property (weak, nonatomic) IBOutlet UIButton *closeBtn;
 - (IBAction)closeBtn:(UIButton *)sender;
 
 
+@property (nonatomic, copy)NSString *orderId;
 @end

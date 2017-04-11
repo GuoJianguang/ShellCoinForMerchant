@@ -24,7 +24,7 @@
 
 - (void)reload
 {
-//    [self.tableView.mj_header beginRefreshing];
+    [self.tableView.mj_header beginRefreshing];
 }
 - (instancetype)init
 {
@@ -60,8 +60,9 @@
 {
     NSDictionary *prams = @{@"pageNo":@(self.page),
                             @"pageSize":MacoPageSize,
-                            @"token":[ShellCoinUserInfo shareUserInfos].token};
-    [HttpClient POST:@"user/wallet/consumRecord/get" parameters:prams success:^(NSURLSessionDataTask *operation, id jsonObject) {
+                            @"token":[ShellCoinUserInfo shareUserInfos].token,
+                            @"flag":@"1"};
+    [HttpClient POST:@"mch/order/get" parameters:prams success:^(NSURLSessionDataTask *operation, id jsonObject) {
         if (IsRequestTrue) {
             if (isHeader) {
                 [self.dataSouceArray removeAllObjects];
@@ -71,7 +72,7 @@
                 self.page ++;
             }
             for (NSDictionary *dic in array) {
-                BillDataModel *model = [BillDataModel modelWithDic:dic];
+                WaitSureOrderModel *model = [WaitSureOrderModel modelWithDic:dic];
                 [self.dataSouceArray addObject:model];
             }
             [self.tableView judgeIsHaveDataSouce:self.dataSouceArray];
@@ -97,7 +98,6 @@
 #pragma mark - TableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
     return  self.dataSouceArray.count;
 }
 
@@ -115,14 +115,15 @@
     if (!cell) {
         cell = [WaitSureOrderCell newCell];
     }
-//    cell.xiaofeijiluModel = self.dataSouceArray[indexPath.row];
+    cell.dataModel = self.dataSouceArray[indexPath.row];
     cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [((OrderManamentViewController *)self.viewController) sureOrder:@""];
+    WaitSureOrderModel *model = self.dataSouceArray[indexPath.row];
+    [((OrderManamentViewController *)self.viewController) sureOrder:model.orderId];
 
 }
 

@@ -20,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *sortImageview;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
-@property (nonatomic, strong)BillDataModel *xiaofeijiluModel;
+@property (nonatomic, strong)BillDataModel *dataModel;
 
 @property (weak, nonatomic) IBOutlet UILabel *buyCardLabel;
 

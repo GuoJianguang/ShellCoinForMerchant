@@ -97,8 +97,35 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     if (textField == self.phoneTF && textField.text.length == 11) {
+        NSDictionary *parms = @{@"phone":self.phoneTF.text,
+                                @"token":[ShellCoinUserInfo shareUserInfos].token};
+        [HttpClient POST:@"mch/userIdcardName/get" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+            if (IsRequestTrue) {
+                switch ([jsonObject[@"data"][@"flag"] integerValue]) {
+                    case 0:{
+                        [self.markBtn setTitle:@"未认证用户" forState:UIControlStateNormal];
+                        [self.markBtn setTitleColor:MacoColor forState:UIControlStateNormal];
+                    }
+                        break;
+                    case 1:{
+                        [self.markBtn setTitle:@"未认证用户" forState:UIControlStateNormal];
+                        [self.markBtn setTitleColor:MacoColor forState:UIControlStateNormal];
+                    }
+                        break;
+                    case 2:{
+                        [self.markBtn setTitle:NullToSpace(jsonObject[@"idcardName"]) forState:UIControlStateNormal];
+                        [self.markBtn setTitleColor:MacoTitleColor forState:UIControlStateNormal];
+                    }
+                        break;
+                        
+                    default:
+                        break;
+                }
+            }
+        } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+            
+        }];
         
-        NSLog(@"请求接口");
     }
 }
 
@@ -114,7 +141,23 @@
 - (void)detailBtnClick
 {
     if ([self valueValidated]) {
-        NSLog(@"录入接口");
+        NSDictionary *parms = @{@"phone":self.phoneTF.text,
+                                @"tranAmount":self.amountTF.text,
+                                @"token":[ShellCoinUserInfo shareUserInfos].token};
+        
+        [SVProgressHUD showWithStatus:@"正在录入..." maskType:SVProgressHUDMaskTypeBlack];
+        [HttpClient POST:@"mch/consumeInput" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+            [SVProgressHUD dismiss];
+            if (IsRequestTrue) {
+                [[JAlertViewHelper shareAlterHelper]showTint:@"录入订单成功" duration:2.0];
+                self.phoneTF.text = @"";
+                self.amountTF.text  = @"";
+                [self.markBtn setTitle:@"" forState:UIControlStateNormal];
+            }
+        } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+            [SVProgressHUD dismiss];
+        }];
+        
     }
 }
 

@@ -7,14 +7,10 @@
 //
 
 #import "OrderManamentViewController.h"
-#import "Bill1View.h"
-#import "Bill12View.h"
+
 #import "SureOrderView.h"
 
-@interface OrderManamentViewController ()<SwipeViewDelegate,SwipeViewDataSource,SortButtonSwitchViewDelegate>
-
-@property (nonatomic, strong)Bill1View *waitSureOrderView;
-@property (nonatomic, strong)Bill12View *yetSureOrderView;
+@interface OrderManamentViewController ()<SwipeViewDelegate,SwipeViewDataSource,SortButtonSwitchViewDelegate,SureOrderviewDelegate>
 
 @property (nonatomic, strong)SureOrderView *sureOrderView;
 
@@ -58,6 +54,7 @@
 {
     if (!_sureOrderView) {
         _sureOrderView = [[SureOrderView alloc]init];
+        _sureOrderView.deleagete = self;
     }
     return _sureOrderView;
 }
@@ -136,10 +133,16 @@
 - (void)sureOrder:(NSString *)orerId
 {
     UIEdgeInsets insets = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.sureOrderView.orderId = orerId;
     [self.navigationController.view addSubview:self.sureOrderView];
     [self.sureOrderView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.navigationController.view).insets(insets);
     }];
 }
 
+
+- (void)sureSuccess
+{
+    [self.waitSureOrderView reload];
+}
 @end

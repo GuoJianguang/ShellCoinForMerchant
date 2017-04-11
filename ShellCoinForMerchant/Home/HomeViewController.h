@@ -17,6 +17,14 @@
 
 - (IBAction)orderEnter:(UIButton *)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *todayOrderLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *todaOrder;
+
+@property (weak, nonatomic) IBOutlet UIButton *orderEntryBTn;
+@property (weak, nonatomic) IBOutlet UILabel *orderMaLabel;
+@property (weak, nonatomic) IBOutlet UILabel *jiesuandanMaLabel;
 
 @end

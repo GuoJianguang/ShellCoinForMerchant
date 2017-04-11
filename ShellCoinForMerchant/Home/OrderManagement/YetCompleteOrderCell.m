@@ -25,15 +25,24 @@
 
 }
 
-- (void)setXiaofeijiluModel:(BillDataModel *)xiaofeijiluModel
+- (void)setDataModel:(BillDataModel *)dataModel
 {
-    _xiaofeijiluModel = xiaofeijiluModel;
-    self.markLabel.text = _xiaofeijiluModel.mchName;
-    self.timeLabel.text = _xiaofeijiluModel.tranTime;
+    _dataModel = dataModel;
+//    self.markLabel.text = _xiaofeijiluModel.mchName;
+    self.timeLabel.text = _dataModel.tranTime;
     self.buyCardLabel.text = @"";
     NSString *statusStr = [NSString string];
     
-    switch ([_xiaofeijiluModel.state integerValue]) {
+    switch ([_dataModel.state integerValue]) {
+        case 0:
+        {
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
+            self.statusLabel.textColor = self.moneyLabel.textColor = self.buyCardLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+            statusStr = @"未支付";
+        }
+        
+            break;
+            
         case 1:
         {
             statusStr = @"支付成功";
@@ -55,29 +64,32 @@
             statusStr = @"冻结中";
         }
             break;
-        default:
-            break;
-    }
-    
-    switch ([_xiaofeijiluModel.channel integerValue]) {
-        case 1://线下现金支付
-            self.sortImageview.image = [UIImage imageNamed:@"icon_cash_payment_nor"];
-            break;
-        case 3://`pay_type`     '0余额支付 1微信支付
+        case 4:
         {
-            
-            if ([_xiaofeijiluModel.payType isEqualToString:@"0"]) {
-                self.buyCardLabel.text = [NSString stringWithFormat:@"(含购物券%@)",_xiaofeijiluModel.consumeAmount];
-                self.sortImageview.image = [UIImage imageNamed:@"icon_balance_payment_nor"];
-            }else{
-                self.sortImageview.image = [UIImage imageNamed:@"icon_wechat_payment_nor"];
-            }
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
+            self.statusLabel.textColor = self.moneyLabel.textColor = self.buyCardLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+            statusStr = @"已取消";
         }
             break;
         default:
             break;
     }
-    self.moneyLabel.text = [NSString stringWithFormat:@"¥%@",_xiaofeijiluModel.totalAmount];
+    
+    switch ([_dataModel.channel integerValue]) {
+        case 1:
+            self.sortImageview.image = [UIImage imageNamed:@"icon_cash_payment_nor"];
+            break;
+        case 2:
+            self.sortImageview.image = [UIImage imageNamed:@"icon_wechat_payment_nor"];
+            break;
+        case 3:
+            self.sortImageview.image = [UIImage imageNamed:@"icon_balance_payment_nor"];
+            break;
+            
+        default:
+            break;
+    }
+    self.moneyLabel.text = [NSString stringWithFormat:@"¥%@",_dataModel.totalAmount];
     self.statusLabel.text = statusStr;
 }
 

@@ -7,12 +7,14 @@
 //
 
 #import "HomeViewController.h"
-#import "BillConsumptionTableViewCell.h"
+#import "WaitSureOrderCell.h"
 #import "StateMentsMViewController.h"
 #import "OrderEntryViewController.h"
 #import "OrderManamentViewController.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, strong)NSMutableArray *dataSouceArray;
 
 @end
 
@@ -23,22 +25,106 @@
     // Do any additional setup after loading the view.
     self.naviBar.hidden = YES;
     
+
+    [self.tableView noDataSouce];
+    //自动登录
+    if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
+        [self getRequest];
+    }
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(autoLogin) name:AutoLoginAfterGetDeviceToken object:nil];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    //自动登录
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:AutoLoginAfterGetDeviceToken object:nil];
+}
+
+
+- (void)autoLogin
+{
+    if ([[NSUserDefaults standardUserDefaults]objectForKey:LoginUserPassword]) {
+        NSString *password = [[NSString stringWithFormat:@"%@%@",[[NSUserDefaults standardUserDefaults]objectForKey:LoginUserPassword],PasswordKey]md5_32];
+        NSDictionary *parms = @{
+                                @"phone":[[NSUserDefaults standardUserDefaults]objectForKey:LoginUserName],
+                                @"deviceToken":[ShellCoinUserInfo shareUserInfos].devicetoken,
+                                @"deviceType":@"ios",
+                                @"password":password};
+        [HttpClient POST:@"mch/login" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+            if (IsRequestTrue) {
+                //设置用户信息
+                [ShellCoinUserInfo shareUserInfos].currentLogined = YES;
+                [[ShellCoinUserInfo shareUserInfos]setUserinfoWithdic:jsonObject[@"data"]];
+                //统计新增用户
+                [MobClick profileSignInWithPUID:[ShellCoinUserInfo shareUserInfos].userid];
+                [self getRequest];
+                return ;
+            }
+            [[NSUserDefaults standardUserDefaults]removeObjectForKey:IsFirstLaunch
+             ];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            
+            UINavigationController *logvc = [LoginViewController controller];
+            [self presentViewController:logvc animated:YES completion:NULL];
+            
+        } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+            UINavigationController *logvc = [LoginViewController controller];
+            [self presentViewController:logvc animated:YES completion:NULL];
+        }];
+    }
+}
+
+
+
+- (NSMutableArray *)dataSouceArray
+{
+    if (!_dataSouceArray) {
+        _dataSouceArray = [NSMutableArray array];
+    }
+    return _dataSouceArray;
+}
+
+
+
+#pragma mark - 获取数据接口
+- (void)getRequest
+{
+    NSDictionary *parms = @{@"token":[ShellCoinUserInfo shareUserInfos].token};
+    [HttpClient GET:@"mch/biz/get" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+        if (IsRequestTrue) {
+            self.todaOrder.text = NullToNumber(jsonObject[@"data"][@"orderCount"]);
+            [self.dataSouceArray removeAllObjects];
+            NSArray *array = jsonObject[@"data"][@"orderList"];
+            for (NSDictionary *dic in array) {
+                [self.dataSouceArray addObject:[WaitSureOrderModel modelWithDic:dic]];
+            }
+            [self.tableView judgeIsHaveDataSouce:self.dataSouceArray];
+            [self.tableView reloadData];
+        }
+        
+    } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+        [self.tableView showNoDataSouceNoNetworkConnection];
+    }];
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    BillConsumptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[BillConsumptionTableViewCell indentify]];
+    WaitSureOrderCell *cell = [tableView dequeueReusableCellWithIdentifier:[WaitSureOrderCell indentify]];
     if (!cell) {
-        cell = [BillConsumptionTableViewCell newCell];
+        cell = [WaitSureOrderCell newCell];
     }
+    cell.dataModel = self.dataSouceArray[indexPath.row];
     return cell;
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return  3;
+    return  self.dataSouceArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

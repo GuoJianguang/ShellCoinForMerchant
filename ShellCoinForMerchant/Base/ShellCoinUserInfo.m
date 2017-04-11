@@ -63,7 +63,7 @@ static ShellCoinUserInfo *instance;
     
 #pragma mark - 老数据
     instance.avatar = NullToSpace(dic[@"avatar"]);
-    instance.aviableBalance = NullToNumber(dic[@"aviableBalance"]);
+    instance.aviableBalance = NullToNumber(dic[@"balance"]);
     instance.city = NullToSpace(dic[@"city"]);
     instance.userid = NullToSpace(dic[@"id"]);
     instance.nickName = NullToSpace(dic[@"nickName"]);
@@ -134,6 +134,9 @@ static ShellCoinUserInfo *instance;
         instance.completeCount = NullToNumber(unreadMsgCountVo[@"completeCount"]);
         instance.totalWaitCount = NullToNumber(unreadMsgCountVo[@"totalWaitCount"]);
     }
+    
+    
+    instance.code = NullToNumber(dic[@"code"]);
 
 }
 - (NSString *)locationCity

@@ -7,6 +7,7 @@
 //
 
 #import "SureOrderView.h"
+#import "OrderManamentViewController.h"
 
 @implementation SureOrderView
 
@@ -38,6 +39,18 @@
 //确认
 - (IBAction)sureBtn:(UIButton *)sender {
     
+    NSDictionary *parms = @{@"orderId":self.orderId,
+                            @"token":[ShellCoinUserInfo shareUserInfos].token};
+    [HttpClient POST:@"mch/order/confirm" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+        if (IsRequestTrue) {
+            if ([self.deleagete respondsToSelector:@selector(sureSuccess)]) {
+                [self.deleagete sureSuccess];
+            }
+            [self removeFromSuperview];
+        }
+    } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+        [[JAlertViewHelper shareAlterHelper]showTint:@"确认失败，请稍后重试" duration:2.];
+    }];
 }
 //取消
 - (IBAction)cancelBtn:(UIButton *)sender {

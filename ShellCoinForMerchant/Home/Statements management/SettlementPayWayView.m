@@ -7,6 +7,7 @@
 //
 
 #import "SettlementPayWayView.h"
+#import "StateMentTableViewCell.h"
 
 @implementation SettlementPayWayView
 
@@ -23,7 +24,6 @@
         self.backgroundColor = [UIColor clearColor];
         self.blackBackgoundView.userInteractionEnabled = YES;
         [self.blackBackgoundView addGestureRecognizer:tap];
-        [self setPayWay];
     }
     return  self;
 }
@@ -36,6 +36,12 @@
         }
     }];
 }
+
+- (void)setDataModel:(StateMentDataModel *)dataModel
+{
+    _dataModel = dataModel;
+    [self setPayWay];
+}
 #pragma mark - 设置支付规则
 - (void)setPayWay{
     self.wechatBtn.selected = NO;
@@ -47,22 +53,15 @@
     self.wechatMarkBtn.hidden = YES;
     //默认余额支付
     self.payWay_type = Payway_type_banlance;
-    double xiaofeiJin = [[ShellCoinUserInfo shareUserInfos].consumeBalance doubleValue];
-    double payMoney = [self.money doubleValue];
+    double payMoney = [self.dataModel.totalAmount doubleValue];
     double yuE = [[ShellCoinUserInfo shareUserInfos].aviableBalance doubleValue];
     
     
-    if (xiaofeiJin >= payMoney) {
-        self.yuELabel.text = [NSString stringWithFormat:@"余额支付(购物券%.2f元)",payMoney];
+    if (yuE >= payMoney) {
+        self.yuELabel.text = [NSString stringWithFormat:@"余额支付"];
 //        self.xiaofeiJinMoney = xiaofeiJin - payMoney;
-    }else if (payMoney > xiaofeiJin && payMoney - xiaofeiJin < yuE && xiaofeiJin !=0){
-        self.yuELabel.text = [NSString stringWithFormat:@"余额支付(购物券%.2f元+余额%.2f元)",xiaofeiJin,(payMoney - xiaofeiJin)];
-//        self.xiaofeiJinMoney = 0;
-    }else if(xiaofeiJin==0 && payMoney < yuE){
-        self.yuELabel.text = [NSString stringWithFormat:@"余额支付(余额%.2f元)",payMoney];
-//        self.xiaofeiJinMoney = 0;
-    }else if(payMoney > yuE + xiaofeiJin){
-        self.yuELabel.text = [NSString stringWithFormat:@"余额和购物券不足，请用微信或者现金支付"];
+    }else{
+        self.yuELabel.text = [NSString stringWithFormat:@"余额支付(余额不足)"];
         
         self.payWay_type = Payway_type_wechat;
         self.yuEImage.image = [UIImage imageNamed:@"icon_balance_payment_nor"];
@@ -106,6 +105,38 @@
 
 //确认
 - (IBAction)sureBtn:(UIButton *)sender {
+    
+    
+    switch (self.payWay_type) {
+        case Payway_type_wechat://微信支付
+        {
+            
+            
+        }
+            break;
+        case Payway_type_banlance://余额支付
+        {
+            NSDictionary *parms = @{@"settleId":self.dataModel.orderId,
+                                  @"token":[ShellCoinUserInfo shareUserInfos].token};
+            [HttpClient POST:@"pay/mch/settle/balancePay" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+                if (IsRequestTrue) {
+                    if ([self.delegate respondsToSelector:@selector(settlementSuccess)]) {
+                        [ShellCoinUserInfo shareUserInfos].aviableBalance = [NSString stringWithFormat:@"%.2f",[[ShellCoinUserInfo shareUserInfos].aviableBalance doubleValue] -[self.dataModel.totalAmount doubleValue]];
+                        [[JAlertViewHelper shareAlterHelper]showTint:@"结算成功" duration:2.];
+                        [self.delegate settlementSuccess];
+                        [self removeFromSuperview];
+                    }
+                }
+                
+            } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+                [[JAlertViewHelper shareAlterHelper]showTint:@"结算失败，请稍后重试" duration:2.];
+            }];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
 }
 //取消

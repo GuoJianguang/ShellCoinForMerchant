@@ -130,7 +130,7 @@
                                 @"deviceToken":[ShellCoinUserInfo shareUserInfos].devicetoken,
                                 @"deviceType":@"ios",
                                 @"password":password};
-        [HttpClient POST:@"user/login" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+        [HttpClient POST:@"mch/login" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
             [SVProgressHUD dismiss];
             if (IsRequestTrue) {
                 //设置用户信息

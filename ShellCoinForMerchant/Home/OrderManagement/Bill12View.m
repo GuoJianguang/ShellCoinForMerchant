@@ -24,7 +24,7 @@
 
 - (void)reload
 {
-//    [self.tableView.mj_header beginRefreshing];
+    [self.tableView.mj_header beginRefreshing];
 }
 
 - (NSMutableArray *)dataSouceArray
@@ -63,8 +63,9 @@
 {
     NSDictionary *prams = @{@"pageNo":@(self.page),
                             @"pageSize":MacoPageSize,
-                            @"token":[ShellCoinUserInfo shareUserInfos].token};
-    [HttpClient POST:@"user/wallet/withdraw/get" parameters:prams success:^(NSURLSessionDataTask *operation, id jsonObject) {
+                            @"token":[ShellCoinUserInfo shareUserInfos].token,
+                            @"flag":@"2"};
+    [HttpClient POST:@"mch/order/get" parameters:prams success:^(NSURLSessionDataTask *operation, id jsonObject) {
         if (IsRequestTrue) {
             if (isHeader) {
                 [self.dataSouceArray removeAllObjects];
@@ -100,7 +101,6 @@
 #pragma mark - TableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
     return  self.dataSouceArray.count;
 }
 
@@ -119,6 +119,7 @@
     if (!cell) {
         cell = [YetCompleteOrderCell newCell];
     }
+    cell.dataModel = self.dataSouceArray[indexPath.row];
     cell.backgroundColor = [UIColor clearColor];
     return cell;
 }

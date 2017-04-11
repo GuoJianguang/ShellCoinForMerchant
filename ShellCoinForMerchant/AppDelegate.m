@@ -38,6 +38,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
+        
     if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
         self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
     }else{

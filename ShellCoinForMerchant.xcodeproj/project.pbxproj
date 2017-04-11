@@ -88,8 +88,6 @@
 		BC25386E1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25386D1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd */; };
 		BC2538701E9B7A17007232B3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25386F1E9B7A17007232B3 /* libsqlite3.tbd */; };
 		BC3FB69D1E975E5100C06A95 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3FB69C1E975E5100C06A95 /* Home.xcassets */; };
-		BC3FB6A11E97636400C06A95 /* BillConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB69F1E97636400C06A95 /* BillConsumptionTableViewCell.m */; };
-		BC3FB6A21E97636400C06A95 /* BillConsumptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FB6A01E97636400C06A95 /* BillConsumptionTableViewCell.xib */; };
 		BC3FB6A51E97638100C06A95 /* BillAmountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB6A41E97638100C06A95 /* BillAmountDataModel.m */; };
 		BC3FB6A81E9763A100C06A95 /* BillDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB6A71E9763A100C06A95 /* BillDataModel.m */; };
 		BC3FB6AB1E97651800C06A95 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB6AA1E97651800C06A95 /* RootViewController.m */; };
@@ -270,9 +268,6 @@
 		BC25386D1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		BC25386F1E9B7A17007232B3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		BC3FB69C1E975E5100C06A95 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
-		BC3FB69E1E97636400C06A95 /* BillConsumptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillConsumptionTableViewCell.h; sourceTree = "<group>"; };
-		BC3FB69F1E97636400C06A95 /* BillConsumptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillConsumptionTableViewCell.m; sourceTree = "<group>"; };
-		BC3FB6A01E97636400C06A95 /* BillConsumptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillConsumptionTableViewCell.xib; sourceTree = "<group>"; };
 		BC3FB6A31E97638100C06A95 /* BillAmountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillAmountDataModel.h; sourceTree = "<group>"; };
 		BC3FB6A41E97638100C06A95 /* BillAmountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillAmountDataModel.m; sourceTree = "<group>"; };
 		BC3FB6A61E9763A100C06A95 /* BillDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillDataModel.h; sourceTree = "<group>"; };
@@ -289,6 +284,7 @@
 		BC3FB6B91E976DDD00C06A95 /* StateMentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMentTableViewCell.h; sourceTree = "<group>"; };
 		BC3FB6BA1E976DDD00C06A95 /* StateMentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMentTableViewCell.m; sourceTree = "<group>"; };
 		BC3FB6BB1E976DDD00C06A95 /* StateMentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StateMentTableViewCell.xib; sourceTree = "<group>"; };
+		BC8171FE1E9CD855004B97AB /* ShellCoinForMerchant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShellCoinForMerchant.entitlements; sourceTree = "<group>"; };
 		BCAC5D1A1E8268B4003CACF8 /* ShellCoinForMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellCoinForMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAC5D1E1E8268B4003CACF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCAC5D201E8268B4003CACF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -504,9 +500,6 @@
 			children = (
 				BC085D431E83718200572E8A /* HomeViewController.h */,
 				BC085D441E83718200572E8A /* HomeViewController.m */,
-				BC3FB69E1E97636400C06A95 /* BillConsumptionTableViewCell.h */,
-				BC3FB69F1E97636400C06A95 /* BillConsumptionTableViewCell.m */,
-				BC3FB6A01E97636400C06A95 /* BillConsumptionTableViewCell.xib */,
 				BC3FB6A31E97638100C06A95 /* BillAmountDataModel.h */,
 				BC3FB6A41E97638100C06A95 /* BillAmountDataModel.m */,
 				BC3FB6A61E9763A100C06A95 /* BillDataModel.h */,
@@ -673,6 +666,7 @@
 		BCAC5D1C1E8268B4003CACF8 /* ShellCoinForMerchant */ = {
 			isa = PBXGroup;
 			children = (
+				BC8171FE1E9CD855004B97AB /* ShellCoinForMerchant.entitlements */,
 				BC2538281E9B76B5007232B3 /* Login */,
 				BC085D3D1E83712B00572E8A /* Home */,
 				BC085CEF1E836B3E00572E8A /* ThirdAPI */,
@@ -799,8 +793,13 @@
 				TargetAttributes = {
 					BCAC5D191E8268B4003CACF8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 33XXMRMT7P;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 4KU9646Y2X;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					BCAC5D351E8268B4003CACF8 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -863,7 +862,6 @@
 				BC2538401E9B76B5007232B3 /* Login.xcassets in Resources */,
 				BC3FB6B01E9768EA00C06A95 /* BaseNavigationBar.xib in Resources */,
 				BC085CDF1E83647C00572E8A /* 213955937960616.cer in Resources */,
-				BC3FB6A21E97636400C06A95 /* BillConsumptionTableViewCell.xib in Resources */,
 				BC085CE21E83647C00572E8A /* HttpClient_Readme.txt in Resources */,
 				BC3FB6B21E97691200C06A95 /* Public.xcassets in Resources */,
 				BC2537F51E9B6042007232B3 /* OrderEntryViewController.xib in Resources */,
@@ -992,7 +990,6 @@
 				BC3FB6A51E97638100C06A95 /* BillAmountDataModel.m in Sources */,
 				BC25383D1E9B76B5007232B3 /* ForgetPasswordTwoViewController.m in Sources */,
 				BC085D261E836B3F00572E8A /* Colours.m in Sources */,
-				BC3FB6A11E97636400C06A95 /* BillConsumptionTableViewCell.m in Sources */,
 				BC085CE71E83647C00572E8A /* PGIndexBannerSubiew.m in Sources */,
 				BC2537FE1E9B6AFE007232B3 /* SortButtonSwitchView.m in Sources */,
 				BC2538261E9B720D007232B3 /* SureOrderView.m in Sources */,
@@ -1151,7 +1148,9 @@
 			baseConfigurationReference = EA34E77D7DC13C24BABC33D8 /* Pods-ShellCoinForMerchant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33XXMRMT7P;
+				CODE_SIGN_ENTITLEMENTS = ShellCoinForMerchant/ShellCoinForMerchant.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xu han (9L2S5LBXA3)";
+				DEVELOPMENT_TEAM = 4KU9646Y2X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMSocial_Sdk_4.4",
@@ -1167,8 +1166,10 @@
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/Wechat",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMessage_Sdk_1.4.0",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "44c28543-ac6f-4a60-a1fb-294f0b0912d6";
+				PROVISIONING_PROFILE_SPECIFIER = shellCoinMerchantDelopment;
 			};
 			name = Debug;
 		};
@@ -1177,7 +1178,9 @@
 			baseConfigurationReference = 572BBA7B2F43A719AE18FDF0 /* Pods-ShellCoinForMerchant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33XXMRMT7P;
+				CODE_SIGN_ENTITLEMENTS = ShellCoinForMerchant/ShellCoinForMerchant.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xu han (9L2S5LBXA3)";
+				DEVELOPMENT_TEAM = 4KU9646Y2X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMSocial_Sdk_4.4",
@@ -1193,8 +1196,10 @@
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/Wechat",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMessage_Sdk_1.4.0",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMerchant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "44c28543-ac6f-4a60-a1fb-294f0b0912d6";
+				PROVISIONING_PROFILE_SPECIFIER = shellCoinMerchantDelopment;
 			};
 			name = Release;
 		};

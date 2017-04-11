@@ -24,7 +24,9 @@
  */
 #define YoumengKey_Inhouse @"56a9b2dae0f55ae6190022b1"
 
-#define PasswordKey @"SV245HYJH"
+//#define PasswordKey @"SV245HYJH"
+#define PasswordKey @"PW2017$LY"
+
 //高德地图的key
 /**
  高德appstore的key

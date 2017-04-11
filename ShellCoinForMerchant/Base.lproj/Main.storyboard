@@ -114,8 +114,8 @@
                                             <constraint firstAttribute="trailing" secondItem="pY4-ks-hYe" secondAttribute="trailing" constant="8" id="xRP-2x-iVm"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj8-hO-l6c">
-                                        <rect key="frame" x="158.5" y="130" width="58" height="55"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj8-hO-l6c">
+                                        <rect key="frame" x="167" y="130" width="41.5" height="55"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -270,12 +270,18 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="营业统计" id="08H-qr-iCM"/>
                     <connections>
+                        <outlet property="jiesuandanMaLabel" destination="POa-Ni-pmY" id="yTe-Yh-bbW"/>
+                        <outlet property="orderEntryBTn" destination="m31-wM-sQ0" id="fOu-kO-RE6"/>
+                        <outlet property="orderMaLabel" destination="dcT-rG-SIZ" id="18f-Tz-xQu"/>
                         <outlet property="tableView" destination="xmd-pK-QVR" id="75f-og-PqT"/>
+                        <outlet property="titleLabel" destination="XqH-1V-XYY" id="ngd-5a-3u7"/>
+                        <outlet property="todaOrder" destination="dj8-hO-l6c" id="LKw-uJ-4js"/>
+                        <outlet property="todayOrderLabel" destination="9fi-EZ-Xhr" id="WAk-ir-96f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jes-Ee-j3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="-1046"/>
+            <point key="canvasLocation" x="1066" y="-1249"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mf0-Sr-opN">

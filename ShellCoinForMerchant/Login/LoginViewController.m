@@ -88,6 +88,7 @@
                 [MobClick profileSignInWithPUID:[ShellCoinUserInfo shareUserInfos].userid];
                 [[NSUserDefaults standardUserDefaults]synchronize];
                 
+                
                 if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
                     [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
                     [[NSUserDefaults standardUserDefaults]synchronize];

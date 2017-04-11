@@ -8,11 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class StateMentDataModel;
+
 typedef NS_ENUM(NSInteger,Payway_type){
     Payway_type_banlance = 1,//余额支付
     Payway_type_wechat = 2,//微信支付
 };
 
+
+@protocol SettlementDelegate <NSObject>
+
+- (void)settlementSuccess;
+
+@end
 @interface SettlementPayWayView : UIView
 
 
@@ -52,5 +60,9 @@ typedef NS_ENUM(NSInteger,Payway_type){
 
 //结算金额
 @property (nonatomic, copy)NSString *money;
+
+@property (nonatomic, strong)StateMentDataModel *dataModel;
+
+@property (nonatomic, assign)id<SettlementDelegate> delegate;
 
 @end

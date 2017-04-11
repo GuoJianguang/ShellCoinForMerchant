@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="340" height="177"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="340" height="176.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="340" height="176"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thl-Nk-JfK">
@@ -24,6 +24,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_state_blue" translatesAutoresizingMaskIntoConstraints="NO" id="aEf-Fi-xXr">
                                 <rect key="frame" x="0.0" y="0.0" width="6" height="166.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_state_blue" translatesAutoresizingMaskIntoConstraints="NO" id="YRw-g2-dAh">
+                                <rect key="frame" x="0.0" y="0.0" width="6" height="128.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pac-tA-2BL">
                                 <rect key="frame" x="22" y="0.0" width="308" height="38"/>
@@ -254,6 +257,9 @@
                             <constraint firstItem="nSg-gK-ET0" firstAttribute="top" secondItem="JkR-fB-dHY" secondAttribute="bottom" id="c6g-xt-YQz"/>
                             <constraint firstItem="nSg-gK-ET0" firstAttribute="leading" secondItem="aEf-Fi-xXr" secondAttribute="trailing" constant="16" id="eKd-9l-QLH"/>
                             <constraint firstItem="JkR-fB-dHY" firstAttribute="leading" secondItem="aEf-Fi-xXr" secondAttribute="trailing" constant="16" id="gLN-qu-LoC"/>
+                            <constraint firstItem="JkR-fB-dHY" firstAttribute="bottom" secondItem="YRw-g2-dAh" secondAttribute="bottom" id="gjB-4Z-gi7"/>
+                            <constraint firstItem="YRw-g2-dAh" firstAttribute="leading" secondItem="thl-Nk-JfK" secondAttribute="leading" id="i0O-oA-Olm"/>
+                            <constraint firstItem="YRw-g2-dAh" firstAttribute="top" secondItem="thl-Nk-JfK" secondAttribute="top" id="kHa-Fb-BZJ"/>
                             <constraint firstAttribute="trailing" secondItem="nSg-gK-ET0" secondAttribute="trailing" id="r4X-Nb-N0F"/>
                             <constraint firstAttribute="trailing" secondItem="JkR-fB-dHY" secondAttribute="trailing" id="uOK-FP-Wtp"/>
                         </constraints>
@@ -267,18 +273,21 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="goJiesuanHeight" destination="lF1-oH-kKe" id="7kc-Yo-h8T"/>
                 <outlet property="gouJiesuanLabel" destination="WFX-KS-Rkz" id="qn9-n5-FzQ"/>
+                <outlet property="gouJiesuanView" destination="nSg-gK-ET0" id="3WF-aR-W6B"/>
                 <outlet property="mark_imageView" destination="aEf-Fi-xXr" id="28U-LX-flg"/>
                 <outlet property="shouldJiesuan" destination="BA3-K4-qYV" id="ueJ-98-FHa"/>
                 <outlet property="shouldJiesuanLabel" destination="3d4-MX-3Kl" id="MSu-Ub-rMm"/>
                 <outlet property="status_label" destination="Bah-EH-9OY" id="wnp-Tb-YyH"/>
+                <outlet property="successMarkImageView" destination="YRw-g2-dAh" id="rGz-xJ-wpm"/>
                 <outlet property="time_label" destination="kQ7-av-iKu" id="9Ax-Vc-Com"/>
                 <outlet property="titalBIshu" destination="Mqc-jQ-zMc" id="EdL-of-1SH"/>
                 <outlet property="totalBishuLabel" destination="oUy-vT-g8U" id="WvM-xB-RkW"/>
                 <outlet property="totalMoney" destination="NZI-NQ-WGx" id="46s-m6-afe"/>
                 <outlet property="totalMoneyLabel" destination="0zK-fy-I3C" id="1d0-8s-pUc"/>
             </connections>
-            <point key="canvasLocation" x="166" y="40.5"/>
+            <point key="canvasLocation" x="-21" y="55"/>
         </tableViewCell>
     </objects>
     <resources>
