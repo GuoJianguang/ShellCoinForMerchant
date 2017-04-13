@@ -23,7 +23,7 @@
                         <rect key="frame" x="12" y="10" width="296" height="88.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_state_blue" translatesAutoresizingMaskIntoConstraints="NO" id="yMR-zw-yEM">
-                                <rect key="frame" x="0.0" y="10" width="6" height="68.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="6" height="88.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="6" id="48W-uB-RPb"/>
                                 </constraints>
@@ -74,7 +74,7 @@
                             <constraint firstItem="F7w-rS-7Pq" firstAttribute="leading" secondItem="NLI-rP-XDG" secondAttribute="trailing" constant="5" id="4bS-Jy-Ank"/>
                             <constraint firstItem="F7w-rS-7Pq" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="10" id="5nL-wo-mCE"/>
                             <constraint firstAttribute="trailing" secondItem="bmo-a2-cfm" secondAttribute="trailing" constant="20" id="JOc-6s-xG0"/>
-                            <constraint firstAttribute="bottom" secondItem="yMR-zw-yEM" secondAttribute="bottom" constant="10" id="NGG-SN-K9k"/>
+                            <constraint firstAttribute="bottom" secondItem="yMR-zw-yEM" secondAttribute="bottom" id="NGG-SN-K9k"/>
                             <constraint firstAttribute="trailing" secondItem="F7w-rS-7Pq" secondAttribute="trailing" constant="20" id="SND-yJ-AWH"/>
                             <constraint firstItem="MkH-JJ-o7b" firstAttribute="leading" secondItem="yMR-zw-yEM" secondAttribute="trailing" constant="15" id="Sdh-x3-QaR"/>
                             <constraint firstItem="yMR-zw-yEM" firstAttribute="leading" secondItem="hlm-lF-CZ7" secondAttribute="leading" id="WFZ-rZ-QhH"/>
@@ -82,7 +82,7 @@
                             <constraint firstItem="71e-hg-zpL" firstAttribute="leading" secondItem="MkH-JJ-o7b" secondAttribute="trailing" constant="8" id="dfR-8f-6qC"/>
                             <constraint firstItem="bmo-a2-cfm" firstAttribute="leading" secondItem="FQe-1v-hfS" secondAttribute="trailing" id="g9v-H2-6kt"/>
                             <constraint firstItem="NLI-rP-XDG" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="10" id="no4-1f-LDT"/>
-                            <constraint firstItem="yMR-zw-yEM" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="10" id="qh0-Pw-uWS"/>
+                            <constraint firstItem="yMR-zw-yEM" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" id="qh0-Pw-uWS"/>
                             <constraint firstItem="bmo-a2-cfm" firstAttribute="baseline" secondItem="FQe-1v-hfS" secondAttribute="baseline" id="tg3-MI-jed"/>
                             <constraint firstAttribute="bottom" secondItem="bmo-a2-cfm" secondAttribute="bottom" constant="10" id="vTf-pi-01Z"/>
                             <constraint firstAttribute="bottom" secondItem="71e-hg-zpL" secondAttribute="bottom" constant="10" id="x2l-cT-p6r"/>

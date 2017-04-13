@@ -7,7 +7,6 @@
 //
 
 #import "YetCompleteOrderCell.h"
-#import "BillAmountDataModel.h"
 #import "BillDataModel.h"
 
 @implementation YetCompleteOrderCell
@@ -28,11 +27,10 @@
 - (void)setDataModel:(BillDataModel *)dataModel
 {
     _dataModel = dataModel;
-//    self.markLabel.text = _xiaofeijiluModel.mchName;
+    self.markLabel.text = _dataModel.phone;
     self.timeLabel.text = _dataModel.tranTime;
     self.buyCardLabel.text = @"";
     NSString *statusStr = [NSString string];
-    
     switch ([_dataModel.state integerValue]) {
         case 0:
         {
@@ -45,14 +43,14 @@
             
         case 1:
         {
-            statusStr = @"支付成功";
-            self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
-            self.statusLabel.textColor = self.moneyLabel.textColor = self.buyCardLabel.textColor = MacoColor;
+            statusStr = @"正常";
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_yellow"];
+            self.statusLabel.textColor = self.moneyLabel.textColor = self.buyCardLabel.textColor = [UIColor colorFromHexString:@"#ff8335"];
         }
             break;
         case 2:
         {
-            statusStr = @"支付成功";
+            statusStr = @"已积累";
             self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
             self.statusLabel.textColor = self.moneyLabel.textColor = self.buyCardLabel.textColor = MacoColor;
         }
@@ -61,7 +59,7 @@
         {
             self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
             self.statusLabel.textColor = self.moneyLabel.textColor = self.buyCardLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
-            statusStr = @"冻结中";
+            statusStr = @"冻结";
         }
             break;
         case 4:
@@ -89,6 +87,7 @@
         default:
             break;
     }
+    
     self.moneyLabel.text = [NSString stringWithFormat:@"¥%@",_dataModel.totalAmount];
     self.statusLabel.text = statusStr;
 }

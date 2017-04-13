@@ -7,7 +7,6 @@
 //
 
 #import "Bill1View.h"
-#import "BillAmountDataModel.h"
 #import "BillDataModel.h"
 #import "WaitSureOrderCell.h"
 #import "OrderManamentViewController.h"

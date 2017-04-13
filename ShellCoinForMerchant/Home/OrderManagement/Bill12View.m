@@ -7,8 +7,8 @@
 //
 
 #import "Bill12View.h"
-#import "BillAmountDataModel.h"
 #import "YetCompleteOrderCell.h"
+#import "BillDataModel.h"
 
 @interface Bill12View()<UITableViewDelegate,UITableViewDataSource>
 
@@ -75,7 +75,7 @@
                 self.page ++;
             }
             for (NSDictionary *dic in array) {
-                BillAmountDataModel *model = [BillAmountDataModel modelWithDic:dic];
+                BillDataModel *model = [BillDataModel modelWithDic:dic];
                 [self.dataSouceArray addObject:model];
             }
             [self.tableView judgeIsHaveDataSouce:self.dataSouceArray];

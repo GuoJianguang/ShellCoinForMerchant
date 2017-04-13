@@ -88,7 +88,6 @@
 		BC25386E1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25386D1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd */; };
 		BC2538701E9B7A17007232B3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25386F1E9B7A17007232B3 /* libsqlite3.tbd */; };
 		BC3FB69D1E975E5100C06A95 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3FB69C1E975E5100C06A95 /* Home.xcassets */; };
-		BC3FB6A51E97638100C06A95 /* BillAmountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB6A41E97638100C06A95 /* BillAmountDataModel.m */; };
 		BC3FB6A81E9763A100C06A95 /* BillDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB6A71E9763A100C06A95 /* BillDataModel.m */; };
 		BC3FB6AB1E97651800C06A95 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB6AA1E97651800C06A95 /* RootViewController.m */; };
 		BC3FB6AF1E9768EA00C06A95 /* BaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB6AD1E9768EA00C06A95 /* BaseNavigationBar.m */; };
@@ -98,10 +97,10 @@
 		BC3FB6B81E9769A300C06A95 /* StateMentsMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FB6B61E9769A300C06A95 /* StateMentsMViewController.xib */; };
 		BC3FB6BC1E976DDD00C06A95 /* StateMentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FB6BA1E976DDD00C06A95 /* StateMentTableViewCell.m */; };
 		BC3FB6BD1E976DDD00C06A95 /* StateMentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FB6BB1E976DDD00C06A95 /* StateMentTableViewCell.xib */; };
+		BC6553591E9F1A9600DEC34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6553571E9F1A9600DEC34D /* Main.storyboard */; };
+		BC65535B1E9F1CA800DEC34D /* TabBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC65535A1E9F1CA800DEC34D /* TabBar.xcassets */; };
 		BCAC5D1F1E8268B4003CACF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D1E1E8268B4003CACF8 /* main.m */; };
 		BCAC5D221E8268B4003CACF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D211E8268B4003CACF8 /* AppDelegate.m */; };
-		BCAC5D251E8268B4003CACF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D241E8268B4003CACF8 /* ViewController.m */; };
-		BCAC5D281E8268B4003CACF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAC5D261E8268B4003CACF8 /* Main.storyboard */; };
 		BCAC5D2B1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D291E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld */; };
 		BCAC5D2D1E8268B4003CACF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAC5D2C1E8268B4003CACF8 /* Assets.xcassets */; };
 		BCAC5D301E8268B4003CACF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAC5D2E1E8268B4003CACF8 /* LaunchScreen.storyboard */; };
@@ -268,8 +267,6 @@
 		BC25386D1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		BC25386F1E9B7A17007232B3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		BC3FB69C1E975E5100C06A95 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
-		BC3FB6A31E97638100C06A95 /* BillAmountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillAmountDataModel.h; sourceTree = "<group>"; };
-		BC3FB6A41E97638100C06A95 /* BillAmountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillAmountDataModel.m; sourceTree = "<group>"; };
 		BC3FB6A61E9763A100C06A95 /* BillDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillDataModel.h; sourceTree = "<group>"; };
 		BC3FB6A71E9763A100C06A95 /* BillDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillDataModel.m; sourceTree = "<group>"; };
 		BC3FB6A91E97651800C06A95 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -284,14 +281,13 @@
 		BC3FB6B91E976DDD00C06A95 /* StateMentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMentTableViewCell.h; sourceTree = "<group>"; };
 		BC3FB6BA1E976DDD00C06A95 /* StateMentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMentTableViewCell.m; sourceTree = "<group>"; };
 		BC3FB6BB1E976DDD00C06A95 /* StateMentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StateMentTableViewCell.xib; sourceTree = "<group>"; };
+		BC6553581E9F1A9600DEC34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC65535A1E9F1CA800DEC34D /* TabBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBar.xcassets; sourceTree = "<group>"; };
 		BC8171FE1E9CD855004B97AB /* ShellCoinForMerchant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShellCoinForMerchant.entitlements; sourceTree = "<group>"; };
 		BCAC5D1A1E8268B4003CACF8 /* ShellCoinForMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellCoinForMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAC5D1E1E8268B4003CACF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCAC5D201E8268B4003CACF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCAC5D211E8268B4003CACF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BCAC5D231E8268B4003CACF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BCAC5D241E8268B4003CACF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BCAC5D271E8268B4003CACF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCAC5D2A1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShellCoinForMerchant.xcdatamodel; sourceTree = "<group>"; };
 		BCAC5D2C1E8268B4003CACF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCAC5D2F1E8268B4003CACF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -500,8 +496,6 @@
 			children = (
 				BC085D431E83718200572E8A /* HomeViewController.h */,
 				BC085D441E83718200572E8A /* HomeViewController.m */,
-				BC3FB6A31E97638100C06A95 /* BillAmountDataModel.h */,
-				BC3FB6A41E97638100C06A95 /* BillAmountDataModel.m */,
 				BC3FB6A61E9763A100C06A95 /* BillDataModel.h */,
 				BC3FB6A71E9763A100C06A95 /* BillDataModel.m */,
 				BC3FB69C1E975E5100C06A95 /* Home.xcassets */,
@@ -666,23 +660,22 @@
 		BCAC5D1C1E8268B4003CACF8 /* ShellCoinForMerchant */ = {
 			isa = PBXGroup;
 			children = (
+				BC6553571E9F1A9600DEC34D /* Main.storyboard */,
 				BC8171FE1E9CD855004B97AB /* ShellCoinForMerchant.entitlements */,
-				BC2538281E9B76B5007232B3 /* Login */,
-				BC085D3D1E83712B00572E8A /* Home */,
-				BC085CEF1E836B3E00572E8A /* ThirdAPI */,
-				BC085CBE1E83647C00572E8A /* Public */,
-				BC085CA61E83645800572E8A /* Base */,
 				BCAC5D201E8268B4003CACF8 /* AppDelegate.h */,
 				BCAC5D211E8268B4003CACF8 /* AppDelegate.m */,
-				BCAC5D241E8268B4003CACF8 /* ViewController.m */,
-				BCAC5D231E8268B4003CACF8 /* ViewController.h */,
-				BCAC5D261E8268B4003CACF8 /* Main.storyboard */,
 				BCAC5D2C1E8268B4003CACF8 /* Assets.xcassets */,
 				BCAC5D2E1E8268B4003CACF8 /* LaunchScreen.storyboard */,
 				BCAC5D311E8268B4003CACF8 /* Info.plist */,
 				BCAC5D291E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld */,
 				BC085CED1E836ABB00572E8A /* PrefixHeader.pch */,
 				BC085CEE1E836ABB00572E8A /* TTXMacro.h */,
+				BC65535A1E9F1CA800DEC34D /* TabBar.xcassets */,
+				BC2538281E9B76B5007232B3 /* Login */,
+				BC085D3D1E83712B00572E8A /* Home */,
+				BC085CEF1E836B3E00572E8A /* ThirdAPI */,
+				BC085CBE1E83647C00572E8A /* Public */,
+				BC085CA61E83645800572E8A /* Base */,
 				BCAC5D1D1E8268B4003CACF8 /* Supporting Files */,
 			);
 			path = ShellCoinForMerchant;
@@ -846,6 +839,7 @@
 				BCAC5D301E8268B4003CACF8 /* LaunchScreen.storyboard in Resources */,
 				BC2538181E9B6C7A007232B3 /* NothingView.xib in Resources */,
 				BC2538631E9B7890007232B3 /* UMSocialSDKResources.bundle in Resources */,
+				BC6553591E9F1A9600DEC34D /* Main.storyboard in Resources */,
 				BCAC5D2D1E8268B4003CACF8 /* Assets.xcassets in Resources */,
 				BC2538271E9B720D007232B3 /* SureOrderView.xib in Resources */,
 				BC3FB6B81E9769A300C06A95 /* StateMentsMViewController.xib in Resources */,
@@ -855,7 +849,6 @@
 				BC2538081E9B6B6E007232B3 /* Bill12View.xib in Resources */,
 				BC3FB69D1E975E5100C06A95 /* Home.xcassets in Resources */,
 				BC3FB6BD1E976DDD00C06A95 /* StateMentTableViewCell.xib in Resources */,
-				BCAC5D281E8268B4003CACF8 /* Main.storyboard in Resources */,
 				BC085D271E836B3F00572E8A /* CodeScan.bundle in Resources */,
 				BC2537EF1E9B5658007232B3 /* SettlementPayWayView.xib in Resources */,
 				BC25381D1E9B6D9B007232B3 /* YetCompleteOrderCell.xib in Resources */,
@@ -867,6 +860,7 @@
 				BC2537F51E9B6042007232B3 /* OrderEntryViewController.xib in Resources */,
 				BC2538061E9B6B6E007232B3 /* Bill1View.xib in Resources */,
 				BC25383E1E9B76B5007232B3 /* ForgetPasswordTwoViewController.xib in Resources */,
+				BC65535B1E9F1CA800DEC34D /* TabBar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -949,7 +943,6 @@
 				BC25381C1E9B6D9B007232B3 /* YetCompleteOrderCell.m in Sources */,
 				BC085D311E836B3F00572E8A /* LBXScanViewStyle.m in Sources */,
 				BC085CE51E83647C00572E8A /* LSPaoMaView.m in Sources */,
-				BCAC5D251E8268B4003CACF8 /* ViewController.m in Sources */,
 				BC085D301E836B3F00572E8A /* LBXScanViewController.m in Sources */,
 				BC085CE31E83647C00572E8A /* HttpClientAlertViewHelper.m in Sources */,
 				BC3FB6B71E9769A300C06A95 /* StateMentsMViewController.m in Sources */,
@@ -987,7 +980,6 @@
 				BCAC5D1F1E8268B4003CACF8 /* main.m in Sources */,
 				BC3FB6AB1E97651800C06A95 /* RootViewController.m in Sources */,
 				BC085CBB1E83645800572E8A /* BaseTableViewCell.m in Sources */,
-				BC3FB6A51E97638100C06A95 /* BillAmountDataModel.m in Sources */,
 				BC25383D1E9B76B5007232B3 /* ForgetPasswordTwoViewController.m in Sources */,
 				BC085D261E836B3F00572E8A /* Colours.m in Sources */,
 				BC085CE71E83647C00572E8A /* PGIndexBannerSubiew.m in Sources */,
@@ -1034,10 +1026,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BCAC5D261E8268B4003CACF8 /* Main.storyboard */ = {
+		BC6553571E9F1A9600DEC34D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BCAC5D271E8268B4003CACF8 /* Base */,
+				BC6553581E9F1A9600DEC34D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

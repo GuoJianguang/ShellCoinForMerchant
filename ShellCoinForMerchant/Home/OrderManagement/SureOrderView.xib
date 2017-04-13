@@ -35,7 +35,7 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZF-XJ-3cT">
                                     <rect key="frame" x="0.0" y="0.0" width="137.5" height="44"/>
-                                    <state key="normal" title="确认" backgroundImage="pic3_personal">
+                                    <state key="normal" title="确认" backgroundImage="btn_view_orders">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
@@ -130,7 +130,7 @@
         </view>
     </objects>
     <resources>
+        <image name="btn_view_orders" width="130" height="50"/>
         <image name="icon_close" width="44" height="44"/>
-        <image name="pic3_personal" width="260" height="50"/>
     </resources>
 </document>

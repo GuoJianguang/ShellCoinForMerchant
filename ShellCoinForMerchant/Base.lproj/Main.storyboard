@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="统计" id="qrX-Wv-m1i"/>
+                    <tabBarItem key="tabBarItem" title="统计" image="tab_fund_details_nor" selectedImage="tab_fund_details_sel" id="qrX-Wv-m1i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnX-2I-MwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,9 +86,9 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_witthdraw_bg2" translatesAutoresizingMaskIntoConstraints="NO" id="k2g-UI-mOf">
                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="60"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m31-wM-sQ0">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m31-wM-sQ0">
                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="60"/>
-                                                <state key="normal" title="订单录入">
+                                                <state key="normal" title="订单录入" image="icon_input_order">
                                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -152,6 +152,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0b-0c-jNT">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="100"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPm-vK-f8A">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="100"/>
+                                                <state key="normal" backgroundImage="bg2_business_statistics"/>
+                                                <connections>
+                                                    <action selector="orderManangeBtn:" destination="i4s-sE-TVr" eventType="touchUpInside" id="ndE-xy-xde"/>
+                                                </connections>
+                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFM-KZ-KKF">
                                                 <rect key="frame" x="0.0" y="49.5" width="187.5" height="1"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -159,23 +166,16 @@
                                                     <constraint firstAttribute="height" constant="1" id="Yb4-5f-srA"/>
                                                 </constraints>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_cash_payment_nor" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-fh-ftC">
-                                                <rect key="frame" x="82" y="26.5" width="22" height="18"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_order_management" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-fh-ftC">
+                                                <rect key="frame" x="71" y="5.5" width="44" height="44"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单管理" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-rG-SIZ">
                                                 <rect key="frame" x="64.5" y="55.5" width="57.5" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPm-vK-f8A">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="100"/>
-                                                <connections>
-                                                    <action selector="orderManangeBtn:" destination="i4s-sE-TVr" eventType="touchUpInside" id="ndE-xy-xde"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="c7j-fh-ftC" firstAttribute="centerX" secondItem="q0b-0c-jNT" secondAttribute="centerX" id="0zx-4D-qbm"/>
                                             <constraint firstItem="GFM-KZ-KKF" firstAttribute="leading" secondItem="q0b-0c-jNT" secondAttribute="leading" id="2V9-mH-GQ5"/>
@@ -184,7 +184,7 @@
                                             <constraint firstItem="GFM-KZ-KKF" firstAttribute="centerY" secondItem="q0b-0c-jNT" secondAttribute="centerY" id="SI5-k8-CEN"/>
                                             <constraint firstItem="TPm-vK-f8A" firstAttribute="top" secondItem="q0b-0c-jNT" secondAttribute="top" id="bTS-C6-s1l"/>
                                             <constraint firstAttribute="bottom" secondItem="TPm-vK-f8A" secondAttribute="bottom" id="fK2-3e-fHk"/>
-                                            <constraint firstItem="GFM-KZ-KKF" firstAttribute="top" secondItem="c7j-fh-ftC" secondAttribute="bottom" constant="5" id="mSI-nh-fHC"/>
+                                            <constraint firstItem="GFM-KZ-KKF" firstAttribute="top" secondItem="c7j-fh-ftC" secondAttribute="bottom" id="mSI-nh-fHC"/>
                                             <constraint firstItem="TPm-vK-f8A" firstAttribute="leading" secondItem="q0b-0c-jNT" secondAttribute="leading" id="ueM-mw-osd"/>
                                             <constraint firstItem="dcT-rG-SIZ" firstAttribute="centerX" secondItem="q0b-0c-jNT" secondAttribute="centerX" id="uvl-kn-Ckm"/>
                                             <constraint firstItem="dcT-rG-SIZ" firstAttribute="top" secondItem="GFM-KZ-KKF" secondAttribute="bottom" constant="5" id="vVj-0L-v6R"/>
@@ -193,6 +193,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guH-4W-Zyr">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="100"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mb-Id-ALi">
+                                                <rect key="frame" x="-0.5" y="0.0" width="187.5" height="100"/>
+                                                <state key="normal" backgroundImage="bg3_business_statistics"/>
+                                                <connections>
+                                                    <action selector="jiesuandanBtn:" destination="i4s-sE-TVr" eventType="touchUpInside" id="EFq-h1-Vzd"/>
+                                                </connections>
+                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdf-ip-eWa">
                                                 <rect key="frame" x="0.0" y="49.5" width="187.5" height="1"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -200,27 +207,20 @@
                                                     <constraint firstAttribute="height" constant="1" id="eNW-3a-lh3"/>
                                                 </constraints>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_cash_payment_nor" translatesAutoresizingMaskIntoConstraints="NO" id="0dp-5a-Tb5">
-                                                <rect key="frame" x="82" y="26.5" width="22" height="18"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_settlement_management" translatesAutoresizingMaskIntoConstraints="NO" id="0dp-5a-Tb5">
+                                                <rect key="frame" x="71" y="5.5" width="44" height="44"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结算单管理" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POa-Ni-pmY">
                                                 <rect key="frame" x="57.5" y="55.5" width="71.5" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mb-Id-ALi">
-                                                <rect key="frame" x="-0.5" y="0.0" width="187.5" height="100"/>
-                                                <connections>
-                                                    <action selector="jiesuandanBtn:" destination="i4s-sE-TVr" eventType="touchUpInside" id="EFq-h1-Vzd"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="POa-Ni-pmY" firstAttribute="top" secondItem="Mdf-ip-eWa" secondAttribute="bottom" constant="5" id="8WO-Wg-r9z"/>
                                             <constraint firstAttribute="trailing" secondItem="Mdf-ip-eWa" secondAttribute="trailing" id="9nQ-9i-cTE"/>
-                                            <constraint firstItem="Mdf-ip-eWa" firstAttribute="top" secondItem="0dp-5a-Tb5" secondAttribute="bottom" constant="5" id="BH4-2k-kfL"/>
+                                            <constraint firstItem="Mdf-ip-eWa" firstAttribute="top" secondItem="0dp-5a-Tb5" secondAttribute="bottom" id="BH4-2k-kfL"/>
                                             <constraint firstItem="POa-Ni-pmY" firstAttribute="centerX" secondItem="guH-4W-Zyr" secondAttribute="centerX" id="Ehp-fW-87Z"/>
                                             <constraint firstItem="Mdf-ip-eWa" firstAttribute="leading" secondItem="guH-4W-Zyr" secondAttribute="leading" id="HzG-wR-H1W"/>
                                             <constraint firstItem="0dp-5a-Tb5" firstAttribute="centerX" secondItem="guH-4W-Zyr" secondAttribute="centerX" id="N0E-wv-jhb"/>
@@ -268,7 +268,7 @@
                             <constraint firstItem="WUz-G0-0z4" firstAttribute="leading" secondItem="bLV-Jb-ocD" secondAttribute="leading" id="xo9-Lc-nNY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="营业统计" id="08H-qr-iCM"/>
+                    <tabBarItem key="tabBarItem" title="营业统计" image="tab_fund_details_nor" selectedImage="tab_fund_details_sel" id="08H-qr-iCM"/>
                     <connections>
                         <outlet property="jiesuandanMaLabel" destination="POa-Ni-pmY" id="yTe-Yh-bbW"/>
                         <outlet property="orderEntryBTn" destination="m31-wM-sQ0" id="fOu-kO-RE6"/>
@@ -304,9 +304,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_cash_payment_nor" width="22" height="18"/>
+        <image name="bg2_business_statistics" width="187" height="106"/>
+        <image name="bg3_business_statistics" width="187" height="106"/>
         <image name="icon_enter" width="60" height="60"/>
+        <image name="icon_input_order" width="44" height="44"/>
+        <image name="icon_order_management" width="44" height="44"/>
+        <image name="icon_settlement_management" width="44" height="44"/>
         <image name="mine_withdraw_bg1" width="375" height="260"/>
-        <image name="mine_witthdraw_bg2" width="343" height="225"/>
+        <image name="mine_witthdraw_bg2" width="369" height="73"/>
+        <image name="tab_fund_details_nor" width="49" height="49"/>
+        <image name="tab_fund_details_sel" width="49" height="49"/>
     </resources>
 </document>

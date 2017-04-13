@@ -27,7 +27,7 @@ static NSString *hasComplete  = @"hasComplete";//已完成
     // Do any additional setup after loading the view.
     //接收的推送
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fanxian:) name:Upush_Notifi object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(autoLogin) name:AutoLoginAfterGetDeviceToken object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(autoLogin) name:AutoLoginAfterGetDeviceToken object:nil];
 
 }
 

@@ -132,6 +132,13 @@
     return TWitdh*(190/750.);
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    OrderManamentViewController *orderManaMentVC = [[OrderManamentViewController alloc]init];
+    [self.navigationController pushViewController:orderManaMentVC animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

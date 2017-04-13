@@ -16,7 +16,7 @@
     model.channel = NullToNumber(dic[@"channel"]);
     model.totalAmount = NullToNumber(dic[@"totalAmount"]);
     model.state = NullToNumber(dic[@"state"]);
-    model.phone = NullToNumber(dic[@"phone"]);
+    model.phone = NullToNumber(dic[@"userPhone"]);
     model.orderId = NullToNumber(dic[@"orderId"]);
     model.tranTime = NullToNumber(dic[@"tranTime"]);
     return model;

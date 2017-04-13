@@ -7,7 +7,6 @@
 //
 
 #import "WaitSureOrderCell.h"
-#import "BillAmountDataModel.h"
 #import "BillDataModel.h"
 
 
@@ -60,6 +59,8 @@
         default:
             break;
     }
+    
+
     
 }
 
