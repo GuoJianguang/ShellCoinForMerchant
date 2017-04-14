@@ -37,15 +37,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-EH-9OY">
-                                        <rect key="frame" x="213" y="11" width="80" height="17"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="hrd-UQ-Z7C"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="biF-Dr-aSh">
                                         <rect key="frame" x="0.0" y="37" width="308" height="1"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -53,15 +44,22 @@
                                             <constraint firstAttribute="height" constant="1" id="jkB-q0-Tp5"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hri-mU-nNN">
+                                        <rect key="frame" x="233" y="11" width="55" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="--" backgroundImage="bg_status_label_red">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="biF-Dr-aSh" secondAttribute="trailing" id="062-jL-fTZ"/>
                                     <constraint firstItem="biF-Dr-aSh" firstAttribute="leading" secondItem="pac-tA-2BL" secondAttribute="leading" id="DAP-jg-KhU"/>
+                                    <constraint firstAttribute="trailing" secondItem="hri-mU-nNN" secondAttribute="trailing" constant="20" id="Dz8-x4-UF7"/>
+                                    <constraint firstItem="hri-mU-nNN" firstAttribute="centerY" secondItem="pac-tA-2BL" secondAttribute="centerY" id="EXK-Ve-4NB"/>
                                     <constraint firstAttribute="bottom" secondItem="biF-Dr-aSh" secondAttribute="bottom" id="Hc0-Rf-1Gm"/>
                                     <constraint firstItem="kQ7-av-iKu" firstAttribute="leading" secondItem="pac-tA-2BL" secondAttribute="leading" constant="8" id="Msp-1O-Lfw"/>
-                                    <constraint firstItem="Bah-EH-9OY" firstAttribute="centerY" secondItem="pac-tA-2BL" secondAttribute="centerY" id="SU5-f1-ZpM"/>
                                     <constraint firstAttribute="height" constant="38" id="VTt-pL-AwD"/>
-                                    <constraint firstAttribute="trailing" secondItem="Bah-EH-9OY" secondAttribute="trailing" constant="15" id="t3w-wp-N7F"/>
                                     <constraint firstItem="kQ7-av-iKu" firstAttribute="centerY" secondItem="pac-tA-2BL" secondAttribute="centerY" id="tLt-94-hhb"/>
                                 </constraints>
                             </view>
@@ -279,7 +277,7 @@
                 <outlet property="mark_imageView" destination="aEf-Fi-xXr" id="28U-LX-flg"/>
                 <outlet property="shouldJiesuan" destination="BA3-K4-qYV" id="ueJ-98-FHa"/>
                 <outlet property="shouldJiesuanLabel" destination="3d4-MX-3Kl" id="MSu-Ub-rMm"/>
-                <outlet property="status_label" destination="Bah-EH-9OY" id="wnp-Tb-YyH"/>
+                <outlet property="status_Btn" destination="hri-mU-nNN" id="e8x-xK-2vC"/>
                 <outlet property="successMarkImageView" destination="YRw-g2-dAh" id="rGz-xJ-wpm"/>
                 <outlet property="time_label" destination="kQ7-av-iKu" id="9Ax-Vc-Com"/>
                 <outlet property="titalBIshu" destination="Mqc-jQ-zMc" id="EdL-of-1SH"/>
@@ -287,10 +285,11 @@
                 <outlet property="totalMoney" destination="NZI-NQ-WGx" id="46s-m6-afe"/>
                 <outlet property="totalMoneyLabel" destination="0zK-fy-I3C" id="1d0-8s-pUc"/>
             </connections>
-            <point key="canvasLocation" x="-21" y="55"/>
+            <point key="canvasLocation" x="-236" y="30"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="bg_status_label_red" width="55" height="15"/>
         <image name="icon_enter" width="60" height="60"/>
         <image name="pic_state_blue" width="6" height="70"/>
     </resources>

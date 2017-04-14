@@ -31,6 +31,10 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.totalMoneyLabel.textColor  = self.totalBishuLabel.textColor  = self.shouldJiesuanLabel.textColor = MacoDetailColor;
+    self.totalMoney.textColor = self.titalBIshu.textColor = self.shouldJiesuan.textColor =self.time_label.textColor =MacoTitleColor;
+    self.gouJiesuanLabel.textColor = MacoColor;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -50,14 +54,18 @@
     switch ([_dataModel.state integerValue]) {
         case 0:
         {
-            self.status_label.text = @"未完成";
+            [self.status_Btn setTitle:@"未完成" forState:UIControlStateNormal];
+            [self.status_Btn setBackgroundImage:[UIImage imageNamed:@"bg_status_label_blue"] forState:UIControlStateNormal];
             self.mark_imageView.hidden = NO;
+            self.mark_imageView.image = [UIImage imageNamed:@"pic_statements_blue"];
             self.successMarkImageView.hidden = YES;
         }
             break;
         case 1:
         {
-            self.status_label.text = @"已完成";
+            [self.status_Btn setTitle:@"已完成" forState:UIControlStateNormal];
+            [self.status_Btn setBackgroundImage:[UIImage imageNamed:@"bg_status_label_red"] forState:UIControlStateNormal];
+            self.successMarkImageView.image = [UIImage imageNamed:@"pic_statements_red"];
             self.mark_imageView.hidden = YES;
             self.successMarkImageView.hidden = NO;
             self.goJiesuanHeight.constant = 0;
@@ -66,8 +74,10 @@
             break;
         case 2:
         {
-            self.status_label.text = @"结算失败";
+            [self.status_Btn setTitle:@"结算失败" forState:UIControlStateNormal];
+            [self.status_Btn setBackgroundImage:[UIImage imageNamed:@"bg_status_label_green"] forState:UIControlStateNormal];
             self.mark_imageView.hidden = NO;
+            self.mark_imageView.image = [UIImage imageNamed:@"pic_statements_green"];
             self.successMarkImageView.hidden = YES;
         }
             break;

@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="统计" image="tab_fund_details_nor" selectedImage="tab_fund_details_sel" id="qrX-Wv-m1i"/>
+                    <tabBarItem key="tabBarItem" title="统计" image="tab_business_statistics_nor" selectedImage="tab_business_statistics_sel" id="qrX-Wv-m1i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnX-2I-MwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,12 +72,30 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNN-a9-z9j">
+                                                <rect key="frame" x="331" y="0.0" width="44" height="44"/>
+                                                <state key="normal" image="icon_collection_qrcode"/>
+                                                <connections>
+                                                    <action selector="qrCode:" destination="i4s-sE-TVr" eventType="touchUpInside" id="5B4-TO-HpQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-wJ-JXZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <state key="normal" image="icon_log_off"/>
+                                                <connections>
+                                                    <action selector="logOut:" destination="i4s-sE-TVr" eventType="touchUpInside" id="Hqn-UJ-JcS"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="5BN-Y9-rNK"/>
+                                            <constraint firstItem="Kcc-wJ-JXZ" firstAttribute="centerY" secondItem="YGa-52-t6V" secondAttribute="centerY" id="5M1-ad-MwA"/>
                                             <constraint firstItem="XqH-1V-XYY" firstAttribute="centerX" secondItem="YGa-52-t6V" secondAttribute="centerX" id="ATH-Y8-00i"/>
+                                            <constraint firstItem="eNN-a9-z9j" firstAttribute="centerY" secondItem="YGa-52-t6V" secondAttribute="centerY" id="BZM-CM-If3"/>
                                             <constraint firstItem="XqH-1V-XYY" firstAttribute="centerY" secondItem="YGa-52-t6V" secondAttribute="centerY" id="FmO-WF-53j"/>
+                                            <constraint firstAttribute="trailing" secondItem="eNN-a9-z9j" secondAttribute="trailing" id="P9u-Pv-e2H"/>
+                                            <constraint firstItem="Kcc-wJ-JXZ" firstAttribute="leading" secondItem="YGa-52-t6V" secondAttribute="leading" id="RQm-ri-Ub8"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSx-dZ-K6H">
@@ -281,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jes-Ee-j3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="-1249"/>
+            <point key="canvasLocation" x="708" y="-1296"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mf0-Sr-opN">
@@ -306,12 +324,16 @@
     <resources>
         <image name="bg2_business_statistics" width="187" height="106"/>
         <image name="bg3_business_statistics" width="187" height="106"/>
+        <image name="icon_collection_qrcode" width="44" height="44"/>
         <image name="icon_enter" width="60" height="60"/>
         <image name="icon_input_order" width="44" height="44"/>
+        <image name="icon_log_off" width="44" height="44"/>
         <image name="icon_order_management" width="44" height="44"/>
         <image name="icon_settlement_management" width="44" height="44"/>
         <image name="mine_withdraw_bg1" width="375" height="260"/>
         <image name="mine_witthdraw_bg2" width="369" height="73"/>
+        <image name="tab_business_statistics_nor" width="49" height="49"/>
+        <image name="tab_business_statistics_sel" width="49" height="49"/>
         <image name="tab_fund_details_nor" width="49" height="49"/>
         <image name="tab_fund_details_sel" width="49" height="49"/>
     </resources>

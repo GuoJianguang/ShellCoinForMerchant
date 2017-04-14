@@ -27,4 +27,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *orderMaLabel;
 @property (weak, nonatomic) IBOutlet UILabel *jiesuandanMaLabel;
 
+
+- (IBAction)qrCode:(UIButton *)sender;
+- (IBAction)logOut:(UIButton *)sender;
+
+
+
 @end

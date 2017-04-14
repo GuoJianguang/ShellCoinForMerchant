@@ -11,6 +11,7 @@
 #import "StateMentsMViewController.h"
 #import "OrderEntryViewController.h"
 #import "OrderManamentViewController.h"
+#import "MyQRCodeViewController.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -162,4 +163,63 @@
     OrderEntryViewController *orderENtryVC = [[OrderEntryViewController alloc]init];
     [self.navigationController pushViewController:orderENtryVC animated:YES];
 }
+
+#pragma mark - 二维码和退出登录
+
+- (IBAction)qrCode:(UIButton *)sender {
+    MyQRCodeViewController *myQRVC = [[MyQRCodeViewController alloc]init];
+    [self.navigationController pushViewController:myQRVC animated:YES];
+    
+}
+
+- (IBAction)logOut:(UIButton *)sender {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"您确定要退出登录吗？" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    NSArray *titles = @[@"退出"];
+    [self addActionTarget:alert titles:titles];
+    [self addCancelActionTarget:alert title:@"取消"];
+    // 会更改UIAlertController中所有字体的内容（此方法有个缺点，会修改所以字体的样式）
+    UILabel *appearanceLabel = [UILabel appearanceWhenContainedIn:UIAlertController.class, nil];
+    UIFont *font = [UIFont systemFontOfSize:15];
+    [appearanceLabel setFont:font];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+
+#pragma mark - 退出登录的方法
+
+// 添加其他按钮
+- (void)addActionTarget:(UIAlertController *)alertController titles:(NSArray *)titles
+{
+    for (NSString *title in titles) {
+        UIAlertAction *action = [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [HttpClient POST:@"user/logout" parameters:@{@"token":[ShellCoinUserInfo shareUserInfos].token} success:^(NSURLSessionDataTask *operation, id jsonObject) {
+                
+            } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+            }];
+            [ShellCoinUserInfo shareUserInfos].currentLogined = NO;
+            [[NSUserDefaults standardUserDefaults]removeObjectForKey:LoginUserPassword];
+            [[NSUserDefaults standardUserDefaults]removeObjectForKey:IsFirstLaunch];
+            //统计新增用户
+            [MobClick profileSignOff];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            //            [[NSNotificationCenter defaultCenter]postNotificationName:LogOutNSNotification object:nil userInfo:nil];
+            [self presentViewController:[[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"] animated:YES completion:^{
+            }] ;
+
+        }];
+        [action setValue:MacoColor forKey:@"_titleTextColor"];
+        [alertController addAction:action];
+    }
+}
+
+// 取消按钮
+- (void)addCancelActionTarget:(UIAlertController *)alertController title:(NSString *)title
+{
+    UIAlertAction *action = [UIAlertAction actionWithTitle:title style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        
+    }];
+    [action setValue:MacoTitleColor forKey:@"_titleTextColor"];
+    [alertController addAction:action];
+}
+
 @end

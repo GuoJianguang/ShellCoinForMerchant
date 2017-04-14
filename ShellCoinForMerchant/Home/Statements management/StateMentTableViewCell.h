@@ -68,5 +68,6 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *goJiesuanHeight;
 
+@property (weak, nonatomic) IBOutlet UIButton *status_Btn;
 
 @end

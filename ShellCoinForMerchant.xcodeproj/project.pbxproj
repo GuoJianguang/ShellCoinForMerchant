@@ -99,6 +99,9 @@
 		BC3FB6BD1E976DDD00C06A95 /* StateMentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FB6BB1E976DDD00C06A95 /* StateMentTableViewCell.xib */; };
 		BC6553591E9F1A9600DEC34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6553571E9F1A9600DEC34D /* Main.storyboard */; };
 		BC65535B1E9F1CA800DEC34D /* TabBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC65535A1E9F1CA800DEC34D /* TabBar.xcassets */; };
+		BCAAD57F1EA0702700AD11E6 /* MyQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAAD57D1EA0702700AD11E6 /* MyQRCodeViewController.m */; };
+		BCAAD5801EA0702700AD11E6 /* MyQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCAAD57E1EA0702700AD11E6 /* MyQRCodeViewController.xib */; };
+		BCAAD5821EA0C04100AD11E6 /* StatementsManagement.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAAD5811EA0C04100AD11E6 /* StatementsManagement.xcassets */; };
 		BCAC5D1F1E8268B4003CACF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D1E1E8268B4003CACF8 /* main.m */; };
 		BCAC5D221E8268B4003CACF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D211E8268B4003CACF8 /* AppDelegate.m */; };
 		BCAC5D2B1E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCAC5D291E8268B4003CACF8 /* ShellCoinForMerchant.xcdatamodeld */; };
@@ -284,6 +287,10 @@
 		BC6553581E9F1A9600DEC34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC65535A1E9F1CA800DEC34D /* TabBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBar.xcassets; sourceTree = "<group>"; };
 		BC8171FE1E9CD855004B97AB /* ShellCoinForMerchant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShellCoinForMerchant.entitlements; sourceTree = "<group>"; };
+		BCAAD57C1EA0702700AD11E6 /* MyQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQRCodeViewController.h; sourceTree = "<group>"; };
+		BCAAD57D1EA0702700AD11E6 /* MyQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQRCodeViewController.m; sourceTree = "<group>"; };
+		BCAAD57E1EA0702700AD11E6 /* MyQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyQRCodeViewController.xib; sourceTree = "<group>"; };
+		BCAAD5811EA0C04100AD11E6 /* StatementsManagement.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StatementsManagement.xcassets; sourceTree = "<group>"; };
 		BCAC5D1A1E8268B4003CACF8 /* ShellCoinForMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellCoinForMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAC5D1E1E8268B4003CACF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCAC5D201E8268B4003CACF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -496,6 +503,9 @@
 			children = (
 				BC085D431E83718200572E8A /* HomeViewController.h */,
 				BC085D441E83718200572E8A /* HomeViewController.m */,
+				BCAAD57C1EA0702700AD11E6 /* MyQRCodeViewController.h */,
+				BCAAD57D1EA0702700AD11E6 /* MyQRCodeViewController.m */,
+				BCAAD57E1EA0702700AD11E6 /* MyQRCodeViewController.xib */,
 				BC3FB6A61E9763A100C06A95 /* BillDataModel.h */,
 				BC3FB6A71E9763A100C06A95 /* BillDataModel.m */,
 				BC3FB69C1E975E5100C06A95 /* Home.xcassets */,
@@ -631,6 +641,7 @@
 				BC2537EB1E9B564F007232B3 /* SettlementPayWayView.h */,
 				BC2537EC1E9B564F007232B3 /* SettlementPayWayView.m */,
 				BC2537EE1E9B5658007232B3 /* SettlementPayWayView.xib */,
+				BCAAD5811EA0C04100AD11E6 /* StatementsManagement.xcassets */,
 			);
 			path = "Statements management";
 			sourceTree = "<group>";
@@ -847,7 +858,9 @@
 				BC25383C1E9B76B5007232B3 /* ForgetPasswordOneViewController.xib in Resources */,
 				BC25383F1E9B76B5007232B3 /* Login.storyboard in Resources */,
 				BC2538081E9B6B6E007232B3 /* Bill12View.xib in Resources */,
+				BCAAD5801EA0702700AD11E6 /* MyQRCodeViewController.xib in Resources */,
 				BC3FB69D1E975E5100C06A95 /* Home.xcassets in Resources */,
+				BCAAD5821EA0C04100AD11E6 /* StatementsManagement.xcassets in Resources */,
 				BC3FB6BD1E976DDD00C06A95 /* StateMentTableViewCell.xib in Resources */,
 				BC085D271E836B3F00572E8A /* CodeScan.bundle in Resources */,
 				BC2537EF1E9B5658007232B3 /* SettlementPayWayView.xib in Resources */,
@@ -966,6 +979,7 @@
 				BC085D341E836B3F00572E8A /* ZXingWrapper.m in Sources */,
 				BC085CB81E83645800572E8A /* BaseModel.m in Sources */,
 				BC085D2C1E836B3F00572E8A /* LBXScanNative.m in Sources */,
+				BCAAD57F1EA0702700AD11E6 /* MyQRCodeViewController.m in Sources */,
 				BCAC5D221E8268B4003CACF8 /* AppDelegate.m in Sources */,
 				BC085D291E836B3F00572E8A /* UIAlertView+LBXAlertAction.m in Sources */,
 				BC085CE11E83647C00572E8A /* HttpClient.m in Sources */,
