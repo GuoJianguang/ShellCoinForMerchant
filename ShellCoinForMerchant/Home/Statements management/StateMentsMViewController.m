@@ -106,7 +106,7 @@
 {
     StateMentDataModel *model = self.dataSouceArray[indexPath.row];
     if ([model.state isEqualToString:@"1"]) {
-        return TWitdh *(310/750.) - 38;
+        return TWitdh *(350/750.) - 38;
     }
     return TWitdh *(310/750.);
 }

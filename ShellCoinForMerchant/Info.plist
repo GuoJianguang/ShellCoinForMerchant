@@ -86,8 +86,6 @@
 	<string>需要您的同意才能获取多媒体资料</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>是否允许此App使用语音识别？</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

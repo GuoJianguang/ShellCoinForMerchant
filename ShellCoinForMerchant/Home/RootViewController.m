@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "OrderManamentViewController.h"
 
 static NSString *infomation  = @"infomation";//消息列表
 static NSString *settle  = @"settle";//结算统计
@@ -43,7 +44,7 @@ static NSString *hasComplete  = @"hasComplete";//已完成
     if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
         self.turnType = NullToSpace(notifiInfo[@"page"]);
         NSString *alerInfo = NullToSpace(notifiInfo[@"aps"][@"alert"]);
-        if (![self.turnType isEqualToString:infomation] &&![self.turnType isEqualToString:settle]&&![self.turnType isEqualToString:withdraw]&&![self.turnType isEqualToString:account]&&![self.turnType isEqualToString:mchWaitDeliver]&&![self.turnType isEqualToString:hasComplete]) {
+        if (![self.turnType isEqualToString:hasComplete]) {
             UIAlertView *showView = [[UIAlertView alloc]initWithTitle:@"提醒" message:alerInfo delegate:self cancelButtonTitle:@"知道了" otherButtonTitles: nil];
             [showView show];
             showView.tag = 20;
@@ -62,7 +63,7 @@ static NSString *hasComplete  = @"hasComplete";//已完成
     if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
         self.turnType = NullToSpace(faication.userInfo[@"page"]);
         NSString *alerInfo = NullToSpace(faication.userInfo[@"aps"][@"alert"]);
-        if (![self.turnType isEqualToString:infomation] &&![self.turnType isEqualToString:settle]&&![self.turnType isEqualToString:withdraw]&&![self.turnType isEqualToString:account]&&![self.turnType isEqualToString:hasComplete]&&![self.turnType isEqualToString:mchWaitDeliver]) {
+        if (![self.turnType isEqualToString:hasComplete]) {
             UIAlertView *showView = [[UIAlertView alloc]initWithTitle:@"提醒" message:alerInfo delegate:self cancelButtonTitle:@"知道了" otherButtonTitles: nil];
             showView.tag = 20;
             
@@ -93,14 +94,14 @@ static NSString *hasComplete  = @"hasComplete";//已完成
         }else if([self.turnType isEqualToString:settle]){//结算统计
 
         }else if([self.turnType isEqualToString:hasComplete]){//商城订单已完成
-//            if ([self.topViewController isKindOfClass:[MallOrderViewController class]]) {
-//                [[NSNotificationCenter defaultCenter]postNotificationName:@"notificationyetComplet" object:nil userInfo:nil];
+            if ([self.topViewController isKindOfClass:[OrderManamentViewController class]]) {
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"notificationyetComplet" object:nil userInfo:nil];
             
                 return;
-//            }
-//            MallOrderViewController *mallVC = [[MallOrderViewController alloc]init];
+            }
+            OrderManamentViewController *mallVC = [[OrderManamentViewController alloc]init];
 //            mallVC.orderType = MallOrderRequetst_yetComplete;
-//            [self pushViewController:mallVC animated:YES];
+            [self pushViewController:mallVC animated:YES];
         }
         return;
     }else if(alertView.tag == 20){

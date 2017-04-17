@@ -26,7 +26,17 @@
     self.naviBar.hidden = YES;
     self.swipeView.dataSource = self;
     self.swipeView.delegate = self;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationyetComplet) name:@"notificationyetComplet" object:nil];
+
 }
+
+
+- (void)notificationyetComplet
+{
+    [self.waitSureOrderView reload];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -124,6 +134,7 @@
 
 
 - (IBAction)backBtn:(UIButton *)sender {
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"notificationyetComplet" object:nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

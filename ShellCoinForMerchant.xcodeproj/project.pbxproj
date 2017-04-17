@@ -1154,8 +1154,10 @@
 			baseConfigurationReference = EA34E77D7DC13C24BABC33D8 /* Pods-ShellCoinForMerchant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ShellCoinForMerchant/ShellCoinForMerchant.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: xu han (9L2S5LBXA3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu han (9L2S5LBXA3)";
 				DEVELOPMENT_TEAM = 4KU9646Y2X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1174,8 +1176,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "44c28543-ac6f-4a60-a1fb-294f0b0912d6";
-				PROVISIONING_PROFILE_SPECIFIER = shellCoinMerchantDelopment;
+				PROVISIONING_PROFILE = "49d930a0-fe7a-449c-bf23-6e2b1ddb3b61";
+				PROVISIONING_PROFILE_SPECIFIER = shellForMerDelop;
 			};
 			name = Debug;
 		};
@@ -1184,8 +1186,10 @@
 			baseConfigurationReference = 572BBA7B2F43A719AE18FDF0 /* Pods-ShellCoinForMerchant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ShellCoinForMerchant/ShellCoinForMerchant.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: xu han (9L2S5LBXA3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4KU9646Y2X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1204,8 +1208,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "44c28543-ac6f-4a60-a1fb-294f0b0912d6";
-				PROVISIONING_PROFILE_SPECIFIER = shellCoinMerchantDelopment;
+				PROVISIONING_PROFILE = "49d930a0-fe7a-449c-bf23-6e2b1ddb3b61";
+				PROVISIONING_PROFILE_SPECIFIER = shellForMerDelop;
 			};
 			name = Release;
 		};

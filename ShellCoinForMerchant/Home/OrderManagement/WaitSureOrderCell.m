@@ -33,6 +33,7 @@
     self.timeLabel.textColor = MacoDetailColor;
     self.moneyLabel.textColor = MacoColor;
     self.markLabel.textColor = MacoTitleColor;
+    self.statusLabel.textColor = MacoColor;
     self.statusLabel.text = @"确认订单";
 }
 

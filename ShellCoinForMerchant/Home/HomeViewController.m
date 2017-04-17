@@ -28,11 +28,10 @@
     
     self.jiesuandanMaLabel.textColor = self.orderMaLabel.textColor = MacoTitleColor;
     [self.tableView noDataSouce];
-    //自动登录
-    if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
-        [self getRequest];
-    }
     
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self getRequest];
+    }];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(autoLogin) name:AutoLoginAfterGetDeviceToken object:nil];
     
 }
@@ -44,6 +43,13 @@
     [[NSNotificationCenter defaultCenter]removeObserver:self name:AutoLoginAfterGetDeviceToken object:nil];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
+        [self getRequest];
+    }
+}
 
 - (void)autoLogin
 {
@@ -103,10 +109,12 @@
                 [self.dataSouceArray addObject:[WaitSureOrderModel modelWithDic:dic]];
             }
             [self.tableView judgeIsHaveDataSouce:self.dataSouceArray];
+            [self.tableView.mj_header endRefreshing];
             [self.tableView reloadData];
         }
         
     } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+        [self.tableView.mj_header endRefreshing];
         [self.tableView showNoDataSouceNoNetworkConnection];
     }];
 
@@ -130,7 +138,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return TWitdh*(190/750.);
+    return TWitdh*(180/750.);
 }
 
 

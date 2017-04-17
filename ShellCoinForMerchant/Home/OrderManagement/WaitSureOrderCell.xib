@@ -22,20 +22,20 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlm-lF-CZ7">
                         <rect key="frame" x="12" y="10" width="296" height="88.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_state_blue" translatesAutoresizingMaskIntoConstraints="NO" id="yMR-zw-yEM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_state_red" translatesAutoresizingMaskIntoConstraints="NO" id="yMR-zw-yEM">
                                 <rect key="frame" x="0.0" y="10" width="6" height="68.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="6" id="48W-uB-RPb"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抵换成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-rP-XDG">
-                                <rect key="frame" x="51" y="10" width="151" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-rP-XDG">
+                                <rect key="frame" x="51" y="13" width="141" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.01.02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71e-hg-zpL">
-                                <rect key="frame" x="51" y="65" width="57.5" height="13.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71e-hg-zpL">
+                                <rect key="frame" x="51" y="62" width="11" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -46,8 +46,8 @@
                                     <constraint firstAttribute="width" secondItem="MkH-JJ-o7b" secondAttribute="height" multiplier="44/36" id="51o-Oo-bmu"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付成功" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-rS-7Pq">
-                                <rect key="frame" x="207" y="10" width="54" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-rS-7Pq">
+                                <rect key="frame" x="197" y="13" width="54" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53.5" id="6WJ-a7-wcn"/>
                                 </constraints>
@@ -56,20 +56,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQe-1v-hfS">
-                                <rect key="frame" x="159" y="59" width="27.5" height="20.5"/>
+                                <rect key="frame" x="149" y="56" width="27.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_enter" translatesAutoresizingMaskIntoConstraints="NO" id="cRA-uy-Vtz">
-                                <rect key="frame" x="266" y="30" width="30" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_enter1" translatesAutoresizingMaskIntoConstraints="NO" id="cRA-uy-Vtz">
+                                <rect key="frame" x="256" y="25" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cRA-uy-Vtz" secondAttribute="height" multiplier="1:1" id="8lY-Do-lqR"/>
-                                    <constraint firstAttribute="width" constant="30" id="IK8-70-bQd"/>
+                                    <constraint firstAttribute="width" constant="40" id="IK8-70-bQd"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(含购物券--)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmo-a2-cfm">
-                                <rect key="frame" x="186.5" y="62.5" width="74.5" height="16"/>
+                                <rect key="frame" x="176.5" y="59.5" width="74.5" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +79,7 @@
                         <constraints>
                             <constraint firstItem="NLI-rP-XDG" firstAttribute="leading" secondItem="MkH-JJ-o7b" secondAttribute="trailing" constant="8" id="26Q-Hg-uVq"/>
                             <constraint firstItem="F7w-rS-7Pq" firstAttribute="leading" secondItem="NLI-rP-XDG" secondAttribute="trailing" constant="5" id="4bS-Jy-Ank"/>
-                            <constraint firstItem="F7w-rS-7Pq" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="10" id="5nL-wo-mCE"/>
+                            <constraint firstItem="F7w-rS-7Pq" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="13" id="5nL-wo-mCE"/>
                             <constraint firstItem="cRA-uy-Vtz" firstAttribute="leading" secondItem="bmo-a2-cfm" secondAttribute="trailing" constant="5" id="6Oi-8F-3x3"/>
                             <constraint firstAttribute="trailing" secondItem="cRA-uy-Vtz" secondAttribute="trailing" id="8la-uy-4ln"/>
                             <constraint firstItem="cRA-uy-Vtz" firstAttribute="centerY" secondItem="hlm-lF-CZ7" secondAttribute="centerY" id="Iag-4o-Gc8"/>
@@ -90,11 +90,11 @@
                             <constraint firstItem="cRA-uy-Vtz" firstAttribute="leading" secondItem="F7w-rS-7Pq" secondAttribute="trailing" constant="5" id="aBF-6b-akD"/>
                             <constraint firstItem="71e-hg-zpL" firstAttribute="leading" secondItem="MkH-JJ-o7b" secondAttribute="trailing" constant="8" id="dfR-8f-6qC"/>
                             <constraint firstItem="bmo-a2-cfm" firstAttribute="leading" secondItem="FQe-1v-hfS" secondAttribute="trailing" id="g9v-H2-6kt"/>
-                            <constraint firstItem="NLI-rP-XDG" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="10" id="no4-1f-LDT"/>
+                            <constraint firstItem="NLI-rP-XDG" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="13" id="no4-1f-LDT"/>
                             <constraint firstItem="yMR-zw-yEM" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="10" id="qh0-Pw-uWS"/>
                             <constraint firstItem="bmo-a2-cfm" firstAttribute="baseline" secondItem="FQe-1v-hfS" secondAttribute="baseline" id="tg3-MI-jed"/>
-                            <constraint firstAttribute="bottom" secondItem="bmo-a2-cfm" secondAttribute="bottom" constant="10" id="vTf-pi-01Z"/>
-                            <constraint firstAttribute="bottom" secondItem="71e-hg-zpL" secondAttribute="bottom" constant="10" id="x2l-cT-p6r"/>
+                            <constraint firstAttribute="bottom" secondItem="bmo-a2-cfm" secondAttribute="bottom" constant="13" id="vTf-pi-01Z"/>
+                            <constraint firstAttribute="bottom" secondItem="71e-hg-zpL" secondAttribute="bottom" constant="13" id="x2l-cT-p6r"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -120,7 +120,7 @@
     </objects>
     <resources>
         <image name="icon_balance_payment_nor" width="22" height="18"/>
-        <image name="icon_enter" width="60" height="60"/>
-        <image name="pic_state_blue" width="6" height="70"/>
+        <image name="icon_enter1" width="60" height="60"/>
+        <image name="pic_state_red" width="6" height="70"/>
     </resources>
 </document>
