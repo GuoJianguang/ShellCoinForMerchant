@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="DsV-6q-FL0" kind="relationship" relationship="rootViewController" id="nSK-GT-lhy"/>
+                        <segue destination="i4s-sE-TVr" kind="relationship" relationship="rootViewController" id="sup-gA-Hqn"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFk-JZ-giw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-612" y="-260"/>
+            <point key="canvasLocation" x="-502" y="-1297"/>
         </scene>
         <!--统计-->
         <scene sceneID="5x7-8m-rdr">
@@ -165,7 +165,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-Uz-sik">
-                                <rect key="frame" x="0.0" y="518" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0b-0c-jNT">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="100"/>
@@ -264,7 +264,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-pK-QVR">
-                                <rect key="frame" x="0.0" y="275" width="375" height="243"/>
+                                <rect key="frame" x="0.0" y="275" width="375" height="292"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="i4s-sE-TVr" id="OPo-Cz-Ypg"/>
@@ -275,7 +275,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bl2-Uz-sik" firstAttribute="top" secondItem="xmd-pK-QVR" secondAttribute="bottom" id="2Qf-yg-pIe"/>
-                            <constraint firstItem="AzL-Bx-lCx" firstAttribute="top" secondItem="bl2-Uz-sik" secondAttribute="bottom" id="7PR-3U-7dP"/>
                             <constraint firstAttribute="trailing" secondItem="WUz-G0-0z4" secondAttribute="trailing" id="Aaz-zg-89n"/>
                             <constraint firstItem="bl2-Uz-sik" firstAttribute="leading" secondItem="bLV-Jb-ocD" secondAttribute="leading" id="GtQ-wE-tog"/>
                             <constraint firstAttribute="trailing" secondItem="xmd-pK-QVR" secondAttribute="trailing" id="Qhp-Xl-zrN"/>
@@ -283,10 +282,12 @@
                             <constraint firstItem="xmd-pK-QVR" firstAttribute="top" secondItem="WUz-G0-0z4" secondAttribute="bottom" id="aHn-IR-IOJ"/>
                             <constraint firstItem="WUz-G0-0z4" firstAttribute="top" secondItem="bLV-Jb-ocD" secondAttribute="top" id="gaI-fs-9Wz"/>
                             <constraint firstItem="xmd-pK-QVR" firstAttribute="leading" secondItem="bLV-Jb-ocD" secondAttribute="leading" id="ijk-FQ-JSC"/>
+                            <constraint firstItem="AzL-Bx-lCx" firstAttribute="top" secondItem="bl2-Uz-sik" secondAttribute="bottom" id="oxU-v0-yk1"/>
                             <constraint firstItem="WUz-G0-0z4" firstAttribute="leading" secondItem="bLV-Jb-ocD" secondAttribute="leading" id="xo9-Lc-nNY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="营业统计" image="tab_fund_details_nor" selectedImage="tab_fund_details_sel" id="08H-qr-iCM"/>
+                    <navigationItem key="navigationItem" id="oNM-tr-GaE"/>
                     <connections>
                         <outlet property="jiesuandanMaLabel" destination="POa-Ni-pmY" id="yTe-Yh-bbW"/>
                         <outlet property="orderEntryBTn" destination="m31-wM-sQ0" id="fOu-kO-RE6"/>
@@ -312,7 +313,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="i4s-sE-TVr" kind="relationship" relationship="viewControllers" id="OEx-zW-IGZ"/>
                         <segue destination="qkq-sT-N71" kind="relationship" relationship="viewControllers" id="d4F-hj-LlW"/>
                     </connections>
                 </tabBarController>

@@ -59,6 +59,13 @@
             self.mark_imageView.hidden = NO;
             self.mark_imageView.image = [UIImage imageNamed:@"pic_statements_blue"];
             self.successMarkImageView.hidden = YES;
+            
+            
+            self.successMarkImageView.image = [UIImage imageNamed:@"pic_statements_blue"];
+            self.mark_imageView.hidden = YES;
+            self.successMarkImageView.hidden = NO;
+            self.goJiesuanHeight.constant = 0;
+            self.gouJiesuanView.hidden = YES;
         }
             break;
         case 1:
@@ -79,6 +86,13 @@
             self.mark_imageView.hidden = NO;
             self.mark_imageView.image = [UIImage imageNamed:@"pic_statements_green"];
             self.successMarkImageView.hidden = YES;
+            
+            
+            self.successMarkImageView.image = [UIImage imageNamed:@"pic_statements_green"];
+            self.mark_imageView.hidden = YES;
+            self.successMarkImageView.hidden = NO;
+            self.goJiesuanHeight.constant = 0;
+            self.gouJiesuanView.hidden = YES;
         }
             break;
             

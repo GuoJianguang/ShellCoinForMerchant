@@ -26,7 +26,7 @@
     // Do any additional setup after loading the view.
     self.naviBar.hidden = YES;
     
-
+    self.jiesuandanMaLabel.textColor = self.orderMaLabel.textColor = MacoTitleColor;
     [self.tableView noDataSouce];
     //自动登录
     if ([ShellCoinUserInfo shareUserInfos].currentLogined) {

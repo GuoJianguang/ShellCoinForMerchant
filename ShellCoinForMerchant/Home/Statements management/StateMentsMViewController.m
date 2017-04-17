@@ -117,6 +117,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    return;
     StateMentDataModel *model = self.dataSouceArray[indexPath.row];
     if ([model.state isEqualToString:@"1"]) {
         return;
