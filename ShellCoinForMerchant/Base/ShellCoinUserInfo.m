@@ -24,42 +24,7 @@ static ShellCoinUserInfo *instance;
 
 - (void)setUserinfoWithdic:(NSDictionary *)dic
 {
-    //    instance.token = NullToSpace(dic[@"token"]);
-    //    instance.userId = NullToSpace(dic[@"id"]);
-    //    instance.shellsAmount = NullToNumber(dic[@"shellsAmount"]);
-    //    instance.nickName = NullToSpace(dic[@"nickName"]);
-    //    instance.vipLevel = NullToNumber(dic[@"vipLevel"]);
-    //    instance.password = NullToSpace(dic[@"password"]);
-    instance.payPassword = NullToSpace(dic[@"payPassword"]);
-    //    instance.recommendAmount = NullToSpace(dic[@"recommendAmount"]);
-    //
-    //    if ([NullToNumber(dic[@"idVerifyReqFlag"]) isEqualToString:@"1"]) {
-    //        instance.idVerifyReqFlag = YES;
-    //    }else{
-    //        instance.idVerifyReqFlag = NO;
-    //    }
-    //    if ([NullToNumber(dic[@"bindingFlag"]) isEqualToString:@"1"]) {
-    //        instance.bindingFlag = YES;
-    //    }else{
-    //        instance.bindingFlag = NO;
-    //    }
-    //    instance.totalAccumulateAmount  = NullToNumber(dic[@"totalAccumulateAmount "]);
-    //    /*
-    //     userRebateVo
-    //    */
-    //    instance.rebateShellsAmount = NullToNumber(dic[@"rebateShellsAmount"]);
-    //    instance.totalRate = NullToNumber(dic[@"totalRate"]);
-    //    instance.baseRate = NullToNumber(dic[@"baseRate"]);
-    //    instance.plusRate = NullToNumber(dic[@"plusRate"]);
-    //    if ([dic[@"userRebateVo"] isKindOfClass:[NSDictionary class]]) {
-    //        NSDictionary *unreadMsgCountVo = dic[@"userRebateVo"];
-    //        instance.rebateShellsAmount = NullToNumber(unreadMsgCountVo[@"rebateShellsAmount"]);
-    //        instance.totalRate = NullToNumber(unreadMsgCountVo[@"totalRate"]);
-    //        instance.baseRate = NullToNumber(unreadMsgCountVo[@"baseRate"]);
-    //        instance.plusRate = NullToNumber(unreadMsgCountVo[@"plusRate"]);
-    //    }
-    //
-    
+
     
 #pragma mark - 老数据
     instance.avatar = NullToSpace(dic[@"avatar"]);

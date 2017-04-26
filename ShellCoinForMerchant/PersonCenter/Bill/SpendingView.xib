@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SpendingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vp2-Aa-VIx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vp2-Aa-VIx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="80H-12-nEk"/>
+                <constraint firstAttribute="bottom" secondItem="vp2-Aa-VIx" secondAttribute="bottom" id="JVE-qb-x21"/>
+                <constraint firstItem="vp2-Aa-VIx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dCY-OX-NSR"/>
+                <constraint firstAttribute="trailing" secondItem="vp2-Aa-VIx" secondAttribute="trailing" id="eps-cR-ygA"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="vp2-Aa-VIx" id="RaG-KP-tq1"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="33"/>
+        </view>
+    </objects>
+</document>

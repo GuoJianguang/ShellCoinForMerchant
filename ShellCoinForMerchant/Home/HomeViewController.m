@@ -34,6 +34,18 @@
     }];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(autoLogin) name:AutoLoginAfterGetDeviceToken object:nil];
     
+    UIColor *itemSelectTintColor = MacoColor;
+    //    [[UITabBarItem appearance] setTitleTextAttributes:
+    //     [NSDictionary dictionaryWithObjectsAndKeys:
+    //      itemSelectTintColor,
+    //      NSForegroundColorAttributeName,
+    //      [UIFont boldSystemFontOfSize:15],
+    //      NSFontAttributeName
+    //      ,nil] forState:UIControlStateSelected];
+    self.tabBarController.tabBar.tintColor = itemSelectTintColor;
+    [[UITabBar appearance] setShadowImage:[[UIImage alloc]init]];
+    [[UITabBar appearance] setShadowImage:[UIImage imageWithColor:itemSelectTintColor frame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)]];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated

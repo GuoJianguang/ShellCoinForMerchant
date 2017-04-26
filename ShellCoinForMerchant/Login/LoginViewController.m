@@ -89,24 +89,24 @@
                 [[NSUserDefaults standardUserDefaults]synchronize];
                 
                 
-//                [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
-//                [[NSUserDefaults standardUserDefaults]synchronize];
-//                [UIApplication sharedApplication].keyWindow.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
-//                [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
-//                [[NSUserDefaults standardUserDefaults]synchronize];
-//                [self presentViewController:[UIApplication sharedApplication].keyWindow.rootViewController animated:YES completion:NULL];
-//                
+                [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
+                [[NSUserDefaults standardUserDefaults]synchronize];
+                [UIApplication sharedApplication].keyWindow.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
+                [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
+                [[NSUserDefaults standardUserDefaults]synchronize];
+                [self presentViewController:[UIApplication sharedApplication].keyWindow.rootViewController animated:YES completion:NULL];
+//
 //                return ;
-                if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
-                    [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
-                    [[NSUserDefaults standardUserDefaults]synchronize];
-                    [UIApplication sharedApplication].keyWindow.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
-                    [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
-                    [[NSUserDefaults standardUserDefaults]synchronize];
-                    [self presentViewController:[UIApplication sharedApplication].keyWindow.rootViewController animated:YES completion:NULL];
-                }else{
-                    [self dismissViewControllerAnimated:YES completion:NULL];
-                }
+//                if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
+//                    [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
+//                    [[NSUserDefaults standardUserDefaults]synchronize];
+//                    [UIApplication sharedApplication].keyWindow.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
+//                    [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
+//                    [[NSUserDefaults standardUserDefaults]synchronize];
+//                    [self presentViewController:[UIApplication sharedApplication].keyWindow.rootViewController animated:YES completion:NULL];
+//                }else{
+//                    [self dismissViewControllerAnimated:YES completion:NULL];
+//                }
             }
             
         } failure:^(NSURLSessionDataTask *operation, NSError *error) {

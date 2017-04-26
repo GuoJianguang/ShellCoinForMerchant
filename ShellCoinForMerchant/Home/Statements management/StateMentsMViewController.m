@@ -34,6 +34,12 @@
     [self.tableView noDataSouce];
     
     [self.tableView.mj_header beginRefreshing];
+    
+    self.alerLabel1.textColor = MacoColor;
+    self.alerLabel2.textColor = MacoDetailColor;
+    self.alerLabel1.text = @"手动打款说明";
+    self.alerLabel2.text = @"对公账户：中国民生银行 成都领创有你科技有限公司\n开户行：成都神仙树支行  6232 5820 0035 4518\n\n对私账户：中国民生银行 6226 1920 0526 3926 韩旭\n开户行：成都神仙树支行";
+    
 }
 - (NSMutableArray *)dataSouceArray
 {

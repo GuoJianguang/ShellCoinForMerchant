@@ -41,9 +41,9 @@
 #define GBKEncoding CFStringConvertEncodingToNSStringEncoding(0x0632)
 
 //#define formal_html_base @"https://test.p.tiantianxcn.com/ttx-api/"
-#define formal_html_base @"https://api.tiantianxcn.com/ttx-api/"
-#define formal_base @"https://test.p.tiantianxcn.com/lyu-api/1.0.0/"
-//#define formal_base @"https://api.letopop.com/lyu-api/1.0.0/"
+//#define formal_html_base @"https://api.tiantianxcn.com/ttx-api/"
+//#define formal_base @"https://test.p.tiantianxcn.com/lyu-api/1.0.1/"
+#define formal_base @"https://api.letopop.com/lyu-api/1.0.1/"
 ////正式
 #define HttpClient_BaseUrl formal_base
 
