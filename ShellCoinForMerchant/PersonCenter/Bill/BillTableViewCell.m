@@ -52,14 +52,14 @@
 //        {
 //            self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
 //            self.moneyLabel.textColor = self.markLabel.textColor = MacoColor;
-//            markStr = @"抵换成功";
+//            markStr = @"提现成功";
 //        }
 //            break;
 //        case 4:
 //        {
 //            self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
 //            self.moneyLabel.textColor = self.markLabel.textColor =  [UIColor colorFromHexString:@"#45de8e"];
-//            markStr = @"抵换失败";
+//            markStr = @"提现失败";
 //        }
 //            break;
 //        default:

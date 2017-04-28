@@ -124,7 +124,7 @@
  */
 @property (nonatomic, copy)NSString *messageCount;
 /**
- * 我的抵换
+ * 我的提现
  */
 @property (nonatomic, copy)NSString *withdrawCount;
 /**

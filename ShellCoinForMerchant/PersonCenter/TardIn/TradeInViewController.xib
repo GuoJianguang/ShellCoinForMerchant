@@ -67,7 +67,7 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I4-wu-18t">
                     <rect key="frame" x="89" y="573" width="198" height="59"/>
-                    <state key="normal" title="确认抵换" backgroundImage="btn_nor">
+                    <state key="normal" title="确认提现" backgroundImage="btn_nor">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>

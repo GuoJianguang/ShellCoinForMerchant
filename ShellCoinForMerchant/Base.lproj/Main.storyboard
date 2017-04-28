@@ -101,7 +101,7 @@
                                                     <action selector="qrCode:" destination="i4s-sE-TVr" eventType="touchUpInside" id="5B4-TO-HpQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-wJ-JXZ">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-wJ-JXZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                 <state key="normal" image="icon_log_off"/>
                                                 <connections>

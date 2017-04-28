@@ -10,15 +10,15 @@
 
 @interface TixianModel : BaseModel
 /**
- * 抵换单号
+ * 提现单号
  */
 @property (nonatomic,copy)NSString *userPhone;
 /**
- * 抵换金额
+ * 提现金额
  */
 @property (nonatomic,copy)NSString *tranTime;
 /**
- * 抵换时间
+ * 提现时间
  */
 @property (nonatomic,copy)NSString *amount;
 

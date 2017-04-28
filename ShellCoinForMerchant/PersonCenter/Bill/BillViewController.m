@@ -24,10 +24,16 @@
     self.naviBar.hidden = YES;
     self.sortView.titleArray = @[@"收入",@"支出"];
 
-    
     if (self.billtype == BillType_spending) {
-        [self.swipeView scrollToPage:1 duration:0];
+        [self.swipeView scrollToPage:1 duration:0.1];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+  
 }
 
 - (SpendingView *)spendingView

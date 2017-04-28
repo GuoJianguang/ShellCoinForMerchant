@@ -88,11 +88,11 @@
 }
 
 
-#pragma mark - 抵换的接口请求
+#pragma mark - 提现的接口请求
 
 - (void)getWithDrawRequest:(UIButton *)sender
 {
-    //抵换的接口请求
+    //提现的接口请求
     NSString *password = [[NSString stringWithFormat:@"%@%@",self.passwordTF.text,PasswordKey]md5_32];
     [self.mallOrderParms setObject:password forKey:@"password"];
     [SVProgressHUD showWithStatus:@"正在提交申请"];

@@ -87,16 +87,16 @@
 - (BOOL)balueValideted
 {
     if ([self emptyTextOfTextField:self.moneyTF]) {
-        [[JAlertViewHelper shareAlterHelper]showTint:@"请输入抵换金额" duration:1.];
+        [[JAlertViewHelper shareAlterHelper]showTint:@"请输入提现金额" duration:1.];
         return NO;
     }else if ([self.canWithDrawMoney.text doubleValue] < [self.moneyTF.text doubleValue]) {
-        [[JAlertViewHelper shareAlterHelper]showTint:@"您的可抵换余额不足，请重新输入" duration:1.5];
+        [[JAlertViewHelper shareAlterHelper]showTint:@"您的可提现余额不足，请重新输入" duration:1.5];
         return NO;
     }else if ([self.moneyTF.text integerValue]%10 !=0){
-        [[JAlertViewHelper shareAlterHelper]showTint:@"您的抵换金额必须是10的整数倍" duration:1.5];
+        [[JAlertViewHelper shareAlterHelper]showTint:@"您的提现金额必须是10的整数倍" duration:1.5];
         return NO;
     }else if ([self.moneyTF.text integerValue] <1000){
-        [[JAlertViewHelper shareAlterHelper]showTint:@"您的抵换金额不能小于1000" duration:1.5];
+        [[JAlertViewHelper shareAlterHelper]showTint:@"您的提现金额不能小于1000" duration:1.5];
         return NO;
     }
     return YES;

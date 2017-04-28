@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShellCoinForMerchant/AppDelegate.m"
-            timestampString = "514879800.417257"
+            timestampString = "515060125.791562"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShellCoinForMerchant/AppDelegate.m"
-            timestampString = "514879800.417257"
+            timestampString = "515060125.791562"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "-application:didReceiveRemoteNotification:"
             landmarkType = "7">
          </BreakpointContent>
@@ -132,12 +132,12 @@
                   moduleName = "ShellCoinForMerchant"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guo/Desktop/ShellCoinForMerchant/ShellCoinForMerchant/PersonCenter/Message/MessageListViewController.m"
-                  timestampString = "515055111.933973"
+                  timestampString = "515059047.152394"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "114"
                   endingLineNumber = "114"
-                  offsetFromSymbolStart = "470">
+                  offsetFromSymbolStart = "512">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -147,12 +147,12 @@
                   moduleName = "ShellCoinForMerchant"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guo/Desktop/ShellCoinForMerchant/ShellCoinForMerchant/PersonCenter/Message/MessageListViewController.m"
-                  timestampString = "515055111.93577"
+                  timestampString = "515059047.153858"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "115"
                   endingLineNumber = "115"
-                  offsetFromSymbolStart = "79">
+                  offsetFromSymbolStart = "88">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -186,6 +186,22 @@
             startingLineNumber = "119"
             endingLineNumber = "119"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShellCoinForMerchant/PersonCenter/Bill/BillViewController.m"
+            timestampString = "515059104.104356"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-swipeViewCurrentItemIndexDidChange:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
