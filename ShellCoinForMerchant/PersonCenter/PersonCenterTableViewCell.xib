@@ -35,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP2-SO-ZTb">
-                                        <rect key="frame" x="276" y="0.0" width="44" height="44"/>
+                                        <rect key="frame" x="264" y="0.0" width="44" height="44"/>
                                         <state key="normal" image="icon_news"/>
                                         <connections>
                                             <action selector="messageBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xdr-Xo-eno"/>
@@ -48,7 +48,7 @@
                                     <constraint firstItem="h2p-MX-x8x" firstAttribute="centerX" secondItem="xV1-GP-0Z3" secondAttribute="centerX" id="55N-F3-Jch"/>
                                     <constraint firstItem="JP2-SO-ZTb" firstAttribute="centerY" secondItem="xV1-GP-0Z3" secondAttribute="centerY" id="Jvk-tz-cHM"/>
                                     <constraint firstItem="h2p-MX-x8x" firstAttribute="centerY" secondItem="xV1-GP-0Z3" secondAttribute="centerY" id="eCW-YW-34O"/>
-                                    <constraint firstAttribute="trailing" secondItem="JP2-SO-ZTb" secondAttribute="trailing" id="hld-BY-Ynl"/>
+                                    <constraint firstAttribute="trailing" secondItem="JP2-SO-ZTb" secondAttribute="trailing" constant="12" id="hld-BY-Ynl"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMI-iN-SqO">

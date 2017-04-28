@@ -22,9 +22,33 @@
     self.incomeLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
     self.spendingLabel.textColor = [UIColor colorFromHexString:@"#45de8e"];
 
-    self.balance.text = [ShellCoinUserInfo shareUserInfos].aviableBalance;
+    self.balance.text = [NSString stringWithFormat:@"%.2f",[[ShellCoinUserInfo shareUserInfos].aviableBalance doubleValue]];
     
     
+    [self getInfoMation];
+    
+}
+
+
+- (void)getInfoMation
+{
+    NSDictionary *parms = @{@"token":[ShellCoinUserInfo shareUserInfos].token};
+        [HttpClient POST:@"mch/wallet" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+            if (IsRequestTrue) {
+                NSString *balance = NullToNumber(jsonObject[@"data"][@"balance"]);
+                [ShellCoinUserInfo shareUserInfos].aviableBalance = balance;
+                self.balance.text = [NSString stringWithFormat:@"%.2f",[balance doubleValue]];
+                if ([NullToNumber(jsonObject[@"data"][@"messageCount"]) isEqualToString:@"0"]) {
+                     [self.messageBtn setImage:[UIImage imageNamed:@"icon_news"] forState:UIControlStateNormal];
+                }else{
+                    [self.messageBtn setImage:[UIImage imageNamed:@"icon_news_remind"] forState:UIControlStateNormal];
+
+                }
+
+            }
+        } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+            
+        }];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

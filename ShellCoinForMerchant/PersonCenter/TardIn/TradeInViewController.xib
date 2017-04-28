@@ -15,6 +15,7 @@
                 <outlet property="alerLabel" destination="F2m-P3-SwC" id="LJw-P6-dnl"/>
                 <outlet property="canWithDrawLabel" destination="XcW-qy-DGc" id="dCK-Wb-Jap"/>
                 <outlet property="canWithDrawMoney" destination="Mff-f8-xAp" id="f5C-ZY-FJ0"/>
+                <outlet property="inputMoneyViewHeight" destination="dIE-jE-GB5" id="nDA-mB-qxk"/>
                 <outlet property="moneyTF" destination="nw5-OE-RZa" id="8Xj-aP-eU2"/>
                 <outlet property="sureBtn" destination="4I4-wu-18t" id="v35-4Q-XI5"/>
                 <outlet property="view" destination="Pcx-F5-cD3" id="tfK-mB-pVb"/>
@@ -80,10 +81,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvZ-gr-sEZ">
-                    <rect key="frame" x="22" y="235" width="331" height="145"/>
+                    <rect key="frame" x="22" y="235" width="331" height="225"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tradein_bg2" translatesAutoresizingMaskIntoConstraints="NO" id="THM-vR-K6F">
-                            <rect key="frame" x="0.0" y="0.0" width="331" height="145"/>
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="225"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入您需提现的金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2m-P3-SwC">
                             <rect key="frame" x="29" y="32" width="143" height="17"/>
@@ -95,13 +96,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nw5-OE-RZa">
-                            <rect key="frame" x="35" y="67" width="261" height="47"/>
+                            <rect key="frame" x="35" y="67" width="261" height="127"/>
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="47"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkq-Nw-cVd">
-                            <rect key="frame" x="29" y="114" width="273" height="1"/>
+                            <rect key="frame" x="29" y="194" width="273" height="1"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Ef5-9g-du0"/>
@@ -117,10 +118,10 @@
                         <constraint firstItem="THM-vR-K6F" firstAttribute="leading" secondItem="yvZ-gr-sEZ" secondAttribute="leading" id="Nc4-La-vbO"/>
                         <constraint firstAttribute="trailing" secondItem="nw5-OE-RZa" secondAttribute="trailing" constant="35" id="Rl3-o1-lEY"/>
                         <constraint firstAttribute="trailing" secondItem="THM-vR-K6F" secondAttribute="trailing" id="Ztp-0O-ggm"/>
+                        <constraint firstAttribute="height" constant="225" id="dIE-jE-GB5"/>
                         <constraint firstItem="nw5-OE-RZa" firstAttribute="top" secondItem="F2m-P3-SwC" secondAttribute="bottom" constant="18" id="fhn-Wu-gQP"/>
                         <constraint firstAttribute="bottom" secondItem="bkq-Nw-cVd" secondAttribute="bottom" constant="30" id="kKv-b8-o6K"/>
                         <constraint firstAttribute="trailing" secondItem="bkq-Nw-cVd" secondAttribute="trailing" constant="29" id="o4L-gb-cUA"/>
-                        <constraint firstAttribute="width" secondItem="yvZ-gr-sEZ" secondAttribute="height" multiplier="686/300" id="poF-qe-8AF"/>
                         <constraint firstItem="F2m-P3-SwC" firstAttribute="leading" secondItem="yvZ-gr-sEZ" secondAttribute="leading" constant="29" id="tAA-Hb-7Ap"/>
                         <constraint firstItem="F2m-P3-SwC" firstAttribute="top" secondItem="yvZ-gr-sEZ" secondAttribute="top" constant="32" id="wnr-4c-dh9"/>
                     </constraints>
@@ -145,7 +146,7 @@
                 <constraint firstAttribute="trailing" secondItem="H2H-DF-Qra" secondAttribute="trailing" id="qUy-GG-t0t"/>
                 <constraint firstAttribute="trailing" secondItem="yvZ-gr-sEZ" secondAttribute="trailing" constant="22" id="r9Q-Gf-K1T"/>
             </constraints>
-            <point key="canvasLocation" x="624" y="-922"/>
+            <point key="canvasLocation" x="400" y="-882"/>
         </view>
     </objects>
     <resources>

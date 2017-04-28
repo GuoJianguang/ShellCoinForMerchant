@@ -11,6 +11,7 @@
 @interface TradeInViewController : BaseViewController
 
 - (IBAction)backBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *inputMoneyViewHeight;
 
 @property (weak, nonatomic) IBOutlet UILabel *canWithDrawLabel;
 

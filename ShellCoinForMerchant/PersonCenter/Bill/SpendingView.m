@@ -57,8 +57,8 @@
     NSDictionary *prams = @{@"pageNo":@(self.page),
                             @"pageSize":MacoPageSize,
                             @"token":[ShellCoinUserInfo shareUserInfos].token,
-                            @"flag":@"1"};
-    [HttpClient POST:@"mch/order/get" parameters:prams success:^(NSURLSessionDataTask *operation, id jsonObject) {
+                            @"type":@"2"};
+    [HttpClient POST:@"mch/account/inandout" parameters:prams success:^(NSURLSessionDataTask *operation, id jsonObject) {
         if (IsRequestTrue) {
             if (isHeader) {
                 [self.dataSouceArray removeAllObjects];
@@ -69,6 +69,7 @@
             }
             for (NSDictionary *dic in array) {
                 TixianModel *model = [TixianModel modelWithDic:dic];
+                model.billType = 1;
                 [self.dataSouceArray addObject:model];
             }
             [self.tableView judgeIsHaveDataSouce:self.dataSouceArray];

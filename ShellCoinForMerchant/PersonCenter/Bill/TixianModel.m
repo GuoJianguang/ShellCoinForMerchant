@@ -15,10 +15,10 @@
 + (id)modelWithDic:(NSDictionary *)dic
 {
     TixianModel *model = [[TixianModel alloc]init];
-    model.tixianId = NullToSpace(dic[@"id"]);
-    model.withdrawAmout = NullToNumber(dic[@"withdrawAmout"]);
-    model.successTime = NullToSpace(dic[@"successTime"]);
-    model.state = NullToNumber(dic[@"state"]);
+    model.userPhone = NullToSpace(dic[@"userPhone"]);
+    model.tranTime = NullToNumber(dic[@"tranTime"]);
+    model.amount = NullToNumber(dic[@"amount"]);
+    model.outDesc = NullToSpace(dic[@"outDesc"]);
     return model;
 }
 

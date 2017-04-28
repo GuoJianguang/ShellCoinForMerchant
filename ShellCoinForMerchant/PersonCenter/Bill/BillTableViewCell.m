@@ -26,48 +26,68 @@
 {
     _tixianModel = tixianModel;
     NSString *markStr = [NSString string];
-    switch ([_tixianModel.state integerValue]) {
+//    switch ([_tixianModel.state integerValue]) {
+//        case 0:
+//        {
+//            markStr = @"待审核";
+//            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
+//            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+//        }
+//            break;
+//        case 1:
+//        {
+//            markStr = @"待审核";
+//            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
+//            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+//        }
+//            break;
+//        case 2:
+//        {
+//            markStr = @"待审核";
+//            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
+//            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+//        }
+//            break;
+//        case 3:
+//        {
+//            self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
+//            self.moneyLabel.textColor = self.markLabel.textColor = MacoColor;
+//            markStr = @"抵换成功";
+//        }
+//            break;
+//        case 4:
+//        {
+//            self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
+//            self.moneyLabel.textColor = self.markLabel.textColor =  [UIColor colorFromHexString:@"#45de8e"];
+//            markStr = @"抵换失败";
+//        }
+//            break;
+//        default:
+//            break;
+//    }
+    
+    switch (_tixianModel.billType) {
         case 0:
         {
-            markStr = @"待审核";
-            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
-            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+            self.markLabel.text = _tixianModel.userPhone;
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
+            self.moneyLabel.textColor = self.markLabel.textColor = MacoColor;
+            self.moneyLabel.text = [NSString stringWithFormat:@"+¥%@",_tixianModel.amount];
         }
             break;
         case 1:
         {
-            markStr = @"待审核";
-            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
-            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
-        }
-            break;
-        case 2:
-        {
-            markStr = @"待审核";
-            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
-            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
-        }
-            break;
-        case 3:
-        {
-            self.markImageView.image = [UIImage imageNamed:@"pic_state_green"];
-            self.moneyLabel.textColor = self.markLabel.textColor = MacoColor;
-            markStr = @"抵换成功";
-        }
-            break;
-        case 4:
-        {
-            self.markImageView.image = [UIImage imageNamed:@"pic_state_green"];
+            self.markLabel.text = _tixianModel.outDesc;
             self.moneyLabel.textColor = self.markLabel.textColor =  [UIColor colorFromHexString:@"#45de8e"];
-            markStr = @"抵换失败";
+            self.moneyLabel.text = [NSString stringWithFormat:@"-¥%@",_tixianModel.amount];
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_green"];
         }
             break;
+            
         default:
             break;
     }
     
-    self.markLabel.text = markStr;
-    self.timeLabel.text = _tixianModel.successTime;
-    self.moneyLabel.text = [NSString stringWithFormat:@"¥%@",_tixianModel.withdrawAmout];
+    self.timeLabel.text = _tixianModel.tranTime;
 }
 @end

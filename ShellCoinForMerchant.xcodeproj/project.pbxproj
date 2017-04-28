@@ -43,6 +43,10 @@
 		BC085D331E836B3F00572E8A /* LBXZXCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085D0E1E836B3F00572E8A /* LBXZXCapture.m */; };
 		BC085D341E836B3F00572E8A /* ZXingWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085D111E836B3F00572E8A /* ZXingWrapper.m */; };
 		BC085D451E83718200572E8A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085D441E83718200572E8A /* HomeViewController.m */; };
+		BC0EB51B1EB316C600E62522 /* SureTradInView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0EB5191EB316C600E62522 /* SureTradInView.m */; };
+		BC0EB51C1EB316C600E62522 /* SureTradInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0EB51A1EB316C600E62522 /* SureTradInView.xib */; };
+		BC0EB5201EB31C7600E62522 /* WithDrawalResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0EB51E1EB31C7600E62522 /* WithDrawalResultView.m */; };
+		BC0EB5211EB31C7600E62522 /* WithDrawalResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0EB51F1EB31C7600E62522 /* WithDrawalResultView.xib */; };
 		BC2537ED1E9B564F007232B3 /* SettlementPayWayView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2537EC1E9B564F007232B3 /* SettlementPayWayView.m */; };
 		BC2537EF1E9B5658007232B3 /* SettlementPayWayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2537EE1E9B5658007232B3 /* SettlementPayWayView.xib */; };
 		BC2537F41E9B6042007232B3 /* OrderEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2537F21E9B6042007232B3 /* OrderEntryViewController.m */; };
@@ -232,6 +236,12 @@
 		BC085D111E836B3F00572E8A /* ZXingWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXingWrapper.m; sourceTree = "<group>"; };
 		BC085D431E83718200572E8A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		BC085D441E83718200572E8A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		BC0EB5181EB316C600E62522 /* SureTradInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SureTradInView.h; sourceTree = "<group>"; };
+		BC0EB5191EB316C600E62522 /* SureTradInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SureTradInView.m; sourceTree = "<group>"; };
+		BC0EB51A1EB316C600E62522 /* SureTradInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SureTradInView.xib; sourceTree = "<group>"; };
+		BC0EB51D1EB31C7600E62522 /* WithDrawalResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawalResultView.h; sourceTree = "<group>"; };
+		BC0EB51E1EB31C7600E62522 /* WithDrawalResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawalResultView.m; sourceTree = "<group>"; };
+		BC0EB51F1EB31C7600E62522 /* WithDrawalResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithDrawalResultView.xib; sourceTree = "<group>"; };
 		BC2537EB1E9B564F007232B3 /* SettlementPayWayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettlementPayWayView.h; sourceTree = "<group>"; };
 		BC2537EC1E9B564F007232B3 /* SettlementPayWayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettlementPayWayView.m; sourceTree = "<group>"; };
 		BC2537EE1E9B5658007232B3 /* SettlementPayWayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettlementPayWayView.xib; sourceTree = "<group>"; };
@@ -456,9 +466,9 @@
 		BC085CBE1E83647C00572E8A /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				BC085CC11E83647C00572E8A /* HttpClient */,
 				BC085CBF1E83647C00572E8A /* AutoScroller.h */,
 				BC085CC01E83647C00572E8A /* AutoScroller.m */,
-				BC085CC11E83647C00572E8A /* HttpClient */,
 				BC085CCC1E83647C00572E8A /* JAlertViewHelper.h */,
 				BC085CCD1E83647C00572E8A /* JAlertViewHelper.m */,
 				BC085CCE1E83647C00572E8A /* LSPaoMaView.h */,
@@ -745,6 +755,12 @@
 				BC70EF6F1EB080CA00847EAE /* TradeInViewController.h */,
 				BC70EF701EB080CA00847EAE /* TradeInViewController.m */,
 				BC70EF711EB080CA00847EAE /* TradeInViewController.xib */,
+				BC0EB5181EB316C600E62522 /* SureTradInView.h */,
+				BC0EB5191EB316C600E62522 /* SureTradInView.m */,
+				BC0EB51A1EB316C600E62522 /* SureTradInView.xib */,
+				BC0EB51D1EB31C7600E62522 /* WithDrawalResultView.h */,
+				BC0EB51E1EB31C7600E62522 /* WithDrawalResultView.m */,
+				BC0EB51F1EB31C7600E62522 /* WithDrawalResultView.xib */,
 			);
 			path = TardIn;
 			sourceTree = "<group>";
@@ -1010,6 +1026,7 @@
 				BC2538451E9B76B5007232B3 /* RegisterTwoViewController.xib in Resources */,
 				BCAC5D301E8268B4003CACF8 /* LaunchScreen.storyboard in Resources */,
 				BC2538181E9B6C7A007232B3 /* NothingView.xib in Resources */,
+				BC0EB51C1EB316C600E62522 /* SureTradInView.xib in Resources */,
 				BC70EF881EB0855400847EAE /* MessageTableViewCell.xib in Resources */,
 				BC70EF821EB0855400847EAE /* MessageDetailTableViewCell.xib in Resources */,
 				BC2538631E9B7890007232B3 /* UMSocialSDKResources.bundle in Resources */,
@@ -1021,6 +1038,7 @@
 				BC70EF731EB080CA00847EAE /* TradeInViewController.xib in Resources */,
 				BC2538271E9B720D007232B3 /* SureOrderView.xib in Resources */,
 				BC3FB6B81E9769A300C06A95 /* StateMentsMViewController.xib in Resources */,
+				BC0EB5211EB31C7600E62522 /* WithDrawalResultView.xib in Resources */,
 				BC2538221E9B6E02007232B3 /* WaitSureOrderCell.xib in Resources */,
 				BC25383C1E9B76B5007232B3 /* ForgetPasswordOneViewController.xib in Resources */,
 				BC25383F1E9B76B5007232B3 /* Login.storyboard in Resources */,
@@ -1130,6 +1148,7 @@
 				BC085CE51E83647C00572E8A /* LSPaoMaView.m in Sources */,
 				BC085D301E836B3F00572E8A /* LBXScanViewController.m in Sources */,
 				BC085CE31E83647C00572E8A /* HttpClientAlertViewHelper.m in Sources */,
+				BC0EB5201EB31C7600E62522 /* WithDrawalResultView.m in Sources */,
 				BC3FB6B71E9769A300C06A95 /* StateMentsMViewController.m in Sources */,
 				BC085D2A1E836B3F00572E8A /* LBXAlertAction.m in Sources */,
 				BC2538421E9B76B5007232B3 /* RegisterOneViewController.m in Sources */,
@@ -1173,6 +1192,7 @@
 				BC70EF721EB080CA00847EAE /* TradeInViewController.m in Sources */,
 				BC70EFAE1EB08D6200847EAE /* TixianModel.m in Sources */,
 				BC085CE81E83647C00572E8A /* ShellCoinPageControlView.m in Sources */,
+				BC0EB51B1EB316C600E62522 /* SureTradInView.m in Sources */,
 				BC2537FA1E9B686F007232B3 /* OrderManamentViewController.m in Sources */,
 				BC085D321E836B3F00572E8A /* LBXScanWrapper.m in Sources */,
 				BCAC5D1F1E8268B4003CACF8 /* main.m in Sources */,

@@ -12,19 +12,19 @@
 /**
  * 抵换单号
  */
-@property (nonatomic,copy)NSString *tixianId;
+@property (nonatomic,copy)NSString *userPhone;
 /**
  * 抵换金额
  */
-@property (nonatomic,copy)NSString *withdrawAmout;
+@property (nonatomic,copy)NSString *tranTime;
 /**
  * 抵换时间
  */
-@property (nonatomic,copy)NSString *successTime;
-/**
- * 抵换状态 0待审核  1审核通过  2抵换中   3抵换成功  4抵换失败
- */
-@property (nonatomic,copy)NSString *state;
+@property (nonatomic,copy)NSString *amount;
 
+@property (nonatomic,copy)NSString *outDesc;
+
+//0收入，1支出
+@property (nonatomic, assign)NSInteger billType;
 
 @end

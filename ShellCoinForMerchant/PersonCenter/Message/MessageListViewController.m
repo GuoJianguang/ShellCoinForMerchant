@@ -43,7 +43,7 @@
     NSDictionary *parms = @{@"pageNo":@(self.page),
                             @"pageSize":@"20",
                             @"token":[ShellCoinUserInfo shareUserInfos].token};
-    [HttpClient GET:@"user/message/get" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+    [HttpClient GET:@"mch/message/get" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
         if (IsRequestTrue) {
             if (isHeader) {
                 [self.datasouceArray removeAllObjects];
@@ -111,7 +111,7 @@
     NSString *messageid = ((MessafeModel*)self.datasouceArray[indexPath.row]).messageid;
     NSDictionary *dic = @{@"id":messageid,
                           @"token":[ShellCoinUserInfo shareUserInfos].token};
-    [HttpClient POST:@"user/message/update" parameters:dic success:^(NSURLSessionDataTask *operation, id jsonObject) {
+    [HttpClient POST:@"mch/message/getDetail" parameters:dic success:^(NSURLSessionDataTask *operation, id jsonObject) {
         if (IsRequestTrue) {
             [self.tableView.mj_header beginRefreshing];
         }
