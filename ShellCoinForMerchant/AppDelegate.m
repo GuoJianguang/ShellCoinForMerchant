@@ -40,9 +40,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
-    [_window makeKeyAndVisible];
-    return YES;
+//    self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
+//    [_window makeKeyAndVisible];
+//    return YES;
     if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
         self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
     }else{

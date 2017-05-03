@@ -69,7 +69,7 @@
     switch (_tixianModel.billType) {
         case 0:
         {
-            self.markLabel.text = _tixianModel.userPhone;
+            self.markLabel.text = _tixianModel.outDesc;
             self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
             self.moneyLabel.textColor = self.markLabel.textColor = MacoColor;
             self.moneyLabel.text = [NSString stringWithFormat:@"+¥%@",_tixianModel.amount];

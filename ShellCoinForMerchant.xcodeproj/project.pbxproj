@@ -1288,8 +1288,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: xu han (9L2S5LBXA3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu han (9L2S5LBXA3)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 4KU9646Y2X;
@@ -1312,7 +1312,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "49d930a0-fe7a-449c-bf23-6e2b1ddb3b61";
+				PROVISIONING_PROFILE = "4af7b5e3-5656-4ab8-8043-01814a5624be";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1339,8 +1339,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: xu han (9L2S5LBXA3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu han (9L2S5LBXA3)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 4KU9646Y2X;
@@ -1356,7 +1356,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "49d930a0-fe7a-449c-bf23-6e2b1ddb3b61";
+				PROVISIONING_PROFILE = "4af7b5e3-5656-4ab8-8043-01814a5624be";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1370,8 +1370,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ShellCoinForMerchant/ShellCoinForMerchant.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: xu han (9L2S5LBXA3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu han (9L2S5LBXA3)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: xu han (4KU9646Y2X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4KU9646Y2X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1391,8 +1391,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "49d930a0-fe7a-449c-bf23-6e2b1ddb3b61";
-				PROVISIONING_PROFILE_SPECIFIER = shellForMerDelop;
+				PROVISIONING_PROFILE = "02df8cd2-bfff-4756-8e2e-a81089f2bb22";
+				PROVISIONING_PROFILE_SPECIFIER = lanyuForMerDevelop;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1404,9 +1404,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ShellCoinForMerchant/ShellCoinForMerchant.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: xu han (9L2S5LBXA3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu han (9L2S5LBXA3)";
-				DEVELOPMENT_TEAM = 4KU9646Y2X;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: xu han (4KU9646Y2X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMSocial_Sdk_4.4",
@@ -1425,8 +1425,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "49d930a0-fe7a-449c-bf23-6e2b1ddb3b61";
-				PROVISIONING_PROFILE_SPECIFIER = shellForMerDelop;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
