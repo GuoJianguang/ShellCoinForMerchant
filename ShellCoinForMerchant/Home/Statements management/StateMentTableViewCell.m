@@ -18,7 +18,7 @@
     model.totalAmount = NullToNumber(dic[@"totalAmount"]);
     model.totalCount = NullToNumber(dic[@"totalCount"]);
     model.waitSettleAmount = NullToNumber(dic[@"waitSettleAmount"]);
-    model.expectSettleAmount = NullToNumber(dic[@"expectSettleAmount"]);
+    model.expectSettleAmount = NullToNumber(dic[@"settleAmount"]);
     model.orderId = NullToNumber(dic[@"id"]);
     return model;
 }
@@ -34,6 +34,8 @@
     self.totalMoneyLabel.textColor  = self.totalBishuLabel.textColor  = self.shouldJiesuanLabel.textColor = MacoDetailColor;
     self.totalMoney.textColor = self.titalBIshu.textColor = self.shouldJiesuan.textColor =self.time_label.textColor =MacoTitleColor;
     self.gouJiesuanLabel.textColor = MacoColor;
+    
+    self.totalMoney.adjustsFontSizeToFitWidth = self.titalBIshu.adjustsFontSizeToFitWidth = self.shouldJiesuan.adjustsFontSizeToFitWidth = YES;
     
 }
 
@@ -51,6 +53,7 @@
     self.totalMoney.text = [NSString stringWithFormat:@"¥%@",_dataModel.totalAmount];
     self.titalBIshu.text = _dataModel.totalCount;
     self.shouldJiesuan.text = [NSString stringWithFormat:@"¥%@",_dataModel.expectSettleAmount];
+
     switch ([_dataModel.state integerValue]) {
         case 0:
         {

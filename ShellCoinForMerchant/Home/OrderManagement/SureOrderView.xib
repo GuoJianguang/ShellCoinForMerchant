@@ -21,17 +21,17 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLH-am-Mhg">
-                    <rect key="frame" x="50" y="265" width="275" height="137.5"/>
+                    <rect key="frame" x="50" y="248" width="275" height="171.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsN-JO-tMj">
-                            <rect key="frame" x="0.0" y="92.5" width="275" height="1"/>
+                            <rect key="frame" x="0.0" y="126.5" width="275" height="1"/>
                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="mqF-h7-0mS"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-HH-mGk">
-                            <rect key="frame" x="0.0" y="93.5" width="275" height="44"/>
+                            <rect key="frame" x="0.0" y="127.5" width="275" height="44"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZF-XJ-3cT">
                                     <rect key="frame" x="0.0" y="0.0" width="137.5" height="44"/>
@@ -66,10 +66,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3i-RB-C5H">
-                            <rect key="frame" x="0.0" y="0.0" width="275" height="92.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="275" height="126.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确认您收到的相应金额" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43X-BK-lGG">
-                                    <rect key="frame" x="5" y="37" width="265" height="18"/>
+                                    <rect key="frame" x="5" y="64.5" width="265" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -84,7 +84,7 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="43X-BK-lGG" firstAttribute="centerY" secondItem="g3i-RB-C5H" secondAttribute="centerY" id="2Li-aK-jPZ"/>
+                                <constraint firstItem="43X-BK-lGG" firstAttribute="centerY" secondItem="g3i-RB-C5H" secondAttribute="centerY" constant="10" id="2Li-aK-jPZ"/>
                                 <constraint firstAttribute="trailing" secondItem="43X-BK-lGG" secondAttribute="trailing" constant="5" id="IoA-Et-Jig"/>
                                 <constraint firstItem="43X-BK-lGG" firstAttribute="leading" secondItem="g3i-RB-C5H" secondAttribute="leading" constant="5" id="gfD-Pt-ABc"/>
                                 <constraint firstItem="OWj-bk-7hZ" firstAttribute="top" secondItem="g3i-RB-C5H" secondAttribute="top" id="hOa-91-bmz"/>
@@ -96,7 +96,7 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="g3i-RB-C5H" secondAttribute="trailing" id="FWH-Lp-dqM"/>
                         <constraint firstAttribute="trailing" secondItem="qsN-JO-tMj" secondAttribute="trailing" id="Fl5-7g-PJO"/>
-                        <constraint firstAttribute="width" secondItem="CLH-am-Mhg" secondAttribute="height" multiplier="240:120" id="HLK-P9-SdU"/>
+                        <constraint firstAttribute="width" secondItem="CLH-am-Mhg" secondAttribute="height" multiplier="240:150" id="HLK-P9-SdU"/>
                         <constraint firstItem="qsN-JO-tMj" firstAttribute="leading" secondItem="CLH-am-Mhg" secondAttribute="leading" id="Ihv-hv-CTF"/>
                         <constraint firstItem="G8j-HH-mGk" firstAttribute="leading" secondItem="CLH-am-Mhg" secondAttribute="leading" id="KLk-Fu-PPz"/>
                         <constraint firstItem="g3i-RB-C5H" firstAttribute="leading" secondItem="CLH-am-Mhg" secondAttribute="leading" id="N38-OX-J6o"/>

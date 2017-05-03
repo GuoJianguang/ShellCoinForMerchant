@@ -16,6 +16,7 @@
     self.timeLabel.textColor = MacoDetailColor;
     self.moneyLabel.textColor = MacoColor;
     self.markLabel.textColor = MacoTitleColor;
+    self.moneyLabel.adjustsFontSizeToFitWidth = YES;
     
 }
 
@@ -87,8 +88,7 @@
         default:
             break;
     }
-    
-    self.moneyLabel.text = [NSString stringWithFormat:@"¥%@",_dataModel.totalAmount];
+        self.moneyLabel.text = [NSString stringWithFormat:@"¥%.2f",[_dataModel.totalAmount doubleValue]];
     self.statusLabel.text = statusStr;
 }
 

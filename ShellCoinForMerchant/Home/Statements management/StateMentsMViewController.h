@@ -10,5 +10,7 @@
 
 @interface StateMentsMViewController : BaseViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *alerLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *alerLabel2;
 
 @end

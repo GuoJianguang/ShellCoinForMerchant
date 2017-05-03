@@ -40,14 +40,14 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    
     self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
-
-//    if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
-//        self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
-//    }else{
-//        self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
-//    }
+    [_window makeKeyAndVisible];
+    return YES;
+    if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
+        self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
+    }else{
+        self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
+    }
     
     [_window makeKeyAndVisible];
     return YES;
@@ -177,7 +177,6 @@
     //如果注册成功，可以删掉这个方法
     NSLog(@"application:didFailToRegisterForRemoteNotificationsWithError: %@", error);
 }
-
 
 #pragma mark - UNUserNotificationCenterDelegate
 //iOS10新增：处理前台收到通知的代理方法

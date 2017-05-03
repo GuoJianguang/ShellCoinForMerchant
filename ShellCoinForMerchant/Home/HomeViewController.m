@@ -28,12 +28,23 @@
     
     self.jiesuandanMaLabel.textColor = self.orderMaLabel.textColor = MacoTitleColor;
     [self.tableView noDataSouce];
-    //自动登录
-    if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
-        [self getRequest];
-    }
     
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self getRequest];
+    }];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(autoLogin) name:AutoLoginAfterGetDeviceToken object:nil];
+    
+    UIColor *itemSelectTintColor = MacoColor;
+    //    [[UITabBarItem appearance] setTitleTextAttributes:
+    //     [NSDictionary dictionaryWithObjectsAndKeys:
+    //      itemSelectTintColor,
+    //      NSForegroundColorAttributeName,
+    //      [UIFont boldSystemFontOfSize:15],
+    //      NSFontAttributeName
+    //      ,nil] forState:UIControlStateSelected];
+    self.tabBarController.tabBar.tintColor = itemSelectTintColor;
+    [[UITabBar appearance] setShadowImage:[[UIImage alloc]init]];
+    [[UITabBar appearance] setShadowImage:[UIImage imageWithColor:itemSelectTintColor frame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)]];
     
 }
 
@@ -44,6 +55,13 @@
     [[NSNotificationCenter defaultCenter]removeObserver:self name:AutoLoginAfterGetDeviceToken object:nil];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
+        [self getRequest];
+    }
+}
 
 - (void)autoLogin
 {
@@ -103,10 +121,12 @@
                 [self.dataSouceArray addObject:[WaitSureOrderModel modelWithDic:dic]];
             }
             [self.tableView judgeIsHaveDataSouce:self.dataSouceArray];
+            [self.tableView.mj_header endRefreshing];
             [self.tableView reloadData];
         }
         
     } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+        [self.tableView.mj_header endRefreshing];
         [self.tableView showNoDataSouceNoNetworkConnection];
     }];
 
@@ -130,7 +150,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return TWitdh*(190/750.);
+    return TWitdh*(180/750.);
 }
 
 

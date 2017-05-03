@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BillViewController">
+            <connections>
+                <outlet property="backBtn" destination="3i3-Ht-phX" id="WRq-O2-FFa"/>
+                <outlet property="sortView" destination="IwT-HJ-83d" id="18r-0a-nYH"/>
+                <outlet property="swipeView" destination="q8R-aS-0yJ" id="WRy-O5-kI1"/>
+                <outlet property="titleLabel" destination="SzJ-0D-Xjh" id="z0o-VX-D9g"/>
+                <outlet property="view" destination="yeA-Sy-OqC" id="4Fv-Cn-1g6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="yeA-Sy-OqC">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="835"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaO-Xv-p76">
+                    <rect key="frame" x="0.0" y="0.0" width="532" height="177.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_bg2" translatesAutoresizingMaskIntoConstraints="NO" id="8UM-Zc-aca">
+                            <rect key="frame" x="0.0" y="0.0" width="532" height="171.5"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRw-t8-Ezz">
+                            <rect key="frame" x="0.0" y="20" width="532" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收支明细" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-0D-Xjh">
+                                    <rect key="frame" x="54" y="11" width="424" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3i3-Ht-phX">
+                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="3i3-Ht-phX" secondAttribute="height" multiplier="1:1" id="Kbl-PJ-1Sz"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_back">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="veh-uc-kDm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="SzJ-0D-Xjh" firstAttribute="leading" secondItem="3i3-Ht-phX" secondAttribute="trailing" constant="10" id="0W4-XX-tFy"/>
+                                <constraint firstItem="SzJ-0D-Xjh" firstAttribute="centerX" secondItem="iRw-t8-Ezz" secondAttribute="centerX" id="O5e-e8-PeA"/>
+                                <constraint firstItem="3i3-Ht-phX" firstAttribute="leading" secondItem="iRw-t8-Ezz" secondAttribute="leading" id="lYz-u3-ZDq"/>
+                                <constraint firstAttribute="height" constant="44" id="mfj-PS-clw"/>
+                                <constraint firstItem="3i3-Ht-phX" firstAttribute="top" secondItem="iRw-t8-Ezz" secondAttribute="top" id="nEU-tF-gEj"/>
+                                <constraint firstAttribute="bottom" secondItem="3i3-Ht-phX" secondAttribute="bottom" id="ngD-65-tq8"/>
+                                <constraint firstItem="SzJ-0D-Xjh" firstAttribute="centerY" secondItem="iRw-t8-Ezz" secondAttribute="centerY" id="vea-Oa-dHj"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwT-HJ-83d" customClass="SortButtonSwitchView">
+                            <rect key="frame" x="0.0" y="64" width="532" height="113.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="jSC-GQ-VnD"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="IwT-HJ-83d" firstAttribute="leading" secondItem="LaO-Xv-p76" secondAttribute="leading" id="ZkG-k6-Czh"/>
+                        <constraint firstAttribute="trailing" secondItem="8UM-Zc-aca" secondAttribute="trailing" id="ft5-aH-umg"/>
+                        <constraint firstAttribute="width" secondItem="LaO-Xv-p76" secondAttribute="height" multiplier="3" id="fxL-yb-5KM"/>
+                        <constraint firstItem="iRw-t8-Ezz" firstAttribute="top" secondItem="LaO-Xv-p76" secondAttribute="top" constant="20" id="hDL-9E-fcZ"/>
+                        <constraint firstItem="IwT-HJ-83d" firstAttribute="top" secondItem="iRw-t8-Ezz" secondAttribute="bottom" id="jIq-mC-ofB"/>
+                        <constraint firstAttribute="trailing" secondItem="IwT-HJ-83d" secondAttribute="trailing" id="kjg-9f-TiL"/>
+                        <constraint firstItem="8UM-Zc-aca" firstAttribute="top" secondItem="LaO-Xv-p76" secondAttribute="top" id="oXL-Ag-Gx2"/>
+                        <constraint firstItem="iRw-t8-Ezz" firstAttribute="leading" secondItem="LaO-Xv-p76" secondAttribute="leading" id="oi4-eQ-zuS"/>
+                        <constraint firstAttribute="bottom" secondItem="IwT-HJ-83d" secondAttribute="bottom" id="oiy-r9-qXu"/>
+                        <constraint firstAttribute="bottom" secondItem="8UM-Zc-aca" secondAttribute="bottom" constant="6" id="qS8-Uz-MXa"/>
+                        <constraint firstItem="8UM-Zc-aca" firstAttribute="leading" secondItem="LaO-Xv-p76" secondAttribute="leading" id="su1-iV-jjt"/>
+                        <constraint firstAttribute="trailing" secondItem="iRw-t8-Ezz" secondAttribute="trailing" id="xnR-Zu-xqy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8R-aS-0yJ" customClass="SwipeView">
+                    <rect key="frame" x="0.0" y="177.5" width="532" height="657.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Egd-jl-IJf"/>
+                        <outlet property="delegate" destination="-1" id="gY7-2j-u6Z"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="q8R-aS-0yJ" secondAttribute="trailing" id="5yj-4N-fJA"/>
+                <constraint firstAttribute="bottom" secondItem="q8R-aS-0yJ" secondAttribute="bottom" id="6ne-2G-tXY"/>
+                <constraint firstAttribute="trailing" secondItem="LaO-Xv-p76" secondAttribute="trailing" id="TjG-k8-3pm"/>
+                <constraint firstItem="q8R-aS-0yJ" firstAttribute="leading" secondItem="yeA-Sy-OqC" secondAttribute="leading" id="ZYh-Gw-lbo"/>
+                <constraint firstItem="LaO-Xv-p76" firstAttribute="leading" secondItem="yeA-Sy-OqC" secondAttribute="leading" id="c5q-dP-vXD"/>
+                <constraint firstItem="q8R-aS-0yJ" firstAttribute="top" secondItem="LaO-Xv-p76" secondAttribute="bottom" id="wjc-qD-Nnm"/>
+                <constraint firstItem="LaO-Xv-p76" firstAttribute="top" secondItem="yeA-Sy-OqC" secondAttribute="top" id="zhD-Rl-JOm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-880" y="-723.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_back" width="44" height="44"/>
+        <image name="mine_bg2" width="375" height="64"/>
+    </resources>
+</document>

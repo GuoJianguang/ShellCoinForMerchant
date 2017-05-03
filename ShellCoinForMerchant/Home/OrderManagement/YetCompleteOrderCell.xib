@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,31 +29,28 @@
                                     <constraint firstAttribute="width" constant="6" id="48W-uB-RPb"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抵换成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-rP-XDG">
-                                <rect key="frame" x="51" y="10" width="166.5" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-rP-XDG">
+                                <rect key="frame" x="56" y="10" width="161.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(含购物券--)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmo-a2-cfm">
-                                <rect key="frame" x="201.5" y="62.5" width="74.5" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.01.02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71e-hg-zpL">
-                                <rect key="frame" x="51" y="65" width="57.5" height="13.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71e-hg-zpL">
+                                <rect key="frame" x="56" y="65" width="95" height="13.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="VHd-o2-PEe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_balance_payment_nor" translatesAutoresizingMaskIntoConstraints="NO" id="MkH-JJ-o7b">
-                                <rect key="frame" x="21" y="35.5" width="22" height="18"/>
+                                <rect key="frame" x="21" y="33.5" width="27" height="22.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MkH-JJ-o7b" secondAttribute="height" multiplier="44/36" id="51o-Oo-bmu"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付成功" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-rS-7Pq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-rS-7Pq">
                                 <rect key="frame" x="222.5" y="10" width="53.5" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53.5" id="6WJ-a7-wcn"/>
@@ -62,7 +60,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQe-1v-hfS">
-                                <rect key="frame" x="174" y="59" width="27.5" height="20.5"/>
+                                <rect key="frame" x="156" y="58" width="120" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -73,19 +71,19 @@
                             <constraint firstItem="NLI-rP-XDG" firstAttribute="leading" secondItem="MkH-JJ-o7b" secondAttribute="trailing" constant="8" id="26Q-Hg-uVq"/>
                             <constraint firstItem="F7w-rS-7Pq" firstAttribute="leading" secondItem="NLI-rP-XDG" secondAttribute="trailing" constant="5" id="4bS-Jy-Ank"/>
                             <constraint firstItem="F7w-rS-7Pq" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="10" id="5nL-wo-mCE"/>
-                            <constraint firstAttribute="trailing" secondItem="bmo-a2-cfm" secondAttribute="trailing" constant="20" id="JOc-6s-xG0"/>
                             <constraint firstAttribute="bottom" secondItem="yMR-zw-yEM" secondAttribute="bottom" id="NGG-SN-K9k"/>
                             <constraint firstAttribute="trailing" secondItem="F7w-rS-7Pq" secondAttribute="trailing" constant="20" id="SND-yJ-AWH"/>
                             <constraint firstItem="MkH-JJ-o7b" firstAttribute="leading" secondItem="yMR-zw-yEM" secondAttribute="trailing" constant="15" id="Sdh-x3-QaR"/>
+                            <constraint firstItem="FQe-1v-hfS" firstAttribute="leading" secondItem="71e-hg-zpL" secondAttribute="trailing" constant="5" id="U8U-dZ-rvI"/>
                             <constraint firstItem="yMR-zw-yEM" firstAttribute="leading" secondItem="hlm-lF-CZ7" secondAttribute="leading" id="WFZ-rZ-QhH"/>
                             <constraint firstItem="MkH-JJ-o7b" firstAttribute="centerY" secondItem="hlm-lF-CZ7" secondAttribute="centerY" id="YX8-IC-bPf"/>
                             <constraint firstItem="71e-hg-zpL" firstAttribute="leading" secondItem="MkH-JJ-o7b" secondAttribute="trailing" constant="8" id="dfR-8f-6qC"/>
-                            <constraint firstItem="bmo-a2-cfm" firstAttribute="leading" secondItem="FQe-1v-hfS" secondAttribute="trailing" id="g9v-H2-6kt"/>
+                            <constraint firstItem="FQe-1v-hfS" firstAttribute="bottom" secondItem="71e-hg-zpL" secondAttribute="bottom" id="iy7-Yh-FhU"/>
                             <constraint firstItem="NLI-rP-XDG" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" constant="10" id="no4-1f-LDT"/>
                             <constraint firstItem="yMR-zw-yEM" firstAttribute="top" secondItem="hlm-lF-CZ7" secondAttribute="top" id="qh0-Pw-uWS"/>
-                            <constraint firstItem="bmo-a2-cfm" firstAttribute="baseline" secondItem="FQe-1v-hfS" secondAttribute="baseline" id="tg3-MI-jed"/>
-                            <constraint firstAttribute="bottom" secondItem="bmo-a2-cfm" secondAttribute="bottom" constant="10" id="vTf-pi-01Z"/>
+                            <constraint firstAttribute="trailing" secondItem="FQe-1v-hfS" secondAttribute="trailing" constant="20" id="t5c-Vg-qbG"/>
                             <constraint firstAttribute="bottom" secondItem="71e-hg-zpL" secondAttribute="bottom" constant="10" id="x2l-cT-p6r"/>
+                            <constraint firstItem="MkH-JJ-o7b" firstAttribute="height" secondItem="hlm-lF-CZ7" secondAttribute="height" multiplier="1/4" id="zV1-Fr-XJK"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -98,7 +96,6 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="buyCardLabel" destination="bmo-a2-cfm" id="Q6R-UJ-DJa"/>
                 <outlet property="markImageView" destination="yMR-zw-yEM" id="7Xf-bb-Wy7"/>
                 <outlet property="markLabel" destination="NLI-rP-XDG" id="uYE-CB-wbr"/>
                 <outlet property="moneyLabel" destination="FQe-1v-hfS" id="thA-9u-cA1"/>

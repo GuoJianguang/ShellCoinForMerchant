@@ -87,15 +87,15 @@
                 //统计新增用户
                 [MobClick profileSignInWithPUID:[ShellCoinUserInfo shareUserInfos].userid];
                 [[NSUserDefaults standardUserDefaults]synchronize];
-                
-                
+//
+//                
                 [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
                 [[NSUserDefaults standardUserDefaults]synchronize];
                 [UIApplication sharedApplication].keyWindow.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Main"];
                 [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
                 [[NSUserDefaults standardUserDefaults]synchronize];
                 [self presentViewController:[UIApplication sharedApplication].keyWindow.rootViewController animated:YES completion:NULL];
-                
+
                 return ;
                 if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
                     [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:IsFirstLaunch];
