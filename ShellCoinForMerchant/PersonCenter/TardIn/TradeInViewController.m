@@ -9,6 +9,7 @@
 #import "TradeInViewController.h"
 #import "SureTradInView.h"
 #import "WithDrawalResultView.h"
+#import "TradinRecodViewController.h"
 
 @interface TradeInViewController ()<UITextFieldDelegate,PayViewDelegate>
 @property (nonatomic, strong)SureTradInView *passwordView;
@@ -65,6 +66,11 @@
     }
 }
 
+- (IBAction)tradinRecod:(id)sender {
+    TradinRecodViewController *tradInVC  = [[TradinRecodViewController alloc]init];
+    [self.navigationController pushViewController:tradInVC animated:YES];
+}
+
 - (void)goinputPassword
 {
     NSDictionary *parms = @{@"token":[ShellCoinUserInfo shareUserInfos].token,
@@ -95,8 +101,8 @@
     }else if ([self.moneyTF.text integerValue]%10 !=0){
         [[JAlertViewHelper shareAlterHelper]showTint:@"您的提现金额必须是10的整数倍" duration:1.5];
         return NO;
-    }else if ([self.moneyTF.text integerValue] <1000){
-        [[JAlertViewHelper shareAlterHelper]showTint:@"您的提现金额不能小于1000" duration:1.5];
+    }else if ([self.moneyTF.text integerValue] <100){
+        [[JAlertViewHelper shareAlterHelper]showTint:@"您的提现金额不能小于100" duration:1.5];
         return NO;
     }
     return YES;

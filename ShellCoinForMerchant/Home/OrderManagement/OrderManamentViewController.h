@@ -23,4 +23,6 @@
 @property (nonatomic, strong)Bill12View *yetSureOrderView;
 - (void)sureOrder:(NSString *)orerId;
 
+@property (nonatomic, assign)BOOL isYetCompelet;
+
 @end

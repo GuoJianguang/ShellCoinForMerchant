@@ -23,7 +23,7 @@
     [super viewDidLoad];
     self.naviBar.hidden = YES;
     self.sortView.titleArray = @[@"收入",@"支出"];
-
+    self.swipeView.backgroundColor = [UIColor clearColor];
     if (self.billtype == BillType_spending) {
         [self.swipeView scrollToPage:1 duration:0.1];
     }
@@ -82,6 +82,7 @@
         }
             break;
         case 1:{
+
             [view addSubview:self.spendingView];
             [self.spendingView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.edges.equalTo(view).insets(insets);

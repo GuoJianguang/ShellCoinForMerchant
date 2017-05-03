@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410B0631EB9D566004E45EE /* TradinRecodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410B0611EB9D566004E45EE /* TradinRecodViewController.m */; };
+		0410B0641EB9D566004E45EE /* TradinRecodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0410B0621EB9D566004E45EE /* TradinRecodViewController.xib */; };
 		14A3F32FA3535384F520B906 /* libPods-ShellCoinForMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842F9D262A12AD6836A31F64 /* libPods-ShellCoinForMerchant.a */; };
 		BC085CB61E83645800572E8A /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CA81E83645800572E8A /* BaseCollectionViewCell.m */; };
 		BC085CB71E83645800572E8A /* BaseHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CAA1E83645800572E8A /* BaseHtmlViewController.m */; };
@@ -162,6 +164,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0410B0601EB9D566004E45EE /* TradinRecodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradinRecodViewController.h; sourceTree = "<group>"; };
+		0410B0611EB9D566004E45EE /* TradinRecodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradinRecodViewController.m; sourceTree = "<group>"; };
+		0410B0621EB9D566004E45EE /* TradinRecodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradinRecodViewController.xib; sourceTree = "<group>"; };
 		572BBA7B2F43A719AE18FDF0 /* Pods-ShellCoinForMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShellCoinForMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShellCoinForMerchant/Pods-ShellCoinForMerchant.release.xcconfig"; sourceTree = "<group>"; };
 		842F9D262A12AD6836A31F64 /* libPods-ShellCoinForMerchant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShellCoinForMerchant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC085CA71E83645800572E8A /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
@@ -761,6 +766,9 @@
 				BC0EB51D1EB31C7600E62522 /* WithDrawalResultView.h */,
 				BC0EB51E1EB31C7600E62522 /* WithDrawalResultView.m */,
 				BC0EB51F1EB31C7600E62522 /* WithDrawalResultView.xib */,
+				0410B0601EB9D566004E45EE /* TradinRecodViewController.h */,
+				0410B0611EB9D566004E45EE /* TradinRecodViewController.m */,
+				0410B0621EB9D566004E45EE /* TradinRecodViewController.xib */,
 			);
 			path = TardIn;
 			sourceTree = "<group>";
@@ -1063,6 +1071,7 @@
 				BC2537F51E9B6042007232B3 /* OrderEntryViewController.xib in Resources */,
 				BC2538061E9B6B6E007232B3 /* Bill1View.xib in Resources */,
 				BC25383E1E9B76B5007232B3 /* ForgetPasswordTwoViewController.xib in Resources */,
+				0410B0641EB9D566004E45EE /* TradinRecodViewController.xib in Resources */,
 				BC65535B1E9F1CA800DEC34D /* TabBar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1152,6 +1161,7 @@
 				BC3FB6B71E9769A300C06A95 /* StateMentsMViewController.m in Sources */,
 				BC085D2A1E836B3F00572E8A /* LBXAlertAction.m in Sources */,
 				BC2538421E9B76B5007232B3 /* RegisterOneViewController.m in Sources */,
+				0410B0631EB9D566004E45EE /* TradinRecodViewController.m in Sources */,
 				BC70EF9B1EB0890000847EAE /* BillViewController.m in Sources */,
 				BC70EF831EB0855400847EAE /* MessageDetailViewController.m in Sources */,
 				BC085D2B1E836B3F00572E8A /* LBXScanLineAnimation.m in Sources */,

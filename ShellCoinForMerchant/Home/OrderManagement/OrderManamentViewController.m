@@ -28,15 +28,26 @@
     self.swipeView.delegate = self;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationyetComplet) name:@"notificationyetComplet" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationWaitComplet) name:@"notificationyetWaitComplet" object:nil];
 
+    if (self.isYetCompelet) {
+        [self.swipeView scrollToPage:1 duration:0.1];
+    }
+    
 }
 
 
 - (void)notificationyetComplet
 {
     [self.waitSureOrderView reload];
+    [self.swipeView scrollToPage:1 duration:0.1];
+    [self.yetSureOrderView reload];
 }
 
+- (void)notificationWaitComplet
+{
+    [self.waitSureOrderView reload];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -135,6 +146,8 @@
 
 - (IBAction)backBtn:(UIButton *)sender {
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"notificationyetComplet" object:nil];
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"notificationyetWaitComplet" object:nil];
+
     [self.navigationController popViewControllerAnimated:YES];
 }
 

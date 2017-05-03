@@ -90,4 +90,55 @@
     
     self.timeLabel.text = _tixianModel.tranTime;
 }
+
+
+- (void)setRecodModel:(TixianRecodModel *)recodModel
+{
+    _recodModel = recodModel;
+    
+    self.moneyLabel.text = [NSString stringWithFormat:@"¥%.2f",[_recodModel.withdrawAmout doubleValue]];
+    self.timeLabel.text = _recodModel.successTime;
+    NSString *markStr = [NSString string];
+    switch ([_recodModel.state integerValue]) {
+        case 0:
+        {
+            markStr = @"待审核";
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
+            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+        }
+            break;
+        case 1:
+        {
+            markStr = @"待审核";
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
+            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+        }
+            break;
+        case 2:
+        {
+            markStr = @"待审核";
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_blue"];
+            self.moneyLabel.textColor = self.markLabel.textColor = [UIColor colorFromHexString:@"#2586d5"];
+        }
+            break;
+        case 3:
+        {
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_red"];
+            self.moneyLabel.textColor = self.markLabel.textColor = MacoColor;
+            markStr = @"提现成功";
+        }
+            break;
+        case 4:
+        {
+            self.markImageView.image = [UIImage imageNamed:@"pic_state_green"];
+            self.moneyLabel.textColor = self.markLabel.textColor =  [UIColor colorFromHexString:@"#45de8e"];
+            markStr = @"提现失败";
+        }
+            break;
+        default:
+            break;
+    }
+    self.markLabel.text = markStr;
+    
+}
 @end

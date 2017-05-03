@@ -46,6 +46,9 @@
     [[UITabBar appearance] setShadowImage:[[UIImage alloc]init]];
     [[UITabBar appearance] setShadowImage:[UIImage imageWithColor:itemSelectTintColor frame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)]];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationWaitComplet) name:@"notificationyetWaitComplet" object:nil];
+
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -53,6 +56,11 @@
     [super viewWillDisappear:animated];
     //自动登录
     [[NSNotificationCenter defaultCenter]removeObserver:self name:AutoLoginAfterGetDeviceToken object:nil];
+}
+
+- (void)notificationWaitComplet
+{
+    [self.tableView.mj_header beginRefreshing];
 }
 
 - (void)viewDidAppear:(BOOL)animated

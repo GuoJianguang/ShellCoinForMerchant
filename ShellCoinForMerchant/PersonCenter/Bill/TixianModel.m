@@ -23,3 +23,17 @@
 }
 
 @end
+
+
+@implementation TixianRecodModel
+
++ (id)modelWithDic:(NSDictionary *)dic
+{
+    TixianRecodModel *model = [[TixianRecodModel alloc]init];
+    model.state = NullToNumber(dic[@"state"]);
+    model.withdrawAmout = NullToNumber(dic[@"withdrawAmout"]);
+    model.successTime = NullToNumber(dic[@"successTime"]);
+    return model;
+}
+
+@end

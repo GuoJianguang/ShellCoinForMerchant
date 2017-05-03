@@ -22,4 +22,6 @@
 
 @property (nonatomic, strong)TixianModel *tixianModel;
 
+@property (nonatomic, strong)TixianRecodModel *recodModel;
+
 @end

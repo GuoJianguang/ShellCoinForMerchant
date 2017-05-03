@@ -8,6 +8,8 @@
 
 #import "RootViewController.h"
 #import "OrderManamentViewController.h"
+#import "MessageListViewController.h"
+#import "TradinRecodViewController.h"
 
 static NSString *infomation  = @"infomation";//消息列表
 static NSString *settle  = @"settle";//结算统计
@@ -44,7 +46,7 @@ static NSString *hasComplete  = @"hasComplete";//已完成
     if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
         self.turnType = NullToSpace(notifiInfo[@"page"]);
         NSString *alerInfo = NullToSpace(notifiInfo[@"aps"][@"alert"]);
-        if (![self.turnType isEqualToString:hasComplete]) {
+        if (![self.turnType isEqualToString:hasComplete]&&![self.turnType isEqualToString:infomation]&&![self.turnType isEqualToString:withdraw]) {
             UIAlertView *showView = [[UIAlertView alloc]initWithTitle:@"提醒" message:alerInfo delegate:self cancelButtonTitle:@"知道了" otherButtonTitles: nil];
             [showView show];
             showView.tag = 20;
@@ -63,7 +65,7 @@ static NSString *hasComplete  = @"hasComplete";//已完成
     if ([ShellCoinUserInfo shareUserInfos].currentLogined) {
         self.turnType = NullToSpace(faication.userInfo[@"page"]);
         NSString *alerInfo = NullToSpace(faication.userInfo[@"aps"][@"alert"]);
-        if (![self.turnType isEqualToString:hasComplete]) {
+        if (![self.turnType isEqualToString:hasComplete]&&![self.turnType isEqualToString:infomation]&&![self.turnType isEqualToString:withdraw]) {
             UIAlertView *showView = [[UIAlertView alloc]initWithTitle:@"提醒" message:alerInfo delegate:self cancelButtonTitle:@"知道了" otherButtonTitles: nil];
             showView.tag = 20;
             
@@ -88,19 +90,35 @@ static NSString *hasComplete  = @"hasComplete";//已完成
 {
     if (alertView.tag == 10 && buttonIndex == 1) {
         if ([self.turnType isEqualToString:infomation]) {//消息列表
+            if ([self.topViewController isKindOfClass:[MessageListViewController class]]) {
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"notificationyetMessage" object:nil userInfo:nil];
+                
+                return;
+            }
+            MessageListViewController *listVC = [[MessageListViewController alloc]init];
+            
+            [self pushViewController:listVC animated:YES];
 
         }else if([self.turnType isEqualToString:withdraw]){//账户提现
-
+            TradinRecodViewController *tradinVc = [[TradinRecodViewController alloc]init];
+            [self pushViewController:tradinVc animated:YES];
+//            if ([self.topViewController isKindOfClass:[OrderManamentViewController class]]) {
+//                [[NSNotificationCenter defaultCenter]postNotificationName:@"notificationyetWaitComplet" object:nil userInfo:nil];
+//                return;
+//            }
+//            OrderManamentViewController *mallVC = [[OrderManamentViewController alloc]init];
+//            
+//            [self pushViewController:mallVC animated:YES];
         }else if([self.turnType isEqualToString:settle]){//结算统计
 
         }else if([self.turnType isEqualToString:hasComplete]){//商城订单已完成
             if ([self.topViewController isKindOfClass:[OrderManamentViewController class]]) {
-                [[NSNotificationCenter defaultCenter]postNotificationName:@"notificationyetComplet" object:nil userInfo:nil];
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"notificationyetWaitComplet" object:nil userInfo:nil];
             
                 return;
             }
             OrderManamentViewController *mallVC = [[OrderManamentViewController alloc]init];
-//            mallVC.orderType = MallOrderRequetst_yetComplete;
+            mallVC.isYetCompelet = NO;
             [self pushViewController:mallVC animated:YES];
         }
         return;

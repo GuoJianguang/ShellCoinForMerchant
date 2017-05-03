@@ -28,3 +28,13 @@
 @property (nonatomic, assign)NSInteger billType;
 
 @end
+
+
+@interface TixianRecodModel : BaseModel
+@property (nonatomic, copy)NSString *withdrawAmout;
+@property (nonatomic, copy)NSString *successTime;
+//state 提现状态 0待审核  1审核通过  2提现中   3提现成功  4提现失败 
+@property (nonatomic, copy)NSString *state;
+
+@end
+

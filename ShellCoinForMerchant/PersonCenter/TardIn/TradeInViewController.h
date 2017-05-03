@@ -21,4 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
 
 - (IBAction)sureBtn:(UIButton *)sender;
+
+- (IBAction)tradinRecod:(id)sender;
+
 @end

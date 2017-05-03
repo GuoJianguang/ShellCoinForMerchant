@@ -36,6 +36,19 @@
     [self.tableView noDataSouce];
     [self.tableView.mj_header beginRefreshing];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageNotfication) name:@"notificationyetMessage" object:nil];
+
+}
+
+- (void)backBtnClick
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"notificationyetMessage" object:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
+- (void)messageNotfication
+{
+    [self.tableView.mj_header beginRefreshing];
 }
 
 - (void)alldetailReqest:(BOOL)isHeader
@@ -90,7 +103,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    return TWitdh*(120/750.);
+    return TWitdh*(145/750.);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
