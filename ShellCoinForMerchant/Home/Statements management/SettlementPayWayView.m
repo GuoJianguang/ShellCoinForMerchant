@@ -29,7 +29,7 @@
 }
 - (void)tap{
     [UIView animateWithDuration:0.5 animations:^{
-        self.itemView.frame = CGRectMake(0, THeight, TWitdh, TWitdh*(260/375.));
+        self.itemView.frame = CGRectMake(0, THeight, TWitdh, TWitdh*(310/375.));
     } completion:^(BOOL finished) {
         if (finished) {
             [self removeFromSuperview];
@@ -51,6 +51,8 @@
     self.yuELabel.textColor = MacoColor;
     self.wechatLabel.textColor = MacoTitleColor;
     self.wechatMarkBtn.hidden = YES;
+    self.aliPayMarkBtn.hidden = YES;
+
     //默认余额支付
     self.payWay_type = Payway_type_banlance;
     double payMoney = [self.dataModel.totalAmount doubleValue];
@@ -81,26 +83,57 @@
 
 - (IBAction)yuEBtn:(UIButton *)sender {
     self.payWay_type = Payway_type_banlance;
-    self.wechatBtn.selected = NO;
     self.yuEImage.image = [UIImage imageNamed:@"icon_balance_payment_sel"];
-    self.wechatImage.image = [UIImage imageNamed:@"icon_wechat_payment_nor"];
     self.yuEMarkBtn.hidden = NO;
     self.yuELabel.textColor = MacoColor;
+    
     self.wechatLabel.textColor  = MacoTitleColor;
     self.wechatMarkBtn.hidden  = YES;
+    self.wechatBtn.selected = NO;
+    self.wechatImage.image = [UIImage imageNamed:@"icon_wechat_payment_nor"];
+
+    self.aliPayLabel.textColor  = MacoTitleColor;
+    self.aliPayMarkBtn.hidden  = YES;
+    self.aliPaytBtn.selected = NO;
+    self.aliPayImage.image = [UIImage imageNamed:@"icon_zhifubao_nor"];
+    
 }
+
 - (IBAction)wechatBtn:(UIButton *)sender {
     
     self.payWay_type = Payway_type_wechat;
-    self.yuEImage.image = [UIImage imageNamed:@"icon_balance_payment_nor"];
     self.wechatImage.image = [UIImage imageNamed:@"icon_wechat_payment_sel"];
-    self.yuEMarkBtn.hidden= YES;
     self.wechatBtn.selected = YES;
     self.wechatLabel.textColor = MacoColor;
-    self.yuELabel.textColor =MacoTitleColor;
     self.wechatMarkBtn.hidden = NO;
-}
+    
+    self.yuEImage.image = [UIImage imageNamed:@"icon_balance_payment_nor"];
+    self.yuELabel.textColor =MacoTitleColor;
+    self.yuEMarkBtn.hidden= YES;
+    
+    self.aliPayLabel.textColor  = MacoTitleColor;
+    self.aliPayMarkBtn.hidden  = YES;
+    self.aliPaytBtn.selected = NO;
+    self.aliPayImage.image = [UIImage imageNamed:@"icon_zhifubao_nor"];
 
+}
+- (IBAction)aliPay:(UIButton *)sender
+{
+    self.payWay_type = payway_type_alipay;
+    self.aliPayImage.image = [UIImage imageNamed:@"icon_zhifubao_sel"];
+    self.aliPaytBtn.selected = YES;
+    self.aliPayLabel.textColor = MacoColor;
+    self.aliPayMarkBtn.hidden = NO;
+    
+    self.yuEImage.image = [UIImage imageNamed:@"icon_balance_payment_nor"];
+    self.yuELabel.textColor =MacoTitleColor;
+    self.yuEMarkBtn.hidden= YES;
+    
+    self.wechatLabel.textColor  = MacoTitleColor;
+    self.wechatMarkBtn.hidden  = YES;
+    self.wechatBtn.selected = NO;
+    self.wechatImage.image = [UIImage imageNamed:@"icon_wechat_payment_nor"];
+}
 #pragma mark - 确认支付和取消按钮
 
 //确认
@@ -110,7 +143,7 @@
     switch (self.payWay_type) {
         case Payway_type_wechat://微信支付
         {
-            
+            [[JAlertViewHelper shareAlterHelper]showTint:@"微信支付未开通，请选择其他支付方式" duration:2.];
             
         }
             break;
@@ -134,6 +167,13 @@
         }
             break;
             
+        case payway_type_alipay:
+        {
+            NSDictionary *parms = @{@"settleId":self.dataModel.orderId,
+                                    @"token":[ShellCoinUserInfo shareUserInfos].token};
+            [AliPayObject startAliPayMerchantJiesuan:parms];
+        }
+            break;
         default:
             break;
     }
@@ -142,7 +182,7 @@
 //取消
 - (IBAction)cancelBtn:(UIButton *)sender {
         [UIView animateWithDuration:0.5 animations:^{
-        self.itemView.frame = CGRectMake(0, THeight, TWitdh, TWitdh*(260/375.));
+        self.itemView.frame = CGRectMake(0, THeight, TWitdh, TWitdh*(310/375.));
     } completion:^(BOOL finished) {
         if (finished) {
             [self removeFromSuperview];

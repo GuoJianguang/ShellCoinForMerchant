@@ -124,6 +124,7 @@
             [MobClick profileSignOff];
             [[NSUserDefaults standardUserDefaults]synchronize];
             //            [[NSNotificationCenter defaultCenter]postNotificationName:LogOutNSNotification object:nil userInfo:nil];
+            [[NSNotificationCenter defaultCenter]removeObserver:self.viewController.navigationController name:Upush_Notifi object:nil];
             [self.viewController presentViewController:[[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"] animated:YES completion:^{
             }] ;
             

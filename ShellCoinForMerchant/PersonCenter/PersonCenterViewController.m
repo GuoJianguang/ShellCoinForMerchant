@@ -19,7 +19,6 @@
     [super viewDidLoad];
     self.naviBar.hidden = YES;
     UIEdgeInsets insets = UIEdgeInsetsMake(-20, 0, 49, 0);
- 
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view).insets(insets);
     }];

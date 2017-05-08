@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		0410B0631EB9D566004E45EE /* TradinRecodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410B0611EB9D566004E45EE /* TradinRecodViewController.m */; };
 		0410B0641EB9D566004E45EE /* TradinRecodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0410B0621EB9D566004E45EE /* TradinRecodViewController.xib */; };
+		0437E3041EC04A840094DEAA /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0437E3021EC04A840094DEAA /* AlipaySDK.bundle */; };
+		0437E3051EC04A840094DEAA /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E3031EC04A840094DEAA /* AlipaySDK.framework */; };
+		0437E3071EC04B0F0094DEAA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E3061EC04B0F0094DEAA /* libc++.tbd */; };
+		0437E3091EC04B1A0094DEAA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E3081EC04B1A0094DEAA /* SystemConfiguration.framework */; };
+		0437E30B1EC04B2C0094DEAA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E30A1EC04B2C0094DEAA /* CoreTelephony.framework */; };
+		0437E30D1EC04B3D0094DEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E30C1EC04B3D0094DEAA /* QuartzCore.framework */; };
+		0437E30F1EC04B470094DEAA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E30E1EC04B470094DEAA /* CoreText.framework */; };
+		0437E3111EC04B4F0094DEAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E3101EC04B4F0094DEAA /* CoreGraphics.framework */; };
+		0437E3131EC04B5A0094DEAA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E3121EC04B5A0094DEAA /* CFNetwork.framework */; };
+		0437E3151EC04B660094DEAA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437E3141EC04B660094DEAA /* CoreMotion.framework */; };
+		0437E3181EC04C310094DEAA /* AliPayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437E3171EC04C310094DEAA /* AliPayObject.m */; };
 		14A3F32FA3535384F520B906 /* libPods-ShellCoinForMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842F9D262A12AD6836A31F64 /* libPods-ShellCoinForMerchant.a */; };
 		BC085CB61E83645800572E8A /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CA81E83645800572E8A /* BaseCollectionViewCell.m */; };
 		BC085CB71E83645800572E8A /* BaseHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC085CAA1E83645800572E8A /* BaseHtmlViewController.m */; };
@@ -167,6 +178,18 @@
 		0410B0601EB9D566004E45EE /* TradinRecodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradinRecodViewController.h; sourceTree = "<group>"; };
 		0410B0611EB9D566004E45EE /* TradinRecodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradinRecodViewController.m; sourceTree = "<group>"; };
 		0410B0621EB9D566004E45EE /* TradinRecodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradinRecodViewController.xib; sourceTree = "<group>"; };
+		0437E3021EC04A840094DEAA /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		0437E3031EC04A840094DEAA /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		0437E3061EC04B0F0094DEAA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0437E3081EC04B1A0094DEAA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0437E30A1EC04B2C0094DEAA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0437E30C1EC04B3D0094DEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0437E30E1EC04B470094DEAA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0437E3101EC04B4F0094DEAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0437E3121EC04B5A0094DEAA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0437E3141EC04B660094DEAA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0437E3161EC04C310094DEAA /* AliPayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayObject.h; sourceTree = "<group>"; };
+		0437E3171EC04C310094DEAA /* AliPayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayObject.m; sourceTree = "<group>"; };
 		572BBA7B2F43A719AE18FDF0 /* Pods-ShellCoinForMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShellCoinForMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShellCoinForMerchant/Pods-ShellCoinForMerchant.release.xcconfig"; sourceTree = "<group>"; };
 		842F9D262A12AD6836A31F64 /* libPods-ShellCoinForMerchant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShellCoinForMerchant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC085CA71E83645800572E8A /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
@@ -402,11 +425,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0437E3151EC04B660094DEAA /* CoreMotion.framework in Frameworks */,
+				0437E3131EC04B5A0094DEAA /* CFNetwork.framework in Frameworks */,
+				0437E3111EC04B4F0094DEAA /* CoreGraphics.framework in Frameworks */,
+				0437E30F1EC04B470094DEAA /* CoreText.framework in Frameworks */,
+				0437E30D1EC04B3D0094DEAA /* QuartzCore.framework in Frameworks */,
+				0437E30B1EC04B2C0094DEAA /* CoreTelephony.framework in Frameworks */,
+				0437E3091EC04B1A0094DEAA /* SystemConfiguration.framework in Frameworks */,
+				0437E3071EC04B0F0094DEAA /* libc++.tbd in Frameworks */,
 				BC2538701E9B7A17007232B3 /* libsqlite3.tbd in Frameworks */,
 				BC25386E1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd in Frameworks */,
 				BC25386C1E9B79FD007232B3 /* libz.tbd in Frameworks */,
 				BC2538651E9B7890007232B3 /* UMMobClick.framework in Frameworks */,
 				BC2538621E9B7890007232B3 /* UMSocialNetwork.framework in Frameworks */,
+				0437E3051EC04A840094DEAA /* AlipaySDK.framework in Frameworks */,
 				BC2538671E9B7890007232B3 /* libWeChatSDK.a in Frameworks */,
 				BC2538601E9B7890007232B3 /* libUMessage_Sdk_1.4.0.a in Frameworks */,
 				BC2538661E9B7890007232B3 /* libSocialWeChat.a in Frameworks */,
@@ -433,9 +465,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0437E3011EC04A780094DEAA /* AlipaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				0437E3021EC04A840094DEAA /* AlipaySDK.bundle */,
+				0437E3031EC04A840094DEAA /* AlipaySDK.framework */,
+			);
+			path = AlipaySDK;
+			sourceTree = "<group>";
+		};
 		B51E7F7009EBB967E6849C66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0437E3141EC04B660094DEAA /* CoreMotion.framework */,
+				0437E3121EC04B5A0094DEAA /* CFNetwork.framework */,
+				0437E3101EC04B4F0094DEAA /* CoreGraphics.framework */,
+				0437E30E1EC04B470094DEAA /* CoreText.framework */,
+				0437E30C1EC04B3D0094DEAA /* QuartzCore.framework */,
+				0437E30A1EC04B2C0094DEAA /* CoreTelephony.framework */,
+				0437E3081EC04B1A0094DEAA /* SystemConfiguration.framework */,
+				0437E3061EC04B0F0094DEAA /* libc++.tbd */,
 				BC25386F1E9B7A17007232B3 /* libsqlite3.tbd */,
 				BC25386D1E9B7A0C007232B3 /* libstdc++.6.0.9.tbd */,
 				BC25386B1E9B79FD007232B3 /* libz.tbd */,
@@ -495,6 +544,8 @@
 				BC2538151E9B6C7A007232B3 /* NothingView.xib */,
 				BC2538681E9B78D7007232B3 /* WeXinPayObject.h */,
 				BC2538691E9B78D7007232B3 /* WeXinPayObject.m */,
+				0437E3161EC04C310094DEAA /* AliPayObject.h */,
+				0437E3171EC04C310094DEAA /* AliPayObject.m */,
 				BC70EFAF1EB094D100847EAE /* UIImage+ColorImage.h */,
 				BC70EFB01EB094D100847EAE /* UIImage+ColorImage.m */,
 				BC3FB6B11E97691200C06A95 /* Public.xcassets */,
@@ -522,6 +573,7 @@
 		BC085CEF1E836B3E00572E8A /* ThirdAPI */ = {
 			isa = PBXGroup;
 			children = (
+				0437E3011EC04A780094DEAA /* AlipaySDK */,
 				BC25384F1E9B7890007232B3 /* share */,
 				BC085CF01E836B3E00572E8A /* Colours */,
 				BC085CF31E836B3E00572E8A /* LBXScan */,
@@ -1057,6 +1109,7 @@
 				BCAAD5821EA0C04100AD11E6 /* StatementsManagement.xcassets in Resources */,
 				BC3FB6BD1E976DDD00C06A95 /* StateMentTableViewCell.xib in Resources */,
 				BC70EF861EB0855400847EAE /* MessageListViewController.xib in Resources */,
+				0437E3041EC04A840094DEAA /* AlipaySDK.bundle in Resources */,
 				BC70EF841EB0855400847EAE /* MessageDetailViewController.xib in Resources */,
 				BC085D271E836B3F00572E8A /* CodeScan.bundle in Resources */,
 				BC2537EF1E9B5658007232B3 /* SettlementPayWayView.xib in Resources */,
@@ -1189,6 +1242,7 @@
 				BC085D2C1E836B3F00572E8A /* LBXScanNative.m in Sources */,
 				BC70EFAA1EB08D4300847EAE /* BillTableViewCell.m in Sources */,
 				BC70EF9F1EB08A7200847EAE /* IncomeView.m in Sources */,
+				0437E3181EC04C310094DEAA /* AliPayObject.m in Sources */,
 				BCAAD57F1EA0702700AD11E6 /* MyQRCodeViewController.m in Sources */,
 				BCAC5D221E8268B4003CACF8 /* AppDelegate.m in Sources */,
 				BC085D291E836B3F00572E8A /* UIAlertView+LBXAlertAction.m in Sources */,
@@ -1388,6 +1442,7 @@
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMSocial_Sdk_4.4",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/UMStatistics_4.1.4",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMStatistics_4.1.4",
+					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/AlipaySDK",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ShellCoinForMerchant/PrefixHeader.pch";
 				INFOPLIST_FILE = ShellCoinForMerchant/Info.plist;
@@ -1415,13 +1470,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = ShellCoinForMerchant/ShellCoinForMerchant.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: xu han (4KU9646Y2X)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xu han (4KU9646Y2X)";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMSocial_Sdk_4.4",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/UMStatistics_4.1.4",
 					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/share/UMStatistics_4.1.4",
+					"$(PROJECT_DIR)/ShellCoinForMerchant/ThirdAPI/AlipaySDK",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ShellCoinForMerchant/PrefixHeader.pch";
 				INFOPLIST_FILE = ShellCoinForMerchant/Info.plist;
@@ -1435,8 +1491,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Letopop.ShellCoinForMer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "4af7b5e3-5656-4ab8-8043-01814a5624be";
+				PROVISIONING_PROFILE_SPECIFIER = shellCoinForMerDis;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

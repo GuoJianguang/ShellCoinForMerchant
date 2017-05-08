@@ -10,7 +10,7 @@
 #import "StateMentTableViewCell.h"
 #import "SettlementPayWayView.h"
 
-@interface StateMentsMViewController ()<UITableViewDelegate,UITableViewDataSource,SettlementDelegate>
+@interface StateMentsMViewController ()<UITableViewDelegate,UITableViewDataSource,SettlementDelegate,BasenavigationDelegate>
 @property (nonatomic, strong)SettlementPayWayView *payView;
 
 @property (nonatomic, assign)NSInteger page;
@@ -23,6 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.naviBar.title = @"结算单管理";
+    self.naviBar.delegate = self;
     __weak StateMentsMViewController *weak_self = self;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         weak_self.page = 1;
@@ -39,6 +40,15 @@
     self.alerLabel2.textColor = MacoDetailColor;
     self.alerLabel1.text = @"手动打款说明";
     self.alerLabel2.text = @"对公账户：中国民生银行 成都领创有你科技有限公司\n开户行：成都神仙树支行  6232 5820 0035 4518\n\n对私账户：中国民生银行 6226 1920 0526 3926 韩旭\n开户行：成都神仙树支行";
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(aliPayResult:) name:AliPayResult object:nil];
+
+}
+
+- (void)backBtnClick
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"AliPayResult" object:nil];
+
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 - (NSMutableArray *)dataSouceArray
@@ -123,7 +133,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return;
     StateMentDataModel *model = self.dataSouceArray[indexPath.row];
     if ([model.state isEqualToString:@"1"]) {
         return;
@@ -135,11 +144,53 @@
     [self.payView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view).insets(insets);
     }];
-    self.payView.itemView.frame = CGRectMake(0, THeight , TWitdh, TWitdh*(260/375.));
+    self.payView.itemView.frame = CGRectMake(0, THeight , TWitdh, TWitdh*(310/375.));
     [UIView animateWithDuration:0.5 animations:^{
-        self.payView.itemView.frame = CGRectMake(0, THeight - (TWitdh*(260/375.)), TWitdh, TWitdh*(260/375.));
+        self.payView.itemView.frame = CGRectMake(0, THeight - (TWitdh*(310/375.)), TWitdh, TWitdh*(310/375.));
     }];
 
+}
+
+#pragma mark - 支付宝结算结果
+- (void)aliPayResult:(NSNotification *)notification{
+    
+    switch ([notification.userInfo[@"resultStatus"] integerValue]) {
+        case 9000:
+        {
+            [[JAlertViewHelper shareAlterHelper]showTint:@"结算成功" duration:2.];
+            [self.payView tap];
+            [self settlementSuccess];
+        }
+            break;
+        case 8000:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"正在处理中，支付结果未知（有可能已经支付成功），请查询商户订单列表中订单的支付状态" duration:2.];
+
+            break;
+        case 4000:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"订单支付失败" duration:2.];
+
+            break;
+        case 5000:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"重复请求" duration:2.];
+
+            break;
+        case 6001:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"用户中途取消" duration:2.];
+
+            break;
+        case 6002:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"网络连接出错" duration:2.];
+
+            break;
+        case 6004:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"支付结果未知（有可能已经支付成功），请查询商户订单列表中订单的支付状态" duration:2.];
+
+            break;
+            
+        default:
+            break;
+    }
+    
 }
 
 

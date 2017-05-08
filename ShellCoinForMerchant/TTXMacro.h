@@ -66,15 +66,17 @@
 //微信支付的结果回调
 #define WeixinPayResult @"WeixinPayResult"
 
+//支付宝支付结果回掉
+#define AliPayResult @"AliPayResult"
 //接收推送
 #define Upush_Notifi @"Upush_Fanxian_Notifi"
+
 
 
 
 #define AutoLoginAfterGetDeviceToken @"AutoLoginAfterGetDeviceToken"
 
 #define IsRequestTrue ([NullToNumber(jsonObject[@"code"]) isEqualToString:@"0"])
-
 
 #define TWitdh  [UIScreen mainScreen].bounds.size.width
 #define THeight [UIScreen mainScreen].bounds.size.height
@@ -94,6 +96,7 @@
 
 //分页请求的每页的数据
 #define MacoPageSize @"20"
+
 
 //appStore地址
 #define AppStoreDetailUrl @"https://itunes.apple.com/us/app/tian-tian-xin-shang-jia-ban/id1095617211?l=zh&ls=1&mt=8"

@@ -36,6 +36,7 @@
     self.gouJiesuanLabel.textColor = MacoColor;
     
     self.totalMoney.adjustsFontSizeToFitWidth = self.titalBIshu.adjustsFontSizeToFitWidth = self.shouldJiesuan.adjustsFontSizeToFitWidth = YES;
+    self.status_Btn.titleLabel.adjustsFontSizeToFitWidth = YES;
     
 }
 
@@ -64,11 +65,11 @@
             self.successMarkImageView.hidden = YES;
             
             
-            self.successMarkImageView.image = [UIImage imageNamed:@"pic_statements_blue"];
-            self.mark_imageView.hidden = YES;
-            self.successMarkImageView.hidden = NO;
-            self.goJiesuanHeight.constant = 0;
-            self.gouJiesuanView.hidden = YES;
+//            self.successMarkImageView.image = [UIImage imageNamed:@"pic_statements_blue"];
+//            self.mark_imageView.hidden = YES;
+//            self.successMarkImageView.hidden = NO;
+//            self.goJiesuanHeight.constant = 38;
+//            self.gouJiesuanView.hidden = NO;
         }
             break;
         case 1:
@@ -91,11 +92,11 @@
             self.successMarkImageView.hidden = YES;
             
             
-            self.successMarkImageView.image = [UIImage imageNamed:@"pic_statements_green"];
-            self.mark_imageView.hidden = YES;
-            self.successMarkImageView.hidden = NO;
-            self.goJiesuanHeight.constant = 0;
-            self.gouJiesuanView.hidden = YES;
+//            self.successMarkImageView.image = [UIImage imageNamed:@"pic_statements_green"];
+//            self.mark_imageView.hidden = YES;
+//            self.successMarkImageView.hidden = NO;
+//            self.goJiesuanHeight.constant = 38;
+//            self.gouJiesuanView.hidden = NO;
         }
             break;
             
