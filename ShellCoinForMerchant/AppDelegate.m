@@ -42,9 +42,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
-    [_window makeKeyAndVisible];
-    return YES;
+//    self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
+//    [_window makeKeyAndVisible];
+//    return YES;
     if (![[NSUserDefaults standardUserDefaults]objectForKey:IsFirstLaunch]) {
         self.window.rootViewController =  [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"Login"];
     }else{
@@ -78,9 +78,9 @@
     
     //友盟推送的key
     //    //微信支付
-    [WXApi registerApp:@"wx8f7e25bacc68c476" withDescription:@"com.ttx.TianTianXinForMerchant"];
+    [WXApi registerApp:@"wx82d0327bdaa1761b" withDescription:@"com.ttx.TianTianXinForMerchant"];
     [self setUMPush:launchOptions];
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wx8f7e25bacc68c476" appSecret:@"b5b3d73959f2d861c6f06f68bbb0935a" redirectURL:@"http://mobile.umeng.com/social"];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wx82d0327bdaa1761b" appSecret:@"d1d1dd32c94b9482f3279f70f3b7f8d3" redirectURL:@"http://mobile.umeng.com/social"];
     //    [UMSocialConfig hiddenNotInstallPlatforms:nil];
     
 }

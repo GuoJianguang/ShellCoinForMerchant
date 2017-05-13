@@ -29,8 +29,9 @@ static AliPayObject *instance;
 
 + (void)startAliPayMerchantJiesuan:(NSDictionary *)parms
 {
-    
+    [SVProgressHUD showWithStatus:@"正在发送支付请求" maskType:SVProgressHUDMaskTypeBlack];
     [HttpClient POST:@"pay/mch/settle/alipay" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+        [SVProgressHUD dismiss];
         if (IsRequestTrue) {
             NSString *jsonorderString = NullToSpace(jsonObject[@"data"][@"orderString"]);
             if (![jsonorderString isEqualToString:@""]) {
@@ -49,8 +50,8 @@ static AliPayObject *instance;
 
         }
     } failure:^(NSURLSessionDataTask *operation, NSError *error) {
-        
-        
+        [SVProgressHUD dismiss];
+        [[JAlertViewHelper shareAlterHelper]showTint:@"订单生成失败,请稍后重试" duration:2.];
     }];
     
 }

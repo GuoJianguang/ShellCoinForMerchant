@@ -8,6 +8,7 @@
 
 #import "SettlementPayWayView.h"
 #import "StateMentTableViewCell.h"
+#import "WeXinPayObject.h"
 
 @implementation SettlementPayWayView
 
@@ -52,11 +53,17 @@
     self.wechatLabel.textColor = MacoTitleColor;
     self.wechatMarkBtn.hidden = YES;
     self.aliPayMarkBtn.hidden = YES;
-
+    self.aliPayLabel.textColor  = MacoTitleColor;
+    self.aliPayMarkBtn.hidden  = YES;
+    self.aliPaytBtn.selected = NO;
+    self.aliPayImage.image = [UIImage imageNamed:@"icon_zhifubao_nor"];
+    
     //默认余额支付
     self.payWay_type = Payway_type_banlance;
     double payMoney = [self.dataModel.totalAmount doubleValue];
     double yuE = [[ShellCoinUserInfo shareUserInfos].aviableBalance doubleValue];
+    
+    
     
     
     if (yuE >= payMoney) {
@@ -143,28 +150,48 @@
     switch (self.payWay_type) {
         case Payway_type_wechat://微信支付
         {
-            [[JAlertViewHelper shareAlterHelper]showTint:@"微信支付未开通，请选择其他支付方式" duration:2.];
+            NSDictionary *parms = @{@"settleId":self.dataModel.orderId,
+                                    @"token":[ShellCoinUserInfo shareUserInfos].token};
+            [WeXinPayObject startWexinPay:parms];
+
+//            [[JAlertViewHelper shareAlterHelper]showTint:@"微信支付未开通，请选择其他支付方式" duration:2.];
             
         }
             break;
         case Payway_type_banlance://余额支付
         {
-            NSDictionary *parms = @{@"settleId":self.dataModel.orderId,
-                                  @"token":[ShellCoinUserInfo shareUserInfos].token};
-            [HttpClient POST:@"pay/mch/settle/balancePay" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
-                if (IsRequestTrue) {
-                    if ([self.delegate respondsToSelector:@selector(settlementSuccess)]) {
-                        [ShellCoinUserInfo shareUserInfos].aviableBalance = [NSString stringWithFormat:@"%.2f",[[ShellCoinUserInfo shareUserInfos].aviableBalance doubleValue] -[self.dataModel.totalAmount doubleValue]];
-                        [[JAlertViewHelper shareAlterHelper]showTint:@"结算成功" duration:2.];
-                        [self.delegate settlementSuccess];
-                        [self removeFromSuperview];
-                    }
-                }
-                
-            } failure:^(NSURLSessionDataTask *operation, NSError *error) {
-                [[JAlertViewHelper shareAlterHelper]showTint:@"结算失败，请稍后重试" duration:2.];
+            UIAlertController *alertcontroller = [UIAlertController alertControllerWithTitle:@"提示" message:@"是否确认用余额进行结算？" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
             }];
-        }
+            UIAlertAction *otherAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                
+                NSDictionary *parms = @{@"settleId":self.dataModel.orderId,
+                                        @"token":[ShellCoinUserInfo shareUserInfos].token};
+                [SVProgressHUD showWithStatus:@"正在发送结算请求" maskType:SVProgressHUDMaskTypeBlack];
+                [HttpClient POST:@"pay/mch/settle/balancePay" parameters:parms success:^(NSURLSessionDataTask *operation, id jsonObject) {
+                    [SVProgressHUD dismiss];
+                    if (IsRequestTrue) {
+                        if ([self.delegate respondsToSelector:@selector(settlementSuccess)]) {
+                            [ShellCoinUserInfo shareUserInfos].aviableBalance = [NSString stringWithFormat:@"%.2f",[[ShellCoinUserInfo shareUserInfos].aviableBalance doubleValue] -[self.dataModel.totalAmount doubleValue]];
+                            [[JAlertViewHelper shareAlterHelper]showTint:@"结算成功" duration:2.];
+                            [self.delegate settlementSuccess];
+                            [self removeFromSuperview];
+                        }
+                    }
+                    
+                } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+                    [SVProgressHUD dismiss];
+                    [[JAlertViewHelper shareAlterHelper]showTint:@"结算失败，请稍后重试" duration:2.];
+                }];
+
+            }];
+            [alertcontroller addAction:cancelAction];
+            [alertcontroller addAction:otherAction];
+            [self.viewController presentViewController:alertcontroller animated:YES completion:NULL];
+
+            
+            
+            }
             break;
             
         case payway_type_alipay:

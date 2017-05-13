@@ -9,6 +9,7 @@
 #import "StateMentsMViewController.h"
 #import "StateMentTableViewCell.h"
 #import "SettlementPayWayView.h"
+#import "WeXinPayObject.h"
 
 @interface StateMentsMViewController ()<UITableViewDelegate,UITableViewDataSource,SettlementDelegate,BasenavigationDelegate>
 @property (nonatomic, strong)SettlementPayWayView *payView;
@@ -41,6 +42,8 @@
     self.alerLabel1.text = @"手动打款说明";
     self.alerLabel2.text = @"对公账户：中国民生银行 成都领创有你科技有限公司\n开户行：成都神仙树支行  6232 5820 0035 4518\n\n对私账户：中国民生银行 6226 1920 0526 3926 韩旭\n开户行：成都神仙树支行";
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(aliPayResult:) name:AliPayResult object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(weixinPayResult:) name:WeixinPayResult object:nil];
+
 
 }
 
@@ -193,6 +196,43 @@
     
 }
 
+#pragma mark - 微信支付结算结果
+
+
+- (void)weixinPayResult:(NSNotification *)notification
+{
+    NSString *code = notification.userInfo[@"resultcode"];
+    switch ([code intValue]) {
+        case WXSuccess:
+        {
+            [[JAlertViewHelper shareAlterHelper]showTint:@"结算成功" duration:2.];
+            [self.payView tap];
+            [self settlementSuccess];
+        }
+            
+            break;
+        case WXErrCodeCommon:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"支付失败" duration:2.];
+            
+            break;
+        case WXErrCodeUserCancel:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"您已取消支付" duration:2.];
+            
+            break;
+        case WXErrCodeSentFail:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"发起支付请求失败" duration:2.];
+            
+            break;
+        case WXErrCodeAuthDeny:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"微信支付授权失败" duration:2.];
+            break;
+        case WXErrCodeUnsupport:
+            [[JAlertViewHelper shareAlterHelper]showTint:@"您未安装微信客户端,请先安装" duration:2.];
+            break;
+        default:
+            break;
+    }
+}
 
 - (void)settlementSuccess
 {

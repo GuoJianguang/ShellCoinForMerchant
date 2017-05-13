@@ -47,7 +47,7 @@ static NSString *rsaPrivateKey = @"MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAA
         }
     } failure:^(NSURLSessionDataTask *operation, NSError *error) {
         [SVProgressHUD dismiss];
-        [[JAlertViewHelper shareAlterHelper]showTint:@"订单生成失败,请稍后重试" duration:1.];
+        [[JAlertViewHelper shareAlterHelper]showTint:@"订单生成失败,请稍后重试" duration:2.];
     }];
 }
 

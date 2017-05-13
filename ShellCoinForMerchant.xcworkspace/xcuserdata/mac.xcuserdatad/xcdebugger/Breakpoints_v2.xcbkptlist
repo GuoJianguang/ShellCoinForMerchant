@@ -73,13 +73,108 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShellCoinForMerchant/AppDelegate.m"
-            timestampString = "515922146.028942"
+            filePath = "ShellCoinForMerchant/Login/LoginViewController.m"
+            timestampString = "515991372.39615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
-            landmarkName = "-application:didRegisterForRemoteNotificationsWithDeviceToken:"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "-login_btn:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShellCoinForMerchant/Public/HttpClient/BaseHttpClient.m"
+            timestampString = "516001467.11854"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "+POSTWithFullUrl:parameters:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BaseHttpClient POSTWithFullUrl:parameters:success:failure:]"
+                  moduleName = "ShellCoinForMerchant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/ShellCoinForMerchant/ShellCoinForMerchant/Public/HttpClient/BaseHttpClient.m"
+                  timestampString = "516092096.309107"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "411">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__61+[BaseHttpClient POSTWithFullUrl:parameters:success:failure:]_block_invoke"
+                  moduleName = "ShellCoinForMerchant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/ShellCoinForMerchant/ShellCoinForMerchant/Public/HttpClient/BaseHttpClient.m"
+                  timestampString = "516092096.312045"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__61+[BaseHttpClient POSTWithFullUrl:parameters:success:failure:]_block_invoke_2"
+                  moduleName = "ShellCoinForMerchant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/ShellCoinForMerchant/ShellCoinForMerchant/Public/HttpClient/BaseHttpClient.m"
+                  timestampString = "516092096.314671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShellCoinForMerchant/Public/HttpClient/BaseHttpClient.m"
+            timestampString = "516001469.782807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "+POSTWithFullUrl:parameters:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShellCoinForMerchant/Public/HttpClient/BaseHttpClient.m"
+            timestampString = "516001470.406496"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "+POSTWithFullUrl:parameters:success:failure:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,7 +185,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShellCoinForMerchant/Login/LoginViewController.m"
-            timestampString = "515920203.687624"
+            timestampString = "516001534.414398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
@@ -105,14 +200,56 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShellCoinForMerchant/AppDelegate.m"
-            timestampString = "515922328.062515"
+            filePath = "ShellCoinForMerchant/Login/LoginViewController.m"
+            timestampString = "516001553.062231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "-application:handleOpenURL:"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-login_btn:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LoginViewController login_btn:]"
+                  moduleName = "ShellCoinForMerchant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/ShellCoinForMerchant/ShellCoinForMerchant/Login/LoginViewController.m"
+                  timestampString = "516092096.334726"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "860">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[LoginViewController login_btn:]_block_invoke"
+                  moduleName = "ShellCoinForMerchant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/ShellCoinForMerchant/ShellCoinForMerchant/Login/LoginViewController.m"
+                  timestampString = "516092096.337157"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -121,13 +258,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShellCoinForMerchant/AppDelegate.m"
-            timestampString = "515922331.630505"
+            filePath = "ShellCoinForMerchant/Home/Statements management/SettlementPayWayView.m"
+            timestampString = "516092093.336581"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-application:handleOpenURL:"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-setDataModel:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
